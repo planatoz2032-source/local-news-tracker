@@ -314,20 +314,25 @@
 <script>
 const DATA_SOURCES = [
   { file: 'data/seoul.json', region: '서울특별시' },
-  // { file: 'data/gyeonggi.json', region: '경기도' },
-  // { file: 'data/daejeon.json', region: '대전광역시' },
-  // { file: 'data/daegu.json', region: '대구광역시' },
   // { file: 'data/incheon.json', region: '인천광역시' },
   // { file: 'data/busan.json', region: '부산광역시' },
-  // { file: 'data/jeonnam-gwangju.json', region: '전남광주통합특별시' },
+  // { file: 'data/daejeon.json', region: '대전광역시' },
+  // { file: 'data/daegu.json', region: '대구광역시' },
+  // { file: 'data/suwon.json', region: '수원특례시' },
+  // { file: 'data/hwaseong.json', region: '화성특례시' },
+  // { file: 'data/yongin.json', region: '용인특례시' },
+  // { file: 'data/changwon.json', region: '창원특례시' },
+  // { file: 'data/gyeonggi.json', region: '경기도' },
   // { file: 'data/ansan.json', region: '안산시' },
-  // { file: 'data/suwon.json', region: '수원시' },
-  // { file: 'data/hwaseong.json', region: '화성시' },
+  // { file: 'data/jeonnam-gwangju.json', region: '전남광주통합특별시' },
 ];
 
+// 요청하신 순서: 서울 > 인천·부산·대전·대구(광역시) > 수원·화성·용인·창원(특례시)
+// 그 뒤로 경기도·안산시·전남광주통합특별시를 이어서 배치했어요.
 const ALL_REGIONS = [
-  '서울특별시', '경기도', '대전광역시', '대구광역시', '인천광역시',
-  '부산광역시', '전남광주통합특별시', '안산시', '수원시', '화성시'
+  '서울특별시', '인천광역시', '부산광역시', '대전광역시', '대구광역시',
+  '수원특례시', '화성특례시', '용인특례시', '창원특례시',
+  '경기도', '안산시', '전남광주통합특별시'
 ];
 
 const CATEGORY_ICONS = {
