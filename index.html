@@ -10,12 +10,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#F5F2EA;
-    --paper-dim:#EDE9DD;
+    --paper:#FAF8F3;
+    --card:#FFFFFF;
     --ink:#1B2A44;
-    --ink-soft:#4B5670;
+    --ink-soft:#69728A;
     --seal:#A6303C;
-    --line:#D9D3C2;
+    --line:#E7E2D6;
+    --active-bg:#1B2A44;
     --mono:'Noto Sans KR', sans-serif;
     --serif:'Noto Serif KR', serif;
   }
@@ -29,36 +30,31 @@
   }
 
   header{
-    border-bottom:2px solid var(--ink);
-    padding:10px 16px;
+    padding:18px 20px 10px;
     display:flex;
     align-items:baseline;
     justify-content:space-between;
     gap:16px;
     flex-wrap:wrap;
-    position:sticky;
-    top:0;
-    background:var(--paper);
-    z-index:10;
   }
   header h1{
     font-family:var(--serif);
     font-weight:700;
-    font-size:17px;
+    font-size:19px;
     margin:0;
     letter-spacing:-0.3px;
   }
   .quote{
     font-family:var(--serif);
     font-style:italic;
-    font-size:11.5px;
+    font-size:12px;
     color:var(--ink-soft);
     flex:1;
     min-width:200px;
     text-align:center;
   }
   .meta-line{
-    font-size:11.5px;
+    font-size:12px;
     color:var(--ink-soft);
     white-space:nowrap;
   }
@@ -66,131 +62,148 @@
   .layout{
     display:flex;
     align-items:flex-start;
-    max-width:1100px;
+    gap:16px;
+    max-width:1120px;
     margin:0 auto;
+    padding:0 16px 40px;
   }
 
-  /* ---- 왼쪽 지역 사이드바 ---- */
+  /* ---- 사이드바 ---- */
   .sidebar{
-    width:150px;
+    width:200px;
     flex-shrink:0;
-    padding:16px 10px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:14px 10px;
     position:sticky;
-    top:53px;
-    height:calc(100vh - 53px);
-    overflow-y:auto;
+    top:16px;
   }
   .sidebar-title{
     font-size:11px;
     color:var(--ink-soft);
     font-weight:700;
-    padding:0 8px 6px;
+    padding:2px 10px 8px;
     letter-spacing:.5px;
   }
   .region-btn{
-    display:block;
+    display:flex;
+    align-items:center;
+    gap:8px;
     width:100%;
     text-align:left;
     background:none;
     border:none;
-    padding:7px 8px;
+    padding:9px 10px;
     font-family:var(--mono);
-    font-size:13px;
-    color:var(--ink-soft);
-    border-radius:4px;
+    font-size:13.5px;
+    color:var(--ink);
+    border-radius:10px;
     cursor:pointer;
+    margin-bottom:2px;
   }
-  .region-btn:hover{ background:var(--paper-dim); }
-  .region-btn.active{
-    background:var(--ink);
-    color:var(--paper);
-    font-weight:700;
-  }
+  .region-btn:hover{ background:var(--paper); }
+  .region-btn.active{ background:var(--active-bg); color:#fff; }
+  .region-btn .icon{ font-size:14px; flex-shrink:0; }
+  .region-btn .name{ flex:1; }
   .region-btn .cnt{
-    float:right;
-    font-size:11px;
-    opacity:.7;
+    font-size:10.5px;
+    padding:2px 7px;
+    border-radius:20px;
+    background:var(--paper);
+    color:var(--ink-soft);
+    flex-shrink:0;
   }
-  .sidebar hr{
-    border:none;
-    border-top:1px solid var(--line);
-    margin:12px 8px;
-  }
+  .region-btn.active .cnt{ background:rgba(255,255,255,.18); color:#fff; }
+  .region-btn.empty .cnt{ opacity:.6; }
 
-  /* ---- 오른쪽 콘텐츠 ---- */
-  .content{
-    flex:1;
-    min-width:0;
-    padding:16px 16px 60px;
-  }
+  .sidebar hr{ border:none; border-top:1px solid var(--line); margin:10px 6px; }
+  .star-nav{ color:var(--seal); font-weight:700; }
+  .star-nav.active{ background:var(--seal); color:#fff; }
+
+  /* ---- 콘텐츠 ---- */
+  .content{ flex:1; min-width:0; }
   .search-box{
     width:100%;
-    padding:9px 12px;
+    padding:11px 14px;
     font-size:14px;
     font-family:var(--mono);
-    border:1.5px solid var(--ink);
-    background:#fff;
-    border-radius:2px;
+    border:1px solid var(--line);
+    background:var(--card);
+    border-radius:12px;
     outline:none;
   }
-  .search-box:focus{border-color:var(--seal);}
+  .search-box:focus{ border-color:var(--ink); }
 
-  .filters{
-    display:flex;
-    flex-wrap:wrap;
-    gap:6px;
-    margin:10px 0 0;
-  }
+  .filters{ display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 0; }
   .filter-chip{
+    display:flex;
+    align-items:center;
+    gap:6px;
     font-family:var(--mono);
-    font-size:12px;
-    padding:4px 10px;
+    font-size:12.5px;
+    padding:6px 13px;
     border:1px solid var(--line);
-    background:#fff;
+    background:var(--card);
     color:var(--ink-soft);
-    border-radius:16px;
+    border-radius:20px;
     cursor:pointer;
   }
   .filter-chip.active{
-    background:var(--ink);
-    border-color:var(--ink);
-    color:var(--paper);
-  }
-  .filter-chip.star.active{
-    background:var(--seal);
-    border-color:var(--seal);
+    background:var(--active-bg);
+    border-color:var(--active-bg);
+    color:#fff;
   }
 
   .count-line{
-    margin:10px 0 0;
+    margin:14px 0 0;
     font-size:12px;
     color:var(--ink-soft);
     display:flex;
     justify-content:space-between;
-    border-bottom:1px solid var(--line);
-    padding-bottom:6px;
+    padding-bottom:8px;
+  }
+
+  main{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    overflow:hidden;
   }
 
   .item{
     display:flex;
     align-items:center;
     gap:10px;
-    padding:7px 2px;
+    padding:11px 14px;
     border-bottom:1px solid var(--line);
     font-size:13.5px;
   }
-  .item:hover{ background:var(--paper-dim); }
+  .item:last-child{ border-bottom:none; }
+  .item:hover{ background:var(--paper); }
+
+  .star-btn{
+    flex-shrink:0;
+    border:none;
+    background:none;
+    cursor:pointer;
+    font-size:17px;
+    color:var(--line);
+    line-height:1;
+    padding:2px;
+  }
+  .star-btn.active{ color:var(--seal); }
 
   .item .tags{ display:flex; gap:5px; flex-shrink:0; }
   .tag{
     font-size:10.5px;
     font-weight:700;
-    padding:2px 6px;
-    border-radius:2px;
+    padding:3px 8px;
+    border-radius:6px;
     white-space:nowrap;
   }
-  .tag.region{ background:var(--seal); color:#fff; }
-  .tag.category{ background:var(--paper-dim); color:var(--ink-soft); border:1px solid var(--line); }
+  .tag.region{ background:#EEF0F5; color:var(--ink); }
+  .tag.category{ background:var(--paper); color:var(--ink-soft); }
 
   .item a.line{
     flex:1;
@@ -211,17 +224,6 @@
     width:78px;
     text-align:right;
   }
-  .star-btn{
-    flex-shrink:0;
-    border:none;
-    background:none;
-    cursor:pointer;
-    font-size:16px;
-    color:var(--line);
-    line-height:1;
-    padding:2px;
-  }
-  .star-btn.active{ color:var(--seal); }
 
   .empty{
     text-align:center;
@@ -237,28 +239,45 @@
     font-size:11px;
     color:var(--ink-soft);
     padding:16px;
-    border-top:1px solid var(--line);
   }
 
-  /* ---- 모바일: 사이드바를 상단 가로 스크롤로 ---- */
+  /* ---- 모바일 ---- */
   @media (max-width:760px){
-    .layout{ flex-direction:column; }
+    header{ padding:14px 14px 4px; }
+    .quote{ order:3; width:100%; text-align:left; font-size:11px; }
+    .layout{ flex-direction:column; padding:0 10px 30px; }
     .sidebar{
       width:100%;
-      height:auto;
       position:static;
       display:flex;
       overflow-x:auto;
-      padding:10px 12px;
-      gap:4px;
+      padding:10px;
+      gap:6px;
+      border-radius:12px;
     }
     .sidebar-title{ display:none; }
-    .region-btn{ width:auto; white-space:nowrap; flex-shrink:0; }
-    .region-btn .cnt{ float:none; margin-left:4px; }
+    .region-btn{
+      width:auto;
+      white-space:nowrap;
+      flex-shrink:0;
+      margin-bottom:0;
+      padding:8px 12px;
+    }
     .sidebar hr{ display:none; }
-    .item .date{ width:60px; font-size:10.5px; }
-    .item{ font-size:12.5px; }
-    .quote{ order:3; width:100%; text-align:left; }
+    .star-nav{ margin-left:4px; }
+
+    .item{ flex-wrap:wrap; padding:12px; }
+    .item a.line{
+      white-space:normal;
+      overflow:visible;
+      text-overflow:unset;
+      flex-basis:100%;
+      order:3;
+      font-size:13.5px;
+      line-height:1.5;
+      margin-top:2px;
+    }
+    .item .date{ width:auto; order:2; margin-left:auto; }
   }
 </style>
 </head>
@@ -276,7 +295,7 @@
   </nav>
 
   <div class="content">
-    <input type="text" class="search-box" id="searchInput" placeholder="제목, 부서, 키워드로 검색...">
+    <input type="text" class="search-box" id="searchInput" placeholder="🔍  제목, 부서, 키워드로 검색...">
     <div class="filters" id="categoryFilters"></div>
 
     <div class="count-line">
@@ -293,7 +312,6 @@
 </footer>
 
 <script>
-// 앞으로 지역이 준비되는 대로 이 목록의 file 경로를 추가하면 사이드바에 자동으로 반영됩니다.
 const DATA_SOURCES = [
   { file: 'data/seoul.json', region: '서울특별시' },
   // { file: 'data/gyeonggi.json', region: '경기도' },
@@ -307,11 +325,15 @@ const DATA_SOURCES = [
   // { file: 'data/hwaseong.json', region: '화성시' },
 ];
 
-// 사이드바에는 데이터가 아직 없는 지역도 미리 보여준다 (준비중으로 표시)
 const ALL_REGIONS = [
   '서울특별시', '경기도', '대전광역시', '대구광역시', '인천광역시',
   '부산광역시', '전남광주통합특별시', '안산시', '수원시', '화성시'
 ];
+
+const CATEGORY_ICONS = {
+  '문화': '🎭', '경제': '📈', '주택': '🏠', '교통': '🚌',
+  '도시계획': '🏙️', '안전': '🛡️', '환경': '🌳', '행정': '🏛️', '복지': '🤝'
+};
 
 const BOOKMARK_KEY = 'news-bookmarks-v1';
 let allItems = [];
@@ -343,8 +365,7 @@ async function loadData(){
 }
 
 function uniqueValues(key){
-  const set = new Set(allItems.map(i => i[key]).filter(Boolean));
-  return Array.from(set);
+  return Array.from(new Set(allItems.map(i => i[key]).filter(Boolean)));
 }
 
 function renderSidebar(){
@@ -353,17 +374,18 @@ function renderSidebar(){
   allItems.forEach(i => { counts[i.region] = (counts[i.region]||0) + 1; });
 
   let html = '<div class="sidebar-title">지역</div>';
-  html += regionBtn('전체', allItems.length);
+  html += regionBtn('🌐', '전체', allItems.length, true);
   ALL_REGIONS.forEach(r => {
-    html += regionBtn(r, counts[r] || 0, counts[r] === undefined);
+    html += regionBtn('📍', r, counts[r] || 0, counts[r] > 0);
   });
   html += '<hr>';
-  html += `<button class="region-btn star ${showBookmarksOnly?'active':''}" id="starToggle">★ 즐겨찾기</button>`;
+  html += `<button class="region-btn star-nav ${showBookmarksOnly?'active':''}" id="starToggle"><span class="icon">★</span><span class="name">즐겨찾기</span></button>`;
   sidebar.innerHTML = html;
 
   sidebar.querySelectorAll('.region-btn[data-region]').forEach(btn => {
     btn.addEventListener('click', () => {
       activeRegion = btn.dataset.region;
+      showBookmarksOnly = false;
       render();
     });
   });
@@ -373,18 +395,22 @@ function renderSidebar(){
   });
 }
 
-function regionBtn(name, count){
-  const active = name === activeRegion ? 'active' : '';
-  const countLabel = count > 0 ? `<span class="cnt">${count}</span>` : `<span class="cnt">준비중</span>`;
-  return `<button class="region-btn ${active}" data-region="${name}">${name}${countLabel}</button>`;
+function regionBtn(icon, name, count, hasData){
+  const active = (name === activeRegion && !showBookmarksOnly) ? 'active' : '';
+  const emptyClass = hasData ? '' : 'empty';
+  const countLabel = hasData ? count : '준비중';
+  return `<button class="region-btn ${active} ${emptyClass}" data-region="${name}">
+    <span class="icon">${icon}</span><span class="name">${name}</span><span class="cnt">${countLabel}</span>
+  </button>`;
 }
 
 function renderCategoryFilters(){
   const catWrap = document.getElementById('categoryFilters');
   const cats = ['전체', ...uniqueValues('category')];
-  catWrap.innerHTML = cats.map(c =>
-    `<button class="filter-chip ${c===activeCategory?'active':''}" data-value="${c}">${c}</button>`
-  ).join('');
+  catWrap.innerHTML = cats.map(c => {
+    const icon = c === '전체' ? '' : (CATEGORY_ICONS[c] || '📄') + ' ';
+    return `<button class="filter-chip ${c===activeCategory?'active':''}" data-value="${c}">${icon}${c}</button>`;
+  }).join('');
   catWrap.querySelectorAll('.filter-chip').forEach(btn => {
     btn.addEventListener('click', () => {
       activeCategory = btn.dataset.value;
@@ -400,7 +426,7 @@ function render(){
   const bookmarks = getBookmarks();
 
   let filtered = allItems.filter(item => {
-    if(activeRegion!=='전체' && item.region!==activeRegion) return false;
+    if(!showBookmarksOnly && activeRegion!=='전체' && item.region!==activeRegion) return false;
     if(activeCategory!=='전체' && item.category!==activeCategory) return false;
     if(showBookmarksOnly && !bookmarks[item.id]) return false;
     if(q){
@@ -427,15 +453,15 @@ function render(){
     const isBookmarked = !!bookmarks[item.id];
     return `
     <div class="item">
+      <button class="star-btn ${isBookmarked?'active':''}" data-id="${item.id}">${isBookmarked?'★':'☆'}</button>
       <div class="tags">
         <span class="tag region">${item.region}</span>
-        <span class="tag category">${item.category||'미분류'}</span>
+        <span class="tag category">${CATEGORY_ICONS[item.category]||''} ${item.category||'미분류'}</span>
       </div>
       <a class="line" href="${item.url}" target="_blank" rel="noopener">
         ${escapeHtml(item.title)} <span class="dept">— ${escapeHtml(item.dept||'')}</span>
       </a>
       <span class="date">${item.date||''}</span>
-      <button class="star-btn ${isBookmarked?'active':''}" data-id="${item.id}">${isBookmarked?'★':'☆'}</button>
     </div>`;
   }).join('');
 
