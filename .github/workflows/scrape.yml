@@ -1,97 +1,45 @@
-"""
-서울시 보도자료(주택/교통/도시계획 분야) 수집 스크립트
-"""
+name: Seoul News Scraper
 
-import json
-import re
-import time
-from pathlib import Path
+on:
+  schedule:
+    - cron: '0 15,3 * * *'
+  workflow_dispatch: {}
 
-from playwright.sync_api import sync_playwright
+permissions:
+  contents: write
 
-LIST_URL = (
-    "https://www.seoul.go.kr/news/news_report.do"
-    "?srchCtgryType=464,465,466,467&cntPerPage=50&curPage={page}"
-)
-DETAIL_URL = "https://www.seoul.go.kr/news/news_report.do?nttNo={ntt_no}"
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "seoul.json"
-DEBUG_DIR = Path(__file__).resolve().parent.parent / "debug"
-MAX_PAGES_PER_RUN = 10
-REGION = "서울특별시"
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
+      - name: Install dependencies
+        run: |
+          pip install -r scraper/requirements.txt
+          playwright install --with-deps chromium
 
-def load_existing():
-    if DATA_FILE.exists():
-        return json.loads(DATA_FILE.read_text(encoding="utf-8"))
-    return []
+      - name: Run scraper
+        run: python scraper/scrape_seoul.py
 
+      - name: Upload debug files
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-files
+          path: debug/
+          if-no-files-found: ignore
 
-def save(items):
-    DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
-    items = sorted(items, key=lambda x: x.get("date", ""), reverse=True)
-    DATA_FILE.write_text(
-        json.dumps(items, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
-
-
-def save_debug(page, tag):
-    DEBUG_DIR.mkdir(parents=True, exist_ok=True)
-    try:
-        page.screenshot(path=str(DEBUG_DIR / f"{tag}.png"), full_page=True)
-    except Exception as e:
-        print(f"  (스크린샷 저장 실패: {e})")
-    try:
-        (DEBUG_DIR / f"{tag}.html").write_text(page.content(), encoding="utf-8")
-    except Exception as e:
-        print(f"  (HTML 저장 실패: {e})")
-
-
-def collect_list_links(page, page_no):
-    url = LIST_URL.format(page=page_no)
-    page.goto(url, wait_until="networkidle", timeout=60000)
-    page.wait_for_timeout(3500)
-
-    if page_no == 1:
-        save_debug(page, "list_page1")
-
-    links = page.eval_on_selector_all(
-        "a[href*='nttNo=']",
-        """els => els.map(e => ({
-            href: e.getAttribute('href') || '',
-            text: (e.textContent || '').trim()
-        }))""",
-    )
-    print(f"  a[href*='nttNo=']로 찾은 링크 수: {len(links)}")
-
-    if not links:
-        all_a = page.eval_on_selector_all(
-            "a",
-            """els => els.slice(0, 40).map(e => ({
-                href: e.getAttribute('href') || '',
-                onclick: e.getAttribute('onclick') || '',
-                text: (e.textContent || '').trim().slice(0, 40)
-            }))""",
-        )
-        print("  전체 링크 샘플(최대 40개):")
-        for a in all_a:
-            if a["text"] or a["onclick"]:
-                print(f"    href={a['href']!r} onclick={a['onclick']!r} text={a['text']!r}")
-
-    results = {}
-    for link in links:
-        m = re.search(r"nttNo=(\d+)", link["href"])
-        if not m:
-            continue
-        ntt_no = m.group(1)
-        title = link["text"]
-        if not title:
-            continue
-        if len(title) < 4:
-            continue
-        results[ntt_no] = title
-    return results
-
-
-def extract_detail(page, ntt_no):
-    url = DETAIL_URL.format(ntt_no=ntt_no)
+      - name: Commit updated data
+        run: |
+          git config user.name news-bot
+          git config user.email news-bot@users.noreply.github.com
+          git add data/seoul.json
+          git diff --staged --quiet && echo no changes || git commit -m "update seoul data"
+          git push
