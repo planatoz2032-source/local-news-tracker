@@ -32,45 +32,96 @@
     border-bottom:2px solid var(--ink);
     padding:10px 16px;
     display:flex;
-    align-items:center;
+    align-items:baseline;
     justify-content:space-between;
-    gap:12px;
+    gap:16px;
     flex-wrap:wrap;
     position:sticky;
     top:0;
     background:var(--paper);
     z-index:10;
   }
-  .brand{ display:flex; align-items:center; gap:8px; }
-  .seal-mini{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    width:26px;height:26px;
-    border:1.5px solid var(--seal);
-    border-radius:50%;
-    color:var(--seal);
-    font-family:var(--serif);
-    font-weight:700;
-    font-size:10px;
-    flex-shrink:0;
-  }
   header h1{
     font-family:var(--serif);
     font-weight:700;
-    font-size:16px;
+    font-size:17px;
     margin:0;
     letter-spacing:-0.3px;
+  }
+  .quote{
+    font-family:var(--serif);
+    font-style:italic;
+    font-size:11.5px;
+    color:var(--ink-soft);
+    flex:1;
+    min-width:200px;
+    text-align:center;
   }
   .meta-line{
     font-size:11.5px;
     color:var(--ink-soft);
+    white-space:nowrap;
   }
 
-  .controls{
-    max-width:920px;
+  .layout{
+    display:flex;
+    align-items:flex-start;
+    max-width:1100px;
     margin:0 auto;
-    padding:12px 16px 0;
+  }
+
+  /* ---- 왼쪽 지역 사이드바 ---- */
+  .sidebar{
+    width:150px;
+    flex-shrink:0;
+    padding:16px 10px;
+    position:sticky;
+    top:53px;
+    height:calc(100vh - 53px);
+    overflow-y:auto;
+  }
+  .sidebar-title{
+    font-size:11px;
+    color:var(--ink-soft);
+    font-weight:700;
+    padding:0 8px 6px;
+    letter-spacing:.5px;
+  }
+  .region-btn{
+    display:block;
+    width:100%;
+    text-align:left;
+    background:none;
+    border:none;
+    padding:7px 8px;
+    font-family:var(--mono);
+    font-size:13px;
+    color:var(--ink-soft);
+    border-radius:4px;
+    cursor:pointer;
+  }
+  .region-btn:hover{ background:var(--paper-dim); }
+  .region-btn.active{
+    background:var(--ink);
+    color:var(--paper);
+    font-weight:700;
+  }
+  .region-btn .cnt{
+    float:right;
+    font-size:11px;
+    opacity:.7;
+  }
+  .sidebar hr{
+    border:none;
+    border-top:1px solid var(--line);
+    margin:12px 8px;
+  }
+
+  /* ---- 오른쪽 콘텐츠 ---- */
+  .content{
+    flex:1;
+    min-width:0;
+    padding:16px 16px 60px;
   }
   .search-box{
     width:100%;
@@ -111,21 +162,13 @@
   }
 
   .count-line{
-    max-width:920px;
-    margin:10px auto 0;
-    padding:0 16px;
+    margin:10px 0 0;
     font-size:12px;
     color:var(--ink-soft);
     display:flex;
     justify-content:space-between;
     border-bottom:1px solid var(--line);
     padding-bottom:6px;
-  }
-
-  main{
-    max-width:920px;
-    margin:0 auto;
-    padding:0 16px 60px;
   }
 
   .item{
@@ -138,11 +181,7 @@
   }
   .item:hover{ background:var(--paper-dim); }
 
-  .item .tags{
-    display:flex;
-    gap:5px;
-    flex-shrink:0;
-  }
+  .item .tags{ display:flex; gap:5px; flex-shrink:0; }
   .tag{
     font-size:10.5px;
     font-weight:700;
@@ -163,10 +202,7 @@
     text-overflow:ellipsis;
   }
   .item a.line:hover{ text-decoration:underline; }
-  .item .dept{
-    color:var(--ink-soft);
-    font-weight:400;
-  }
+  .item .dept{ color:var(--ink-soft); font-weight:400; }
 
   .item .date{
     flex-shrink:0;
@@ -204,42 +240,77 @@
     border-top:1px solid var(--line);
   }
 
-  @media (max-width:480px){
+  /* ---- 모바일: 사이드바를 상단 가로 스크롤로 ---- */
+  @media (max-width:760px){
+    .layout{ flex-direction:column; }
+    .sidebar{
+      width:100%;
+      height:auto;
+      position:static;
+      display:flex;
+      overflow-x:auto;
+      padding:10px 12px;
+      gap:4px;
+    }
+    .sidebar-title{ display:none; }
+    .region-btn{ width:auto; white-space:nowrap; flex-shrink:0; }
+    .region-btn .cnt{ float:none; margin-left:4px; }
+    .sidebar hr{ display:none; }
     .item .date{ width:60px; font-size:10.5px; }
     .item{ font-size:12.5px; }
+    .quote{ order:3; width:100%; text-align:left; }
   }
 </style>
 </head>
 <body>
 
 <header>
-  <div class="brand">
-    <span class="seal-mini">보도</span>
-    <h1>보도자료</h1>
-  </div>
+  <h1>보도자료</h1>
+  <div class="quote">"Never regret yesterday. Life is in me today, and make my own tomorrow." — L. Ron Hubbard</div>
   <div class="meta-line" id="metaLine">불러오는 중...</div>
 </header>
 
-<div class="controls">
-  <input type="text" class="search-box" id="searchInput" placeholder="제목, 부서, 키워드로 검색...">
-  <div class="filters" id="regionFilters"></div>
-  <div class="filters" id="categoryFilters"></div>
-</div>
+<div class="layout">
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-title">지역</div>
+  </nav>
 
-<div class="count-line">
-  <span id="countText">불러오는 중...</span>
-  <span>최신순 정렬</span>
-</div>
+  <div class="content">
+    <input type="text" class="search-box" id="searchInput" placeholder="제목, 부서, 키워드로 검색...">
+    <div class="filters" id="categoryFilters"></div>
 
-<main id="list"></main>
+    <div class="count-line">
+      <span id="countText">불러오는 중...</span>
+      <span>최신순 정렬</span>
+    </div>
+
+    <main id="list"></main>
+  </div>
+</div>
 
 <footer>
   각 게시물의 원문은 해당 지자체 공식 누리집에서 제공됩니다. ★를 눌러 즐겨찾기에 담아두세요 (이 브라우저에만 저장돼요).
 </footer>
 
 <script>
+// 앞으로 지역이 준비되는 대로 이 목록의 file 경로를 추가하면 사이드바에 자동으로 반영됩니다.
 const DATA_SOURCES = [
   { file: 'data/seoul.json', region: '서울특별시' },
+  // { file: 'data/gyeonggi.json', region: '경기도' },
+  // { file: 'data/daejeon.json', region: '대전광역시' },
+  // { file: 'data/daegu.json', region: '대구광역시' },
+  // { file: 'data/incheon.json', region: '인천광역시' },
+  // { file: 'data/busan.json', region: '부산광역시' },
+  // { file: 'data/jeonnam-gwangju.json', region: '전남광주통합특별시' },
+  // { file: 'data/ansan.json', region: '안산시' },
+  // { file: 'data/suwon.json', region: '수원시' },
+  // { file: 'data/hwaseong.json', region: '화성시' },
+];
+
+// 사이드바에는 데이터가 아직 없는 지역도 미리 보여준다 (준비중으로 표시)
+const ALL_REGIONS = [
+  '서울특별시', '경기도', '대전광역시', '대구광역시', '인천광역시',
+  '부산광역시', '전남광주통합특별시', '안산시', '수원시', '화성시'
 ];
 
 const BOOKMARK_KEY = 'news-bookmarks-v1';
@@ -273,26 +344,26 @@ async function loadData(){
 
 function uniqueValues(key){
   const set = new Set(allItems.map(i => i[key]).filter(Boolean));
-  return ['전체', ...Array.from(set)];
+  return Array.from(set);
 }
 
-function renderFilters(){
-  const regionWrap = document.getElementById('regionFilters');
-  const catWrap = document.getElementById('categoryFilters');
+function renderSidebar(){
+  const sidebar = document.getElementById('sidebar');
+  const counts = {};
+  allItems.forEach(i => { counts[i.region] = (counts[i.region]||0) + 1; });
 
-  regionWrap.innerHTML = uniqueValues('region').map(r =>
-    `<button class="filter-chip ${r===activeRegion?'active':''}" data-type="region" data-value="${r}">${r}</button>`
-  ).join('') + `<button class="filter-chip star ${showBookmarksOnly?'active':''}" id="starToggle">★ 즐겨찾기</button>`;
+  let html = '<div class="sidebar-title">지역</div>';
+  html += regionBtn('전체', allItems.length);
+  ALL_REGIONS.forEach(r => {
+    html += regionBtn(r, counts[r] || 0, counts[r] === undefined);
+  });
+  html += '<hr>';
+  html += `<button class="region-btn star ${showBookmarksOnly?'active':''}" id="starToggle">★ 즐겨찾기</button>`;
+  sidebar.innerHTML = html;
 
-  catWrap.innerHTML = uniqueValues('category').map(c =>
-    `<button class="filter-chip ${c===activeCategory?'active':''}" data-type="category" data-value="${c}">${c}</button>`
-  ).join('');
-
-  document.querySelectorAll('.filter-chip[data-type]').forEach(btn => {
+  sidebar.querySelectorAll('.region-btn[data-region]').forEach(btn => {
     btn.addEventListener('click', () => {
-      const {type, value} = btn.dataset;
-      if(type==='region') activeRegion = value;
-      if(type==='category') activeCategory = value;
+      activeRegion = btn.dataset.region;
       render();
     });
   });
@@ -302,8 +373,29 @@ function renderFilters(){
   });
 }
 
+function regionBtn(name, count){
+  const active = name === activeRegion ? 'active' : '';
+  const countLabel = count > 0 ? `<span class="cnt">${count}</span>` : `<span class="cnt">준비중</span>`;
+  return `<button class="region-btn ${active}" data-region="${name}">${name}${countLabel}</button>`;
+}
+
+function renderCategoryFilters(){
+  const catWrap = document.getElementById('categoryFilters');
+  const cats = ['전체', ...uniqueValues('category')];
+  catWrap.innerHTML = cats.map(c =>
+    `<button class="filter-chip ${c===activeCategory?'active':''}" data-value="${c}">${c}</button>`
+  ).join('');
+  catWrap.querySelectorAll('.filter-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeCategory = btn.dataset.value;
+      render();
+    });
+  });
+}
+
 function render(){
-  renderFilters();
+  renderSidebar();
+  renderCategoryFilters();
   const q = document.getElementById('searchInput').value.trim().toLowerCase();
   const bookmarks = getBookmarks();
 
@@ -326,7 +418,7 @@ function render(){
   if(filtered.length === 0){
     listEl.innerHTML = `<div class="empty">
       <strong>${showBookmarksOnly ? '즐겨찾기한 보도자료가 없어요' : '아직 표시할 보도자료가 없어요'}</strong>
-      ${showBookmarksOnly ? '★ 버튼을 눌러 관심있는 보도자료를 담아보세요.' : 'GitHub Actions가 매일 자정에 자동으로 데이터를 수집합니다.'}
+      ${showBookmarksOnly ? '★ 버튼을 눌러 관심있는 보도자료를 담아보세요.' : '이 지역은 아직 준비중이거나, GitHub Actions가 다음 자정에 수집할 예정이에요.'}
     </div>`;
     return;
   }
