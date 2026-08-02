@@ -24,7 +24,8 @@ DETAIL_URL = "https://www.seoul.go.kr/news/news_report.do?nttNo={ntt_no}"
 
 DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "seoul.json"
 DEBUG_DIR = Path(__file__).resolve().parent.parent / "debug"
-MAX_PAGES_PER_RUN = 10
+MAX_PAGES_PER_RUN = 40  # 넉넉하게 (MIN_DATE에서 자동으로 멈춤)
+MIN_DATE = "2026-01-01"  # 이 날짜보다 오래된 글은 수집하지 않음
 REGION = "서울특별시"
 
 ROW_SELECTOR = "table.sib-lst-type-basic tbody tr"
@@ -130,7 +131,15 @@ def run():
                 break
 
             page_had_new = False
+            oldest_date_on_page = None
             for ntt_no, row in rows.items():
+                date = row["date"]
+                if date and (oldest_date_on_page is None or date < oldest_date_on_page):
+                    oldest_date_on_page = date
+
+                if date and date < MIN_DATE:
+                    continue  # 수집 기준일보다 오래된 글은 건너뜀
+
                 if ntt_no in existing_by_id:
                     continue
                 page_had_new = True
@@ -147,6 +156,10 @@ def run():
                 }
                 new_count += 1
                 time.sleep(0.3)
+
+            if oldest_date_on_page and oldest_date_on_page < MIN_DATE:
+                print(f"  {MIN_DATE} 이전 글까지 도달해서 수집을 마칩니다.")
+                break
 
             if not page_had_new and page_no > 1:
                 print("  신규 게시물이 없어 이후 페이지는 건너뜁니다.")

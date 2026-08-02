@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#1B2A44">
 <title>지역 보도자료 모음</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
@@ -13,7 +15,6 @@
     --ink:#1B2A44;
     --ink-soft:#4B5670;
     --seal:#A6303C;
-    --seal-soft:#C9727C;
     --line:#D9D3C2;
     --mono:'Noto Sans KR', sans-serif;
     --serif:'Noto Serif KR', serif;
@@ -24,55 +25,57 @@
     background:var(--paper);
     color:var(--ink);
     font-family:var(--mono);
-    line-height:1.5;
+    line-height:1.4;
   }
+
   header{
-    border-bottom:3px double var(--ink);
-    padding:32px 20px 20px;
-    text-align:center;
-    position:relative;
+    border-bottom:2px solid var(--ink);
+    padding:10px 16px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    flex-wrap:wrap;
+    position:sticky;
+    top:0;
+    background:var(--paper);
+    z-index:10;
   }
-  .seal{
+  .brand{ display:flex; align-items:center; gap:8px; }
+  .seal-mini{
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    width:54px;height:54px;
-    border:2.5px solid var(--seal);
+    width:26px;height:26px;
+    border:1.5px solid var(--seal);
     border-radius:50%;
     color:var(--seal);
     font-family:var(--serif);
     font-weight:700;
-    font-size:13px;
-    letter-spacing:1px;
-    margin-bottom:10px;
-    transform:rotate(-6deg);
+    font-size:10px;
+    flex-shrink:0;
   }
-  h1{
+  header h1{
     font-family:var(--serif);
     font-weight:700;
-    font-size:clamp(22px,5vw,34px);
-    margin:0 0 6px;
-    letter-spacing:-0.5px;
+    font-size:16px;
+    margin:0;
+    letter-spacing:-0.3px;
   }
-  .subtitle{
+  .meta-line{
+    font-size:11.5px;
     color:var(--ink-soft);
-    font-size:13.5px;
-  }
-  .updated{
-    color:var(--ink-soft);
-    font-size:12px;
-    margin-top:10px;
   }
 
   .controls{
-    max-width:880px;
-    margin:24px auto 0;
-    padding:0 20px;
+    max-width:920px;
+    margin:0 auto;
+    padding:12px 16px 0;
   }
   .search-box{
     width:100%;
-    padding:13px 16px;
-    font-size:15px;
+    padding:9px 12px;
+    font-size:14px;
     font-family:var(--mono);
     border:1.5px solid var(--ink);
     background:#fff;
@@ -84,115 +87,137 @@
   .filters{
     display:flex;
     flex-wrap:wrap;
-    gap:8px;
-    margin:14px 0 4px;
+    gap:6px;
+    margin:10px 0 0;
   }
   .filter-chip{
     font-family:var(--mono);
-    font-size:12.5px;
-    padding:6px 12px;
+    font-size:12px;
+    padding:4px 10px;
     border:1px solid var(--line);
     background:#fff;
     color:var(--ink-soft);
-    border-radius:20px;
+    border-radius:16px;
     cursor:pointer;
-    transition:all .15s;
   }
   .filter-chip.active{
     background:var(--ink);
     border-color:var(--ink);
     color:var(--paper);
   }
+  .filter-chip.star.active{
+    background:var(--seal);
+    border-color:var(--seal);
+  }
 
   .count-line{
-    max-width:880px;
-    margin:16px auto 0;
-    padding:0 20px;
-    font-size:12.5px;
+    max-width:920px;
+    margin:10px auto 0;
+    padding:0 16px;
+    font-size:12px;
     color:var(--ink-soft);
     display:flex;
     justify-content:space-between;
     border-bottom:1px solid var(--line);
-    padding-bottom:10px;
+    padding-bottom:6px;
   }
 
   main{
-    max-width:880px;
+    max-width:920px;
     margin:0 auto;
-    padding:0 20px 60px;
+    padding:0 16px 60px;
   }
 
   .item{
-    display:block;
-    text-decoration:none;
-    color:inherit;
-    padding:20px 4px;
-    border-bottom:1px solid var(--line);
-    transition:background .15s;
-  }
-  .item:hover{background:var(--paper-dim);}
-
-  .item-meta{
     display:flex;
-    flex-wrap:wrap;
-    gap:10px;
     align-items:center;
-    font-size:12px;
-    color:var(--seal);
-    font-weight:700;
-    margin-bottom:6px;
+    gap:10px;
+    padding:7px 2px;
+    border-bottom:1px solid var(--line);
+    font-size:13.5px;
   }
-  .item-meta .region{
-    background:var(--seal);
-    color:#fff;
-    padding:2px 8px;
-    border-radius:2px;
-    font-size:11px;
-  }
-  .item-meta .cat{ color:var(--ink-soft); font-weight:500; }
-  .item-meta .date{ color:var(--ink-soft); font-weight:500; margin-left:auto; }
+  .item:hover{ background:var(--paper-dim); }
 
-  .item-title{
-    font-family:var(--serif);
-    font-size:17px;
-    font-weight:500;
-    line-height:1.45;
-    margin-bottom:4px;
+  .item .tags{
+    display:flex;
+    gap:5px;
+    flex-shrink:0;
   }
-  .item-dept{
-    font-size:12.5px;
+  .tag{
+    font-size:10.5px;
+    font-weight:700;
+    padding:2px 6px;
+    border-radius:2px;
+    white-space:nowrap;
+  }
+  .tag.region{ background:var(--seal); color:#fff; }
+  .tag.category{ background:var(--paper-dim); color:var(--ink-soft); border:1px solid var(--line); }
+
+  .item a.line{
+    flex:1;
+    min-width:0;
+    text-decoration:none;
+    color:var(--ink);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .item a.line:hover{ text-decoration:underline; }
+  .item .dept{
     color:var(--ink-soft);
+    font-weight:400;
   }
+
+  .item .date{
+    flex-shrink:0;
+    font-size:11.5px;
+    color:var(--ink-soft);
+    width:78px;
+    text-align:right;
+  }
+  .star-btn{
+    flex-shrink:0;
+    border:none;
+    background:none;
+    cursor:pointer;
+    font-size:16px;
+    color:var(--line);
+    line-height:1;
+    padding:2px;
+  }
+  .star-btn.active{ color:var(--seal); }
 
   .empty{
     text-align:center;
-    padding:80px 20px;
+    padding:70px 20px;
     color:var(--ink-soft);
-    font-size:14px;
+    font-size:13.5px;
     line-height:1.8;
   }
-  .empty strong{ display:block; font-family:var(--serif); font-size:18px; color:var(--ink); margin-bottom:8px; }
+  .empty strong{ display:block; font-family:var(--serif); font-size:17px; color:var(--ink); margin-bottom:6px; }
 
   footer{
     text-align:center;
-    font-size:11.5px;
+    font-size:11px;
     color:var(--ink-soft);
-    padding:20px;
+    padding:16px;
     border-top:1px solid var(--line);
   }
 
   @media (max-width:480px){
-    .item-meta .date{ margin-left:0; }
+    .item .date{ width:60px; font-size:10.5px; }
+    .item{ font-size:12.5px; }
   }
 </style>
 </head>
 <body>
 
 <header>
-  <div class="seal">보도</div>
-  <h1>지역 보도자료 모음</h1>
-  <div class="subtitle">주택 · 교통 · 도시계획 관련 소식을 한곳에서</div>
-  <div class="updated" id="updatedLine"></div>
+  <div class="brand">
+    <span class="seal-mini">보도</span>
+    <h1>보도자료</h1>
+  </div>
+  <div class="meta-line" id="metaLine">불러오는 중...</div>
 </header>
 
 <div class="controls">
@@ -209,19 +234,29 @@
 <main id="list"></main>
 
 <footer>
-  각 게시물의 원문은 해당 지자체 공식 누리집에서 제공됩니다. 이 페이지는 제목·날짜·부서 정보만 모아 보여줍니다.
+  각 게시물의 원문은 해당 지자체 공식 누리집에서 제공됩니다. ★를 눌러 즐겨찾기에 담아두세요 (이 브라우저에만 저장돼요).
 </footer>
 
 <script>
 const DATA_SOURCES = [
   { file: 'data/seoul.json', region: '서울특별시' },
-  // 앞으로 다른 지역이 추가되면 여기에 한 줄씩 추가하면 됩니다.
-  // { file: 'data/gyeonggi.json', region: '경기도' },
 ];
 
+const BOOKMARK_KEY = 'news-bookmarks-v1';
 let allItems = [];
 let activeRegion = '전체';
 let activeCategory = '전체';
+let showBookmarksOnly = false;
+
+function getBookmarks(){
+  try{ return JSON.parse(localStorage.getItem(BOOKMARK_KEY) || '{}'); }
+  catch(e){ return {}; }
+}
+function toggleBookmark(id){
+  const b = getBookmarks();
+  if(b[id]) delete b[id]; else b[id] = true;
+  localStorage.setItem(BOOKMARK_KEY, JSON.stringify(b));
+}
 
 async function loadData(){
   const results = await Promise.all(
@@ -230,6 +265,9 @@ async function loadData(){
     )
   );
   allItems = results.flat();
+  const latestDate = allItems.reduce((m, i) => i.date && i.date > m ? i.date : m, '');
+  document.getElementById('metaLine').textContent =
+    `총 ${allItems.length}건 · 최신 ${latestDate || '-'}`;
   render();
 }
 
@@ -244,13 +282,13 @@ function renderFilters(){
 
   regionWrap.innerHTML = uniqueValues('region').map(r =>
     `<button class="filter-chip ${r===activeRegion?'active':''}" data-type="region" data-value="${r}">${r}</button>`
-  ).join('');
+  ).join('') + `<button class="filter-chip star ${showBookmarksOnly?'active':''}" id="starToggle">★ 즐겨찾기</button>`;
 
   catWrap.innerHTML = uniqueValues('category').map(c =>
     `<button class="filter-chip ${c===activeCategory?'active':''}" data-type="category" data-value="${c}">${c}</button>`
   ).join('');
 
-  document.querySelectorAll('.filter-chip').forEach(btn => {
+  document.querySelectorAll('.filter-chip[data-type]').forEach(btn => {
     btn.addEventListener('click', () => {
       const {type, value} = btn.dataset;
       if(type==='region') activeRegion = value;
@@ -258,15 +296,21 @@ function renderFilters(){
       render();
     });
   });
+  document.getElementById('starToggle').addEventListener('click', () => {
+    showBookmarksOnly = !showBookmarksOnly;
+    render();
+  });
 }
 
 function render(){
   renderFilters();
   const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  const bookmarks = getBookmarks();
 
   let filtered = allItems.filter(item => {
     if(activeRegion!=='전체' && item.region!==activeRegion) return false;
     if(activeCategory!=='전체' && item.category!==activeCategory) return false;
+    if(showBookmarksOnly && !bookmarks[item.id]) return false;
     if(q){
       const haystack = `${item.title} ${item.dept} ${item.category}`.toLowerCase();
       if(!haystack.includes(q)) return false;
@@ -281,24 +325,34 @@ function render(){
   const listEl = document.getElementById('list');
   if(filtered.length === 0){
     listEl.innerHTML = `<div class="empty">
-      <strong>아직 표시할 보도자료가 없어요</strong>
-      GitHub Actions가 하루 2번(0시, 12시) 자동으로 데이터를 수집합니다.<br>
-      처음 설정하신 경우, Actions 탭에서 수동으로 한 번 실행해보세요.
+      <strong>${showBookmarksOnly ? '즐겨찾기한 보도자료가 없어요' : '아직 표시할 보도자료가 없어요'}</strong>
+      ${showBookmarksOnly ? '★ 버튼을 눌러 관심있는 보도자료를 담아보세요.' : 'GitHub Actions가 매일 자정에 자동으로 데이터를 수집합니다.'}
     </div>`;
     return;
   }
 
-  listEl.innerHTML = filtered.map(item => `
-    <a class="item" href="${item.url}" target="_blank" rel="noopener">
-      <div class="item-meta">
-        <span class="region">${item.region}</span>
-        <span class="cat">${item.category||'분류없음'}</span>
-        <span class="date">${item.date||''}</span>
+  listEl.innerHTML = filtered.map(item => {
+    const isBookmarked = !!bookmarks[item.id];
+    return `
+    <div class="item">
+      <div class="tags">
+        <span class="tag region">${item.region}</span>
+        <span class="tag category">${item.category||'미분류'}</span>
       </div>
-      <div class="item-title">${escapeHtml(item.title)}</div>
-      <div class="item-dept">${escapeHtml(item.dept||'')}</div>
-    </a>
-  `).join('');
+      <a class="line" href="${item.url}" target="_blank" rel="noopener">
+        ${escapeHtml(item.title)} <span class="dept">— ${escapeHtml(item.dept||'')}</span>
+      </a>
+      <span class="date">${item.date||''}</span>
+      <button class="star-btn ${isBookmarked?'active':''}" data-id="${item.id}">${isBookmarked?'★':'☆'}</button>
+    </div>`;
+  }).join('');
+
+  listEl.querySelectorAll('.star-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      toggleBookmark(btn.dataset.id);
+      render();
+    });
+  });
 }
 
 function escapeHtml(str){
@@ -308,8 +362,6 @@ function escapeHtml(str){
 }
 
 document.getElementById('searchInput').addEventListener('input', render);
-document.getElementById('updatedLine').textContent =
-  '페이지 접속 시각: ' + new Date().toLocaleString('ko-KR');
 
 loadData();
 </script>
