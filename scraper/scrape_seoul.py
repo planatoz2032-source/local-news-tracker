@@ -95,3 +95,72 @@ def collect_list_links(page, page_no):
 
 def extract_detail(page, ntt_no):
     url = DETAIL_URL.format(ntt_no=ntt_no)
+    page.goto(url, wait_until="networkidle", timeout=60000)
+    page.wait_for_timeout(1200)
+
+    text = page.inner_text("body")
+    lines = [l.strip() for l in text.split("\n") if l.strip()]
+
+    def value_after(label):
+        for i, line in enumerate(lines):
+            if line == label and i + 1 < len(lines):
+                return lines[i + 1]
+        return ""
+
+    dept = value_after("담당부서")
+    date = value_after("등록일")
+    category = value_after("분류")
+
+    return {"dept": dept, "date": date, "category": category, "url": url}
+
+
+def run():
+    existing = load_existing()
+    existing_by_id = {item["id"]: item for item in existing}
+    new_count = 0
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        page = browser.new_page(user_agent=(
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        ))
+
+        for page_no in range(1, MAX_PAGES_PER_RUN + 1):
+            print(f"[서울] {page_no}페이지 확인 중...")
+            links = collect_list_links(page, page_no)
+            if not links:
+                print("  더 이상 게시물이 없어 중단합니다.")
+                break
+
+            page_had_new = False
+            for ntt_no, title in links.items():
+                if ntt_no in existing_by_id:
+                    continue
+                page_had_new = True
+                print(f"  신규 발견: {title}")
+                detail = extract_detail(page, ntt_no)
+                existing_by_id[ntt_no] = {
+                    "id": ntt_no,
+                    "region": REGION,
+                    "title": title,
+                    "dept": detail["dept"],
+                    "date": detail["date"],
+                    "category": detail["category"],
+                    "url": detail["url"],
+                }
+                new_count += 1
+                time.sleep(0.5)
+
+            if not page_had_new and page_no > 1:
+                print("  신규 게시물이 없어 이후 페이지는 건너뜁니다.")
+                break
+
+        browser.close()
+
+    save(list(existing_by_id.values()))
+    print(f"완료: 새 게시물 {new_count}건 추가, 총 {len(existing_by_id)}건 저장됨.")
+
+
+if __name__ == "__main__":
+    run()
