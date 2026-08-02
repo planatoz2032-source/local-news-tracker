@@ -1,5 +1,12 @@
 """
-서울시 보도자료(주택/교통/도시계획 분야) 수집 스크립트
+서울시 보도자료(주택/교통/도시계획 등 분야) 수집 스크립트
+
+실제 확인된 구조: 목록 표(table.sib-lst-type-basic)의 각 행(tr) 안에
+제목/담당부서/등록일이 이미 다 들어있고, 제목 링크는
+javascript:fnTbbsView('게시물번호') 형태로 상세페이지를 연다.
+따라서 목록 페이지 하나만 봐도 제목/부서/날짜를 모두 얻을 수 있다.
+분류(카테고리)만 상세 페이지에 들어가야 확인 가능해서, 새 게시물에 한해서만
+상세 페이지를 잠깐 방문한다.
 """
 
 import json
@@ -19,6 +26,8 @@ DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "seoul.json"
 DEBUG_DIR = Path(__file__).resolve().parent.parent / "debug"
 MAX_PAGES_PER_RUN = 10
 REGION = "서울특별시"
+
+ROW_SELECTOR = "table.sib-lst-type-basic tbody tr"
 
 
 def load_existing():
@@ -47,71 +56,58 @@ def save_debug(page, tag):
         print(f"  (HTML 저장 실패: {e})")
 
 
-def collect_list_links(page, page_no):
+def collect_list_rows(page, page_no):
+    """목록 표에서 제목/부서/날짜/게시물번호를 한 번에 뽑아온다."""
     url = LIST_URL.format(page=page_no)
     page.goto(url, wait_until="networkidle", timeout=60000)
-    page.wait_for_timeout(3500)
+    try:
+        page.wait_for_selector(ROW_SELECTOR, timeout=15000)
+    except Exception:
+        pass
+    page.wait_for_timeout(1500)
 
     if page_no == 1:
         save_debug(page, "list_page1")
 
-    links = page.eval_on_selector_all(
-        "a[href*='nttNo=']",
-        """els => els.map(e => ({
-            href: e.getAttribute('href') || '',
-            text: (e.textContent || '').trim()
-        }))""",
+    rows = page.eval_on_selector_all(
+        ROW_SELECTOR,
+        """trs => trs.map(tr => {
+            const a = tr.querySelector('td.sib-lst-type-basic-subject a');
+            const tds = tr.querySelectorAll('td');
+            return {
+                href: a ? (a.getAttribute('href') || '') : '',
+                title: a ? a.textContent.trim() : '',
+                dept: tds.length > 2 ? tds[2].textContent.trim() : '',
+                date: tds.length > 3 ? tds[3].textContent.trim() : ''
+            };
+        })""",
     )
-    print(f"  a[href*='nttNo=']로 찾은 링크 수: {len(links)}")
-
-    if not links:
-        all_a = page.eval_on_selector_all(
-            "a",
-            """els => els.slice(0, 40).map(e => ({
-                href: e.getAttribute('href') || '',
-                onclick: e.getAttribute('onclick') || '',
-                text: (e.textContent || '').trim().slice(0, 40)
-            }))""",
-        )
-        print("  전체 링크 샘플(최대 40개):")
-        for a in all_a:
-            if a["text"] or a["onclick"]:
-                print(f"    href={a['href']!r} onclick={a['onclick']!r} text={a['text']!r}")
+    print(f"  찾은 행 수: {len(rows)}")
 
     results = {}
-    for link in links:
-        m = re.search(r"nttNo=(\d+)", link["href"])
+    for row in rows:
+        m = re.search(r"fnTbbsView\('(\d+)'\)", row["href"])
         if not m:
             continue
         ntt_no = m.group(1)
-        title = link["text"]
-        if not title:
+        if not row["title"]:
             continue
-        if len(title) < 4:
-            continue
-        results[ntt_no] = title
+        results[ntt_no] = row
     return results
 
 
-def extract_detail(page, ntt_no):
+def extract_category(page, ntt_no):
+    """분류(카테고리)만 상세 페이지에서 확인한다."""
     url = DETAIL_URL.format(ntt_no=ntt_no)
     page.goto(url, wait_until="networkidle", timeout=60000)
-    page.wait_for_timeout(1200)
+    page.wait_for_timeout(800)
 
     text = page.inner_text("body")
     lines = [l.strip() for l in text.split("\n") if l.strip()]
-
-    def value_after(label):
-        for i, line in enumerate(lines):
-            if line == label and i + 1 < len(lines):
-                return lines[i + 1]
-        return ""
-
-    dept = value_after("담당부서")
-    date = value_after("등록일")
-    category = value_after("분류")
-
-    return {"dept": dept, "date": date, "category": category, "url": url}
+    for i, line in enumerate(lines):
+        if line == "분류" and i + 1 < len(lines):
+            return lines[i + 1]
+    return ""
 
 
 def run():
@@ -128,29 +124,29 @@ def run():
 
         for page_no in range(1, MAX_PAGES_PER_RUN + 1):
             print(f"[서울] {page_no}페이지 확인 중...")
-            links = collect_list_links(page, page_no)
-            if not links:
+            rows = collect_list_rows(page, page_no)
+            if not rows:
                 print("  더 이상 게시물이 없어 중단합니다.")
                 break
 
             page_had_new = False
-            for ntt_no, title in links.items():
+            for ntt_no, row in rows.items():
                 if ntt_no in existing_by_id:
                     continue
                 page_had_new = True
-                print(f"  신규 발견: {title}")
-                detail = extract_detail(page, ntt_no)
+                print(f"  신규 발견: {row['title']}")
+                category = extract_category(page, ntt_no)
                 existing_by_id[ntt_no] = {
                     "id": ntt_no,
                     "region": REGION,
-                    "title": title,
-                    "dept": detail["dept"],
-                    "date": detail["date"],
-                    "category": detail["category"],
-                    "url": detail["url"],
+                    "title": row["title"],
+                    "dept": row["dept"],
+                    "date": row["date"],
+                    "category": category,
+                    "url": DETAIL_URL.format(ntt_no=ntt_no),
                 }
                 new_count += 1
-                time.sleep(0.5)
+                time.sleep(0.3)
 
             if not page_had_new and page_no > 1:
                 print("  신규 게시물이 없어 이후 페이지는 건너뜁니다.")
