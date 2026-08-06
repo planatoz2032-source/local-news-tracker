@@ -1,12 +1,12 @@
 """
-서울시 보도자료(주택/교통/도시계획 등 분야) 수집 스크립트
+서울시 보도자료 수집기
+- 목록 페이지를 훑어서 새 글(nttNo)을 찾고
+- 상세 페이지에서 분류/본문 핵심문장(□, ○ 로 시작하는 줄)을 뽑아
+- 주택·교통은 항상, 그 외 분야는 키워드가 겹칠 때만 "중요"로 표시해서
+- data/news.json 에 누적 저장한다.
 
-실제 확인된 구조: 목록 표(table.sib-lst-type-basic)의 각 행(tr) 안에
-제목/담당부서/등록일이 이미 다 들어있고, 제목 링크는
-javascript:fnTbbsView('게시물번호') 형태로 상세페이지를 연다.
-따라서 목록 페이지 하나만 봐도 제목/부서/날짜를 모두 얻을 수 있다.
-분류(카테고리)만 상세 페이지에 들어가야 확인 가능해서, 새 게시물에 한해서만
-상세 페이지를 잠깐 방문한다.
+사이트 구조가 바뀌면 이 스크립트가 실패할 수 있음.
+그럴 때는 GitHub Actions 로그(빨간 글씨 오류)를 그대로 복사해서 Claude에게 붙여넣으면 됨.
 """
 
 import json
@@ -14,162 +14,167 @@ import re
 import time
 from pathlib import Path
 
-from playwright.sync_api import sync_playwright
+import requests
+from bs4 import BeautifulSoup
 
-LIST_URL = (
-    "https://www.seoul.go.kr/news/news_report.do"
-    "?srchCtgryType=464,465,466,467&cntPerPage=50&curPage={page}"
+BASE = "https://www.seoul.go.kr/news/news_report.do"
+DETAIL_TMPL = BASE + "?bbsNo=158&nttNo={ntt_no}"
+LIST_TMPL = BASE + "?cntPerPage=50&curPage={page}"
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+}
+
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+NEWS_JSON = DATA_DIR / "news.json"
+SEEN_JSON = DATA_DIR / "seen.json"
+
+MAX_LIST_PAGES = 6       # 한 번 실행할 때 최대 몇 페이지(=최대 300건)까지 훑을지
+MAX_KEEP_ITEMS = 400      # news.json 에 최대 몇 건까지 보관할지 (오래된 건 정리)
+REQUEST_DELAY = 0.4       # 서버 부담을 줄이기 위한 요청 간 대기(초)
+
+CORE_FIELDS = {"주택", "교통"}
+ALL_FIELDS = {"경제", "주택", "문화", "교통", "안전", "환경", "행정", "복지"}
+
+CROSS_KEYWORDS = [
+    "주택", "부동산", "전월세", "정비사업", "재건축", "재개발", "공급",
+    "도시계획", "규제", "조례", "예산", "협약", "지하철", "버스", "도로",
+    "철도", "교통", "임대", "분양", "세제", "용적률", "정비구역",
+]
+SIGNAL_KEYWORDS = ["위원회", "심의", "발표", "계획", "대책", "도입", "확대", "개편", "본격"]
+
+ROW_RE = re.compile(
+    r"fnTbbsView\('(?P<ntt>\d+)'\)\);?\">\s*(?P<title>.*?)\s*</a>.*?"
+    r"</td>\s*<td[^>]*>\s*(?P<dept>.*?)\s*</td>\s*<td[^>]*>\s*(?P<date>\d{4}-\d{2}-\d{2})",
+    re.S,
 )
-DETAIL_URL = "https://www.seoul.go.kr/news/news_report.do?nttNo={ntt_no}"
-
-DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "seoul.json"
-DEBUG_DIR = Path(__file__).resolve().parent.parent / "debug"
-MAX_PAGES_PER_RUN = 40  # 넉넉하게 (MIN_DATE에서 자동으로 멈춤)
-MIN_DATE = "2026-01-01"  # 이 날짜보다 오래된 글은 수집하지 않음
-REGION = "서울특별시"
-
-ROW_SELECTOR = "table.sib-lst-type-basic tbody tr"
 
 
-def load_existing():
-    if DATA_FILE.exists():
-        return json.loads(DATA_FILE.read_text(encoding="utf-8"))
-    return []
+def load_json(path, default):
+    if path.exists():
+        try:
+            return json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            return default
+    return default
 
 
-def save(items):
-    DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
-    items = sorted(items, key=lambda x: x.get("date", ""), reverse=True)
-    DATA_FILE.write_text(
-        json.dumps(items, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
+def save_json(path, data):
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def save_debug(page, tag):
-    DEBUG_DIR.mkdir(parents=True, exist_ok=True)
-    try:
-        page.screenshot(path=str(DEBUG_DIR / f"{tag}.png"), full_page=True)
-    except Exception as e:
-        print(f"  (스크린샷 저장 실패: {e})")
-    try:
-        (DEBUG_DIR / f"{tag}.html").write_text(page.content(), encoding="utf-8")
-    except Exception as e:
-        print(f"  (HTML 저장 실패: {e})")
+def strip_tags(html_fragment: str) -> str:
+    return BeautifulSoup(html_fragment, "html.parser").get_text(strip=True)
 
 
-def collect_list_rows(page, page_no):
-    """목록 표에서 제목/부서/날짜/게시물번호를 한 번에 뽑아온다."""
-    url = LIST_URL.format(page=page_no)
-    page.goto(url, wait_until="networkidle", timeout=60000)
-    try:
-        page.wait_for_selector(ROW_SELECTOR, timeout=15000)
-    except Exception:
-        pass
-    page.wait_for_timeout(1500)
-
-    if page_no == 1:
-        save_debug(page, "list_page1")
-
-    rows = page.eval_on_selector_all(
-        ROW_SELECTOR,
-        """trs => trs.map(tr => {
-            const a = tr.querySelector('td.sib-lst-type-basic-subject a');
-            const tds = tr.querySelectorAll('td');
-            return {
-                href: a ? (a.getAttribute('href') || '') : '',
-                title: a ? a.textContent.trim() : '',
-                dept: tds.length > 2 ? tds[2].textContent.trim() : '',
-                date: tds.length > 3 ? tds[3].textContent.trim() : ''
-            };
-        })""",
-    )
-    print(f"  찾은 행 수: {len(rows)}")
-
-    results = {}
-    for row in rows:
-        m = re.search(r"fnTbbsView\('(\d+)'\)", row["href"])
-        if not m:
-            continue
-        ntt_no = m.group(1)
-        if not row["title"]:
-            continue
-        results[ntt_no] = row
-    return results
+def fetch_list_page(page: int):
+    resp = requests.get(LIST_TMPL.format(page=page), headers=HEADERS, timeout=20)
+    resp.raise_for_status()
+    items = []
+    for m in ROW_RE.finditer(resp.text):
+        items.append(
+            {
+                "nttNo": m.group("ntt"),
+                "title": strip_tags(m.group("title")),
+                "dept": strip_tags(m.group("dept")),
+                "date": m.group("date"),
+            }
+        )
+    return items
 
 
-def extract_category(page, ntt_no):
-    """분류(카테고리)만 상세 페이지에서 확인한다."""
-    url = DETAIL_URL.format(ntt_no=ntt_no)
-    page.goto(url, wait_until="networkidle", timeout=60000)
-    page.wait_for_timeout(800)
+def fetch_detail(ntt_no: str):
+    """상세 페이지에서 분류와 핵심 문장(□, ○ 로 시작하는 줄)을 추출."""
+    resp = requests.get(DETAIL_TMPL.format(ntt_no=ntt_no), headers=HEADERS, timeout=20)
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
+    for tag in soup(["script", "style", "nav", "header", "footer"]):
+        tag.decompose()
 
-    text = page.inner_text("body")
-    lines = [l.strip() for l in text.split("\n") if l.strip()]
+    lines = [l.strip() for l in soup.get_text("\n").split("\n") if l.strip()]
+
+    category = None
     for i, line in enumerate(lines):
-        if line == "분류" and i + 1 < len(lines):
-            return lines[i + 1]
-    return ""
+        if line == "분류" and i + 1 < len(lines) and lines[i + 1] in ALL_FIELDS:
+            category = lines[i + 1]
+            break
+
+    bullets = [l for l in lines if l.startswith("□") or l.startswith("○")]
+    # 너무 짧은 잡음 줄 제거, 앞 4개만 핵심 요약으로 사용
+    bullets = [b for b in bullets if len(b) > 6][:4]
+
+    return category, bullets
 
 
-def run():
-    existing = load_existing()
-    existing_by_id = {item["id"]: item for item in existing}
-    new_count = 0
+def score_importance(category, title):
+    score = 0
+    if category in CORE_FIELDS:
+        score += 100
+    score += sum(15 for kw in CROSS_KEYWORDS if kw in title)
+    score += sum(5 for kw in SIGNAL_KEYWORDS if kw in title)
+    return score
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-        page = browser.new_page(user_agent=(
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-        ))
 
-        for page_no in range(1, MAX_PAGES_PER_RUN + 1):
-            print(f"[서울] {page_no}페이지 확인 중...")
-            rows = collect_list_rows(page, page_no)
-            if not rows:
-                print("  더 이상 게시물이 없어 중단합니다.")
+def importance_label(score):
+    if score >= 100:
+        return "높음"
+    if score >= 30:
+        return "중간"
+    return "낮음"
+
+
+def main():
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    existing = load_json(NEWS_JSON, [])
+    seen = set(load_json(SEEN_JSON, []))
+
+    new_items = []
+    stop = False
+    for page in range(1, MAX_LIST_PAGES + 1):
+        if stop:
+            break
+        rows = fetch_list_page(page)
+        if not rows:
+            break
+        for row in rows:
+            if row["nttNo"] in seen:
+                # 이미 처리한 글을 만나면 그 이후는 예전 글이므로 중단
+                stop = True
                 break
+            new_items.append(row)
+        time.sleep(REQUEST_DELAY)
 
-            page_had_new = False
-            oldest_date_on_page = None
-            for ntt_no, row in rows.items():
-                date = row["date"]
-                if date and (oldest_date_on_page is None or date < oldest_date_on_page):
-                    oldest_date_on_page = date
+    print(f"새 글 {len(new_items)}건 발견")
 
-                if date and date < MIN_DATE:
-                    continue  # 수집 기준일보다 오래된 글은 건너뜀
+    for row in new_items:
+        try:
+            category, bullets = fetch_detail(row["nttNo"])
+        except Exception as e:  # noqa: BLE001
+            print(f"[경고] {row['nttNo']} 상세 조회 실패: {e}")
+            category, bullets = None, []
+        time.sleep(REQUEST_DELAY)
 
-                if ntt_no in existing_by_id:
-                    continue
-                page_had_new = True
-                print(f"  신규 발견: {row['title']}")
-                category = extract_category(page, ntt_no)
-                existing_by_id[ntt_no] = {
-                    "id": ntt_no,
-                    "region": REGION,
-                    "title": row["title"],
-                    "dept": row["dept"],
-                    "date": row["date"],
-                    "category": category,
-                    "url": DETAIL_URL.format(ntt_no=ntt_no),
-                }
-                new_count += 1
-                time.sleep(0.3)
+        score = score_importance(category, row["title"])
+        row.update(
+            {
+                "category": category,
+                "importance_score": score,
+                "importance": importance_label(score),
+                "summary": bullets,
+                "url": DETAIL_TMPL.format(ntt_no=row["nttNo"]),
+            }
+        )
+        seen.add(row["nttNo"])
 
-            if oldest_date_on_page and oldest_date_on_page < MIN_DATE:
-                print(f"  {MIN_DATE} 이전 글까지 도달해서 수집을 마칩니다.")
-                break
+    combined = new_items + existing
+    combined.sort(key=lambda x: (x["date"], x["nttNo"]), reverse=True)
+    combined = combined[:MAX_KEEP_ITEMS]
 
-            if not page_had_new and page_no > 1:
-                print("  신규 게시물이 없어 이후 페이지는 건너뜁니다.")
-                break
-
-        browser.close()
-
-    save(list(existing_by_id.values()))
-    print(f"완료: 새 게시물 {new_count}건 추가, 총 {len(existing_by_id)}건 저장됨.")
+    save_json(NEWS_JSON, combined)
+    save_json(SEEN_JSON, sorted(seen)[-2000:])  # seen 목록도 무한정 커지지 않게 정리
+    print(f"저장 완료: 총 {len(combined)}건")
 
 
 if __name__ == "__main__":
-    run()
+    main()
