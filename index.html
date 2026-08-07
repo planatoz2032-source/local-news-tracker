@@ -3,18 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>서울시 보도자료 — 놓치지 않기</title>
+<title>보도자료 — 놓치지 않기</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --paper:#f2efe6;
+    --panel:#ece7d8;
     --ink:#1f2a24;
+    --sub:#6b7466;
     --line:#c9c2ab;
     --navy:#26344a;
     --stamp:#a4342a;
     --stamp-mid:#9c7a2c;
     --stamp-low:#7c8577;
+    --star:#c9962c;
   }
   *{box-sizing:border-box;}
   body{
@@ -24,114 +27,193 @@
     font-family:'Noto Sans KR',sans-serif;
     -webkit-font-smoothing:antialiased;
   }
-  header{
-    padding:36px 20px 20px;
-    border-bottom:2px solid var(--ink);
-    max-width:860px;
+  .layout{
+    display:flex;
+    max-width:1180px;
     margin:0 auto;
+    min-height:100vh;
   }
-  header h1{
+
+  /* ---------- 사이드바 ---------- */
+  .sidebar{
+    width:220px;
+    flex:0 0 220px;
+    padding:28px 16px;
+    border-right:1px solid var(--line);
+  }
+  .sidebar h2{
+    font-family:'Space Mono',monospace;
+    font-size:12px;
+    color:var(--sub);
+    letter-spacing:0.08em;
+    margin:0 0 10px;
+    text-transform:uppercase;
+  }
+  .region-list{list-style:none;margin:0 0 28px;padding:0;}
+  .region-list li{margin-bottom:2px;}
+  .region-btn{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:8px;
+    background:none;
+    border:none;
+    text-align:left;
+    padding:9px 10px;
+    border-radius:6px;
+    font-size:14px;
+    font-family:'Noto Sans KR',sans-serif;
+    color:var(--ink);
+    cursor:pointer;
+  }
+  .region-btn:hover{background:var(--panel);}
+  .region-btn.active{background:var(--navy);color:var(--paper);}
+  .region-btn.disabled{color:var(--sub);cursor:default;}
+  .region-btn.disabled:hover{background:none;}
+  .region-count{
+    font-family:'Space Mono',monospace;
+    font-size:11px;
+    opacity:0.8;
+  }
+  .region-badge-coming{
+    font-family:'Space Mono',monospace;
+    font-size:10px;
+    color:var(--sub);
+  }
+  .fav-shortcut{
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:none;
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:9px 10px;
+    font-size:14px;
+    color:var(--ink);
+    cursor:pointer;
+  }
+  .fav-shortcut.active{background:var(--panel);border-color:var(--ink);}
+
+  /* ---------- 메인 ---------- */
+  .main{flex:1 1 auto;padding:28px 24px 80px;min-width:0;}
+  .top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    margin-bottom:18px;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .top-bar h1{
     font-family:'Noto Serif KR',serif;
     font-weight:700;
-    font-size:clamp(28px,5vw,40px);
-    margin:0 0 6px;
-    letter-spacing:-0.01em;
-  }
-  header p{
+    font-size:26px;
     margin:0;
-    font-size:14px;
-    color:#565f56;
   }
-  .filters{
-    max-width:860px;
-    margin:16px auto 0;
-    padding:0 20px;
+  .top-bar .count{
+    font-family:'Space Mono',monospace;
+    font-size:13px;
+    color:var(--sub);
+  }
+  .search-box{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    border:1px solid var(--ink);
+    border-radius:8px;
+    padding:10px 14px;
+    margin-bottom:14px;
+    background:var(--panel);
+  }
+  .search-box input{
+    border:none;
+    background:none;
+    outline:none;
+    flex:1;
+    font-size:14px;
+    font-family:'Noto Sans KR',sans-serif;
+    color:var(--ink);
+  }
+  .search-box svg{flex:0 0 auto;color:var(--sub);}
+
+  .cat-filters{
     display:flex;
     gap:8px;
     flex-wrap:wrap;
+    margin-bottom:18px;
   }
-  .filters button{
+  .cat-filters button{
     font-family:'Space Mono',monospace;
     font-size:12px;
     border:1px solid var(--ink);
     background:transparent;
     color:var(--ink);
-    padding:6px 12px;
+    padding:7px 14px;
     cursor:pointer;
     border-radius:999px;
   }
-  .filters button.active{
-    background:var(--ink);
-    color:var(--paper);
-  }
-  main{
-    max-width:860px;
-    margin:24px auto 80px;
-    padding:0 20px;
-  }
-  .day-group{margin-bottom:8px;}
-  .day-label{
-    font-family:'Space Mono',monospace;
-    font-size:13px;
-    color:#6b7466;
-    border-bottom:1px solid var(--line);
-    padding:14px 0 6px;
-    position:sticky;
-    top:0;
-    background:var(--paper);
-  }
+  .cat-filters button.active{background:var(--ink);color:var(--paper);}
+
   .item{
     border-bottom:1px solid var(--line);
     padding:14px 0;
     cursor:pointer;
   }
-  .item-row{
-    display:flex;
-    align-items:flex-start;
-    gap:12px;
-  }
-  .stamp{
+  .item-row{display:flex;align-items:flex-start;gap:10px;}
+  .badge{
     flex:0 0 auto;
-    width:44px;
-    height:44px;
-    border-radius:50%;
-    border:2.5px solid var(--stamp-low);
-    color:var(--stamp-low);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-family:'Noto Serif KR',serif;
-    font-weight:700;
-    font-size:13px;
-    transform:rotate(-8deg);
-    opacity:0.85;
+    font-family:'Space Mono',monospace;
+    font-size:11px;
+    padding:3px 8px;
+    border-radius:4px;
+    white-space:nowrap;
+    margin-top:2px;
   }
-  .stamp.high{border-color:var(--stamp);color:var(--stamp);opacity:1;}
-  .stamp.mid{border-color:var(--stamp-mid);color:var(--stamp-mid);opacity:1;}
+  .badge.region{background:var(--navy);color:var(--paper);}
+  .badge.cat{border:1px solid var(--sub);color:var(--sub);}
   .item-body{flex:1 1 auto;min-width:0;}
+  .item-title-row{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;}
   .item-title{
     font-family:'Noto Serif KR',serif;
     font-weight:500;
-    font-size:17px;
-    line-height:1.4;
-    margin:0 0 4px;
+    font-size:16px;
+    line-height:1.5;
+    margin:0;
   }
   .item-meta{
     font-family:'Space Mono',monospace;
     font-size:11px;
-    color:#6b7466;
+    color:var(--sub);
+    margin-top:4px;
   }
-  .item-meta .cat{
-    border:1px solid #6b7466;
-    padding:1px 6px;
-    border-radius:3px;
-    margin-right:6px;
+  .star-btn{
+    flex:0 0 auto;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:2px;
+    font-size:18px;
+    color:var(--line);
+    line-height:1;
   }
+  .star-btn.on{color:var(--star);}
+
+  .imp-mark{
+    flex:0 0 auto;
+    width:8px;height:8px;border-radius:50%;
+    margin-top:8px;
+    background:var(--stamp-low);
+  }
+  .imp-mark.높음{background:var(--stamp);}
+  .imp-mark.중간{background:var(--stamp-mid);}
+
   .summary{
     display:none;
-    margin:12px 0 0 56px;
+    margin:12px 0 0 34px;
     padding:12px 14px;
-    background:#e8e3d3;
+    background:var(--panel);
     border-left:3px solid var(--navy);
     font-size:14px;
     line-height:1.7;
@@ -145,108 +227,149 @@
     font-size:12px;
     color:var(--navy);
   }
+
   .empty{
     font-family:'Space Mono',monospace;
     font-size:13px;
-    color:#6b7466;
+    color:var(--sub);
     padding:40px 0;
     text-align:center;
+  }
+
+  @media (max-width: 720px){
+    .layout{flex-direction:column;}
+    .sidebar{width:100%;flex:none;border-right:none;border-bottom:1px solid var(--line);}
+    .region-list{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:12px;}
+    .region-list li{margin:0;}
   }
 </style>
 </head>
 <body>
 
-<header>
-  <h1>서울시 보도자료</h1>
-  <p>주택·교통은 전부, 그 외 분야는 겹치는 사안만 — 도장 색이 진할수록 중요도가 높습니다.</p>
-</header>
+<div class="layout">
+  <aside class="sidebar">
+    <h2>지역</h2>
+    <ul class="region-list" id="regionList"></ul>
+    <button class="fav-shortcut" id="favShortcut">★ 즐겨찾기만 보기</button>
+  </aside>
 
-<div class="filters" id="filters"></div>
+  <main class="main">
+    <div class="top-bar">
+      <h1>보도자료</h1>
+      <span class="count" id="totalCount"></span>
+    </div>
 
-<main id="main">
-  <div class="empty">불러오는 중…</div>
-</main>
+    <div class="search-box">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="searchInput" placeholder="제목, 부서, 키워드로 검색...">
+    </div>
+
+    <div class="cat-filters" id="catFilters"></div>
+
+    <div id="main-list">
+      <div class="empty">불러오는 중…</div>
+    </div>
+  </main>
+</div>
 
 <script>
-const CATEGORIES = ["전체", "주택", "교통", "경제", "문화", "안전", "환경", "행정", "복지"];
-let currentFilter = "전체";
+const FAVORITES_WEBAPP_URL = ""; // google-apps-script/Code.gs 배포 후 여기에 웹 앱 URL 붙여넣기
+
+let regions = [];
 let allItems = [];
+let currentRegion = "all";
+let currentCat = "전체";
+let currentQuery = "";
+let showFavOnly = false;
 
-function stampLabel(importance){
-  if(importance === "높음") return "重要";
-  if(importance === "중간") return "参考";
-  return "確認";
+function favKey(){ return "favorites_v1"; }
+function loadFavorites(){
+  try{ return JSON.parse(localStorage.getItem(favKey()) || "{}"); }catch(e){ return {}; }
 }
-function stampClass(importance){
-  if(importance === "높음") return "high";
-  if(importance === "중간") return "mid";
-  return "";
+function saveFavorites(favs){
+  localStorage.setItem(favKey(), JSON.stringify(favs));
+}
+function sendToSheet(item, action){
+  if(!FAVORITES_WEBAPP_URL) return;
+  fetch(FAVORITES_WEBAPP_URL, {
+    method: "POST",
+    mode: "no-cors",
+    headers: {"Content-Type": "text/plain;charset=utf-8"},
+    body: JSON.stringify({
+      action: action, // "즐겨찾기" 또는 "해제"
+      region_name: item.region_name,
+      category: item.category,
+      title: item.title,
+      dept: item.dept,
+      date: item.date,
+      url: item.url,
+    }),
+  }).catch(() => {});
 }
 
-function render(){
-  const main = document.getElementById("main");
-  const filtered = currentFilter === "전체"
-    ? allItems
-    : allItems.filter(i => i.category === currentFilter);
-
-  if(filtered.length === 0){
-    main.innerHTML = '<div class="empty">해당 분야의 보도자료가 아직 없습니다.</div>';
-    return;
+function toggleFavorite(item, btnEl){
+  const favs = loadFavorites();
+  const isOn = !!favs[item.id];
+  if(isOn){
+    delete favs[item.id];
+    sendToSheet(item, "해제");
+  }else{
+    favs[item.id] = true;
+    sendToSheet(item, "즐겨찾기");
   }
+  saveFavorites(favs);
+  btnEl.classList.toggle("on", !isOn);
+  if(showFavOnly) render();
+}
 
-  const byDate = {};
-  filtered.forEach(item => {
-    (byDate[item.date] = byDate[item.date] || []).push(item);
-  });
+function normalize(item, idx){
+  return Object.assign({
+    id: item.region ? item.id : ("seoul-" + (item.nttNo || idx)),
+    region: item.region || "seoul",
+    region_name: item.region_name || "서울특별시",
+  }, item);
+}
 
-  main.innerHTML = Object.keys(byDate).sort().reverse().map(date => `
-    <div class="day-group">
-      <div class="day-label">${date}</div>
-      ${byDate[date].map(renderItem).join("")}
-    </div>
-  `).join("");
+function buildRegionList(){
+  const el = document.getElementById("regionList");
+  const countAll = allItems.length;
+  const rows = [{ id: "all", name: "전체", status: "active", count: countAll }]
+    .concat(regions.map(r => ({
+      ...r,
+      count: allItems.filter(i => i.region === r.id).length,
+    })));
 
-  document.querySelectorAll(".item").forEach(el => {
-    el.addEventListener("click", () => {
-      const summary = el.querySelector(".summary");
-      if(summary) summary.classList.toggle("open");
+  el.innerHTML = rows.map(r => {
+    if(r.status !== "active"){
+      return `<li><button class="region-btn disabled" disabled>
+        <span>${r.name}</span><span class="region-badge-coming">준비중</span>
+      </button></li>`;
+    }
+    return `<li><button class="region-btn ${r.id===currentRegion?'active':''}" data-region="${r.id}">
+      <span>${r.name}</span><span class="region-count">${r.count}</span>
+    </button></li>`;
+  }).join("");
+
+  el.querySelectorAll("button[data-region]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      currentRegion = btn.dataset.region;
+      showFavOnly = false;
+      document.getElementById("favShortcut").classList.remove("active");
+      buildRegionList();
+      render();
     });
   });
 }
 
-function renderItem(item){
-  const hasSummary = item.summary && item.summary.length > 0;
-  return `
-    <div class="item">
-      <div class="item-row">
-        <div class="stamp ${stampClass(item.importance)}">${stampLabel(item.importance)}</div>
-        <div class="item-body">
-          <p class="item-title">${item.title}</p>
-          <div class="item-meta">
-            <span class="cat">${item.category || "미분류"}</span>${item.dept} · ${item.date}
-          </div>
-        </div>
-      </div>
-      ${hasSummary ? `
-        <div class="summary">
-          <ul>${item.summary.map(s => `<li>${s.replace(/^[□○]\s*/, "")}</li>`).join("")}</ul>
-          <a href="${item.url}" target="_blank" rel="noopener">서울시 원문 보기 →</a>
-        </div>
-      ` : `
-        <div class="summary"><a href="${item.url}" target="_blank" rel="noopener">서울시 원문 보기 →</a></div>
-      `}
-    </div>
-  `;
-}
-
-function buildFilters(){
-  const el = document.getElementById("filters");
-  el.innerHTML = CATEGORIES.map(c =>
-    `<button data-cat="${c}" class="${c===currentFilter?'active':''}">${c}</button>`
+function buildCatFilters(){
+  const cats = ["전체", ...new Set(allItems.map(i => i.category).filter(Boolean))];
+  const el = document.getElementById("catFilters");
+  el.innerHTML = cats.map(c =>
+    `<button data-cat="${c}" class="${c===currentCat?'active':''}">${c}</button>`
   ).join("");
   el.querySelectorAll("button").forEach(btn => {
     btn.addEventListener("click", () => {
-      currentFilter = btn.dataset.cat;
+      currentCat = btn.dataset.cat;
       el.querySelectorAll("button").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
       render();
@@ -254,15 +377,104 @@ function buildFilters(){
   });
 }
 
-fetch("data/news.json?_=" + Date.now())
-  .then(res => res.json())
-  .then(data => {
-    allItems = data;
-    buildFilters();
+function matchesQuery(item, q){
+  if(!q) return true;
+  const hay = (item.title + " " + (item.dept||"") + " " + (item.category||"")).toLowerCase();
+  return hay.includes(q.toLowerCase());
+}
+
+function render(){
+  const favs = loadFavorites();
+  let filtered = allItems;
+  if(currentRegion !== "all") filtered = filtered.filter(i => i.region === currentRegion);
+  if(currentCat !== "전체") filtered = filtered.filter(i => i.category === currentCat);
+  if(currentQuery) filtered = filtered.filter(i => matchesQuery(i, currentQuery));
+  if(showFavOnly) filtered = filtered.filter(i => favs[i.id]);
+
+  document.getElementById("totalCount").textContent = `총 ${filtered.length}건`;
+
+  const listEl = document.getElementById("main-list");
+  if(filtered.length === 0){
+    listEl.innerHTML = '<div class="empty">해당하는 보도자료가 없습니다.</div>';
+    return;
+  }
+
+  listEl.innerHTML = filtered.map(item => renderItem(item, favs)).join("");
+
+  listEl.querySelectorAll(".item").forEach(el => {
+    el.addEventListener("click", (e) => {
+      if(e.target.closest(".star-btn")) return;
+      const summary = el.querySelector(".summary");
+      if(summary) summary.classList.toggle("open");
+    });
+  });
+  listEl.querySelectorAll(".star-btn").forEach(el => {
+    el.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const id = el.dataset.id;
+      const item = allItems.find(i => i.id === id);
+      if(item) toggleFavorite(item, el);
+    });
+  });
+}
+
+function renderItem(item, favs){
+  const hasSummary = item.summary && item.summary.length > 0;
+  const isFav = !!favs[item.id];
+  return `
+    <div class="item">
+      <div class="item-row">
+        <span class="imp-mark ${item.importance||''}" title="중요도: ${item.importance||'낮음'}"></span>
+        <span class="badge region">${item.region_name}</span>
+        <span class="badge cat">${item.category || "미분류"}</span>
+        <div class="item-body">
+          <div class="item-title-row">
+            <p class="item-title">${item.title}</p>
+            <button class="star-btn ${isFav?'on':''}" data-id="${item.id}">★</button>
+          </div>
+          <div class="item-meta">${item.dept} · ${item.date}</div>
+        </div>
+      </div>
+      ${hasSummary ? `
+        <div class="summary">
+          <ul>${item.summary.map(s => `<li>${s.replace(/^[□○]\s*/, "")}</li>`).join("")}</ul>
+          <a href="${item.url}" target="_blank" rel="noopener">원문 보기 →</a>
+        </div>
+      ` : `
+        <div class="summary"><a href="${item.url}" target="_blank" rel="noopener">원문 보기 →</a></div>
+      `}
+    </div>
+  `;
+}
+
+document.getElementById("searchInput").addEventListener("input", (e) => {
+  currentQuery = e.target.value.trim();
+  render();
+});
+document.getElementById("favShortcut").addEventListener("click", (e) => {
+  showFavOnly = !showFavOnly;
+  e.currentTarget.classList.toggle("active", showFavOnly);
+  render();
+});
+
+fetch("data/regions.json?_=" + Date.now())
+  .then(r => r.json())
+  .catch(() => [])
+  .then((regionsData) => {
+    regions = regionsData || [];
+    const activeRegions = regions.filter(r => r.status === "active");
+    return Promise.all(activeRegions.map(r =>
+      fetch(`data/${r.file}?_=` + Date.now()).then(res => res.json()).catch(() => [])
+    ));
+  })
+  .then(datasets => {
+    allItems = datasets.flat().map(normalize);
+    buildRegionList();
+    buildCatFilters();
     render();
   })
   .catch(() => {
-    document.getElementById("main").innerHTML =
+    document.getElementById("main-list").innerHTML =
       '<div class="empty">데이터를 아직 불러올 수 없습니다. Actions가 한 번 실행된 후 다시 열어보세요.</div>';
   });
 </script>

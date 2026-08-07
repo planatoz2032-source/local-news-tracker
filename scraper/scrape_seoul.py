@@ -30,6 +30,9 @@ DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 NEWS_JSON = DATA_DIR / "news.json"
 SEEN_JSON = DATA_DIR / "seen.json"
 
+REGION_ID = "seoul"
+REGION_NAME = "서울특별시"
+
 MAX_LIST_PAGES = 6       # 한 번 실행할 때 최대 몇 페이지(=최대 300건)까지 훑을지
 MAX_KEEP_ITEMS = 400      # news.json 에 최대 몇 건까지 보관할지 (오래된 건 정리)
 REQUEST_DELAY = 0.4       # 서버 부담을 줄이기 위한 요청 간 대기(초)
@@ -158,6 +161,9 @@ def main():
         score = score_importance(category, row["title"])
         row.update(
             {
+                "id": f"{REGION_ID}-{row['nttNo']}",
+                "region": REGION_ID,
+                "region_name": REGION_NAME,
                 "category": category,
                 "importance_score": score,
                 "importance": importance_label(score),
