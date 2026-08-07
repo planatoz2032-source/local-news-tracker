@@ -47,12 +47,6 @@ CROSS_KEYWORDS = [
 ]
 SIGNAL_KEYWORDS = ["위원회", "심의", "발표", "계획", "대책", "도입", "확대", "개편", "본격"]
 
-ROW_RE = re.compile(
-    r"fnTbbsView\('(?P<ntt>\d+)'\)\);?\">\s*(?P<title>.*?)\s*</a>.*?"
-    r"</td>\s*<td[^>]*>\s*(?P<dept>.*?)\s*</td>\s*<td[^>]*>\s*(?P<date>\d{4}-\d{2}-\d{2})",
-    re.S,
-)
-
 
 def load_json(path, default):
     if path.exists():
@@ -67,28 +61,36 @@ def save_json(path, data):
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def strip_tags(html_fragment: str) -> str:
-    return BeautifulSoup(html_fragment, "html.parser").get_text(strip=True)
-
-
 def fetch_list_page(page: int):
+    """목록 페이지에서 'fnTbbsView(글번호)'로 여는 링크만 찾아서 (글번호, 제목) 목록을 만든다.
+    표(td/tr) 구조에 의존하지 않아서 사이트 디자인이 바뀌어도 잘 안 깨진다."""
     resp = requests.get(LIST_TMPL.format(page=page), headers=HEADERS, timeout=20)
     resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
+
     items = []
-    for m in ROW_RE.finditer(resp.text):
-        items.append(
-            {
-                "nttNo": m.group("ntt"),
-                "title": strip_tags(m.group("title")),
-                "dept": strip_tags(m.group("dept")),
-                "date": m.group("date"),
-            }
-        )
+    seen_on_page = set()
+    for a in soup.find_all("a"):
+        onclick = a.get("onclick") or ""
+        m = re.search(r"fnTbbsView\('(\d+)'\)", onclick)
+        if not m:
+            href = a.get("href") or ""
+            m = re.search(r"fnTbbsView\('(\d+)'\)", href)
+        if not m:
+            continue
+        ntt_no = m.group(1)
+        if ntt_no in seen_on_page:
+            continue
+        title = a.get_text(strip=True)
+        if not title:
+            continue
+        seen_on_page.add(ntt_no)
+        items.append({"nttNo": ntt_no, "title": title})
     return items
 
 
 def fetch_detail(ntt_no: str):
-    """상세 페이지에서 분류와 핵심 문장(□, ○ 로 시작하는 줄)을 추출."""
+    """상세 페이지에서 담당부서, 등록일, 분류, 핵심 문장(□, ○ 로 시작하는 줄)을 추출."""
     resp = requests.get(DETAIL_TMPL.format(ntt_no=ntt_no), headers=HEADERS, timeout=20)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
@@ -97,17 +99,29 @@ def fetch_detail(ntt_no: str):
 
     lines = [l.strip() for l in soup.get_text("\n").split("\n") if l.strip()]
 
-    category = None
-    for i, line in enumerate(lines):
-        if line == "분류" and i + 1 < len(lines) and lines[i + 1] in ALL_FIELDS:
-            category = lines[i + 1]
-            break
+    def value_after(label, allowed=None):
+        for i, line in enumerate(lines):
+            if line == label and i + 1 < len(lines):
+                val = lines[i + 1]
+                if allowed is None or val in allowed:
+                    return val
+        return None
+
+    category = value_after("분류", ALL_FIELDS)
+    dept = value_after("담당부서") or value_after("부서명")
+
+    date = value_after("등록일")
+    if not date:
+        for line in lines:
+            if re.match(r"^\d{4}-\d{2}-\d{2}$", line):
+                date = line
+                break
 
     bullets = [l for l in lines if l.startswith("□") or l.startswith("○")]
     # 너무 짧은 잡음 줄 제거, 앞 4개만 핵심 요약으로 사용
     bullets = [b for b in bullets if len(b) > 6][:4]
 
-    return category, bullets
+    return category, dept, date, bullets
 
 
 def score_importance(category, title):
@@ -152,10 +166,10 @@ def main():
 
     for row in new_items:
         try:
-            category, bullets = fetch_detail(row["nttNo"])
+            category, dept, date, bullets = fetch_detail(row["nttNo"])
         except Exception as e:  # noqa: BLE001
             print(f"[경고] {row['nttNo']} 상세 조회 실패: {e}")
-            category, bullets = None, []
+            category, dept, date, bullets = None, None, None, []
         time.sleep(REQUEST_DELAY)
 
         score = score_importance(category, row["title"])
@@ -164,6 +178,8 @@ def main():
                 "id": f"{REGION_ID}-{row['nttNo']}",
                 "region": REGION_ID,
                 "region_name": REGION_NAME,
+                "dept": dept or "",
+                "date": date or "",
                 "category": category,
                 "importance_score": score,
                 "importance": importance_label(score),
@@ -174,7 +190,7 @@ def main():
         seen.add(row["nttNo"])
 
     combined = new_items + existing
-    combined.sort(key=lambda x: (x["date"], x["nttNo"]), reverse=True)
+    combined.sort(key=lambda x: (x.get("date") or "", x["nttNo"]), reverse=True)
     combined = combined[:MAX_KEEP_ITEMS]
 
     save_json(NEWS_JSON, combined)
