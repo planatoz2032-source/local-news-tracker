@@ -11,10 +11,12 @@
 
 import json
 import re
+import ssl
 import time
 from pathlib import Path
 
 import requests
+from requests.adapters import HTTPAdapter
 from bs4 import BeautifulSoup
 
 BASE = "https://www.seoul.go.kr/news/news_report.do"
@@ -23,8 +25,39 @@ LIST_TMPL = BASE + "?cntPerPage=50&curPage={page}"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Referer": "https://www.seoul.go.kr/news/news_report.do",
+    "Connection": "close",
 }
+
+
+class LegacyTLSAdapter(HTTPAdapter):
+    """오래된 정부 사이트에서 흔한 'UNEXPECTED_EOF_WHILE_READING' 오류 우회용.
+    최신 OpenSSL의 엄격한 TLS 협상 대신 조금 완화된 방식으로 연결을 시도한다."""
+
+    def init_poolmanager(self, *args, **kwargs):
+        ctx = ssl.create_default_context()
+        try:
+            ctx.set_ciphers("DEFAULT@SECLEVEL=1")
+        except ssl.SSLError:
+            pass
+        ctx.check_hostname = True
+        ctx.minimum_version = ssl.TLSVersion.TLSv1_2
+        kwargs["ssl_context"] = ctx
+        return super().init_poolmanager(*args, **kwargs)
+
+
+def make_session():
+    session = requests.Session()
+    adapter = LegacyTLSAdapter(max_retries=0)
+    session.mount("https://", adapter)
+    session.headers.update(HEADERS)
+    return session
+
+
+SESSION = make_session()
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 NEWS_JSON = DATA_DIR / "news.json"
@@ -35,7 +68,7 @@ REGION_NAME = "서울특별시"
 
 MAX_LIST_PAGES = 6       # 한 번 실행할 때 최대 몇 페이지(=최대 300건)까지 훑을지
 MAX_KEEP_ITEMS = 400      # news.json 에 최대 몇 건까지 보관할지 (오래된 건 정리)
-REQUEST_DELAY = 0.4       # 서버 부담을 줄이기 위한 요청 간 대기(초)
+REQUEST_DELAY = 1.2       # 서버 부담을 줄이기 위한 요청 간 대기(초)
 
 CORE_FIELDS = {"주택", "교통"}
 ALL_FIELDS = {"경제", "주택", "문화", "교통", "안전", "환경", "행정", "복지"}
@@ -61,12 +94,12 @@ def save_json(path, data):
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def get_with_retry(url, tries=4, delay=2.0):
+def get_with_retry(url, tries=5, delay=3.0):
     """일시적인 SSL/연결 오류에 대비해 몇 번 더 시도해본다."""
     last_err = None
     for attempt in range(1, tries + 1):
         try:
-            resp = requests.get(url, headers=HEADERS, timeout=30)
+            resp = SESSION.get(url, timeout=30)
             resp.raise_for_status()
             return resp
         except requests.exceptions.RequestException as e:
