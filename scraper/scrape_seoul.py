@@ -61,11 +61,25 @@ def save_json(path, data):
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def get_with_retry(url, tries=4, delay=2.0):
+    """일시적인 SSL/연결 오류에 대비해 몇 번 더 시도해본다."""
+    last_err = None
+    for attempt in range(1, tries + 1):
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=30)
+            resp.raise_for_status()
+            return resp
+        except requests.exceptions.RequestException as e:
+            last_err = e
+            print(f"  [재시도 {attempt}/{tries}] {url} 요청 실패: {e}")
+            time.sleep(delay * attempt)
+    raise last_err
+
+
 def fetch_list_page(page: int):
     """목록 페이지에서 'fnTbbsView(글번호)'로 여는 링크만 찾아서 (글번호, 제목) 목록을 만든다.
     표(td/tr) 구조에 의존하지 않아서 사이트 디자인이 바뀌어도 잘 안 깨진다."""
-    resp = requests.get(LIST_TMPL.format(page=page), headers=HEADERS, timeout=20)
-    resp.raise_for_status()
+    resp = get_with_retry(LIST_TMPL.format(page=page))
     soup = BeautifulSoup(resp.text, "html.parser")
 
     items = []
@@ -91,8 +105,7 @@ def fetch_list_page(page: int):
 
 def fetch_detail(ntt_no: str):
     """상세 페이지에서 담당부서, 등록일, 분류, 핵심 문장(□, ○ 로 시작하는 줄)을 추출."""
-    resp = requests.get(DETAIL_TMPL.format(ntt_no=ntt_no), headers=HEADERS, timeout=20)
-    resp.raise_for_status()
+    resp = get_with_retry(DETAIL_TMPL.format(ntt_no=ntt_no))
     soup = BeautifulSoup(resp.text, "html.parser")
     for tag in soup(["script", "style", "nav", "header", "footer"]):
         tag.decompose()
