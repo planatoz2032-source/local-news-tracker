@@ -19,6 +19,20 @@
     --stamp-low:#7c8577;
     --star:#c9962c;
   }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#1b1c18;
+      --panel:#26271f;
+      --ink:#e9e5d8;
+      --sub:#a3a08f;
+      --line:#3c3d33;
+      --navy:#8fa8d6;
+      --stamp:#e08a7d;
+      --stamp-mid:#d9b568;
+      --stamp-low:#8b8a7a;
+      --star:#e0b64f;
+    }
+  }
   *{box-sizing:border-box;}
   body{
     margin:0;
@@ -273,7 +287,7 @@
 </div>
 
 <script>
-const FAVORITES_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbzSBfoYcaZ-4j3TzgL2iNkUgBRQa380ArqeetvmEbZyFHfSGr39gqWx_KLqM1bRwQkZCQ/exec"; // google-apps-script/Code.gs 배포 후 여기에 웹 앱 URL 붙여넣기
+const FAVORITES_WEBAPP_URL = ""; // google-apps-script/Code.gs 배포 후 여기에 웹 앱 URL 붙여넣기
 
 let regions = [];
 let allItems = [];
