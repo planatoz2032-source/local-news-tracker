@@ -1,4 +1,4 @@
-name: 서울시 보도자료 수집
+name: 지역 보도자료 수집
 
 on:
   schedule:
@@ -23,8 +23,13 @@ jobs:
       - name: 라이브러리 설치
         run: pip install -r scraper/requirements.txt
 
-      - name: 보도자료 수집 실행
+      - name: 서울시 수집
         run: python scraper/scrape_seoul.py
+        continue-on-error: true
+
+      - name: 인천시 수집
+        run: python scraper/scrape_incheon.py
+        continue-on-error: true
 
       - name: 변경사항 커밋
         run: |
