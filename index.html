@@ -18,19 +18,27 @@
     --stamp-mid:#9c7a2c;
     --stamp-low:#7c8577;
     --star:#c9962c;
+    --badge-bg:#26344a;
+    --badge-text:#f2efe6;
+    --core-bg:#a4342a;
+    --core-text:#f7ede9;
   }
   @media (prefers-color-scheme: dark){
     :root{
-      --paper:#1b1c18;
-      --panel:#26271f;
-      --ink:#e9e5d8;
-      --sub:#a3a08f;
-      --line:#3c3d33;
-      --navy:#8fa8d6;
-      --stamp:#e08a7d;
-      --stamp-mid:#d9b568;
-      --stamp-low:#8b8a7a;
-      --star:#e0b64f;
+      --paper:#1c1d19;
+      --panel:#25261f;
+      --ink:#d8d4c6;
+      --sub:#918d7c;
+      --line:#38392f;
+      --navy:#9db3d9;
+      --stamp:#d99287;
+      --stamp-mid:#cdac6c;
+      --stamp-low:#84826f;
+      --star:#d4ad55;
+      --badge-bg:#3a4a63;
+      --badge-text:#dbe4f2;
+      --core-bg:#7c342c;
+      --core-text:#f1ddd8;
     }
   }
   *{box-sizing:border-box;}
@@ -39,7 +47,10 @@
     background:var(--paper);
     color:var(--ink);
     font-family:'Noto Sans KR',sans-serif;
+    line-height:1.55;
     -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-rendering:optimizeLegibility;
   }
   .layout{
     display:flex;
@@ -185,8 +196,9 @@
     white-space:nowrap;
     margin-top:2px;
   }
-  .badge.region{background:var(--navy);color:var(--paper);}
+  .badge.region{background:var(--badge-bg);color:var(--badge-text);}
   .badge.cat{border:1px solid var(--sub);color:var(--sub);}
+  .badge.cat.core{background:var(--core-bg);color:var(--core-text);border:none;}
   .item-body{flex:1 1 auto;min-width:0;}
   .item-title-row{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;}
   .item-title{
@@ -440,7 +452,7 @@ function renderItem(item, favs){
       <div class="item-row">
         <span class="imp-mark ${item.importance||''}" title="중요도: ${item.importance||'낮음'}"></span>
         <span class="badge region">${item.region_name}</span>
-        <span class="badge cat">${item.category || "미분류"}</span>
+        <span class="badge cat${(item.category === '주택' || item.category === '교통') ? ' core' : ''}">${item.category || "미분류"}</span>
         <div class="item-body">
           <div class="item-title-row">
             <p class="item-title">${item.title}</p>
