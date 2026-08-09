@@ -1,7 +1,7 @@
 [
   { "id": "seoul", "name": "서울특별시", "status": "active", "file": "news.json" },
   { "id": "gyeonggi", "name": "경기도", "status": "coming" },
-  { "id": "daejeon", "name": "대전광역시", "status": "coming" },
+  { "id": "daejeon", "name": "대전광역시", "status": "active", "file": "news_daejeon.json" },
   { "id": "daegu", "name": "대구광역시", "status": "coming" },
   { "id": "incheon", "name": "인천광역시", "status": "active", "file": "news_incheon.json" },
   { "id": "busan", "name": "부산광역시", "status": "coming" },
