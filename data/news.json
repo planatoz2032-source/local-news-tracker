@@ -1,5 +1,19 @@
 [
   {
+    "nttNo": "463574",
+    "title": "(보도참고자료) 서울시 폭염 일일상황보고(26.8.9. 기준)",
+    "id": "seoul-463574",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "재난안전실 재난안전예방과",
+    "date": "2026-08-09",
+    "category": "안전",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=463574"
+  },
+  {
     "nttNo": "463568",
     "title": "(보도참고자료) 서울시 폭염 일일상황보고(26.8.8. 기준)",
     "id": "seoul-463568",
