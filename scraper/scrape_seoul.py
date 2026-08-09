@@ -29,7 +29,7 @@ ATTACH_TMPL = "https://seoulboard.seoul.go.kr/comm/getFile?srvcId=BBSTY1&upperNo
 # google-apps-script/Code.gs 배포 후 나오는 웹 앱 URL을 여기에 붙여넣으면
 # 제목에 "위원회"가 들어간 새 글의 안건 표가 구글 시트 "위원회" 탭에 자동으로 쌓인다.
 # 비워두면 이 기능은 그냥 건너뛴다 (다른 수집 기능에는 영향 없음).
-COMMITTEE_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbzSBfoYcaZ-4j3TzgL2iNkUgBRQa380ArqeetvmEbZyFHfSGr39gqWx_KLqM1bRwQkZCQ/exec"
+COMMITTEE_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbwtoiQ12i61rndH4xhX-b8qGAxM0aJi4agYvBUoOv6CKHRj-GRNRQ5MDDFSYFXkTI-I6g/exec"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
