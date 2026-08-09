@@ -12,6 +12,8 @@
 import json
 import re
 import ssl
+import subprocess
+import tempfile
 import time
 from pathlib import Path
 
@@ -22,6 +24,12 @@ from bs4 import BeautifulSoup
 BASE = "https://www.seoul.go.kr/news/news_report.do"
 DETAIL_TMPL = BASE + "?bbsNo=158&nttNo={ntt_no}"
 LIST_TMPL = BASE + "?cntPerPage=50&curPage={page}"
+ATTACH_TMPL = "https://seoulboard.seoul.go.kr/comm/getFile?srvcId=BBSTY1&upperNo={ntt_no}&fileTy=ATTACH&fileNo=1&bbsNo=158"
+
+# google-apps-script/Code.gs 배포 후 나오는 웹 앱 URL을 여기에 붙여넣으면
+# 제목에 "위원회"가 들어간 새 글의 안건 표가 구글 시트 "위원회" 탭에 자동으로 쌓인다.
+# 비워두면 이 기능은 그냥 건너뛴다 (다른 수집 기능에는 영향 없음).
+COMMITTEE_WEBAPP_URL = ""
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -187,6 +195,94 @@ def importance_label(score):
     return "낮음"
 
 
+COMMITTEE_TITLE_RE = re.compile(r"제\s*(\d+)\s*차\s*([^\s()（）]+위원회)")
+HEADER_CELL_HINTS = {"연번", "안건명", "안 건 명", "번호", "no", "no."}
+
+
+def extract_committee_agenda(ntt_no: str):
+    """위원회 개최결과 첨부(.hwp)를 내려받아 hwp5html로 변환한 뒤 표를 추출한다.
+    hwp5html이 없거나 변환에 실패하면 예외를 던진다 (호출부에서 조용히 건너뜀)."""
+    resp = get_with_retry(ATTACH_TMPL.format(ntt_no=ntt_no))
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp_path = Path(tmp)
+        hwp_path = tmp_path / "doc.hwp"
+        hwp_path.write_bytes(resp.content)
+
+        out_dir = tmp_path / "out"
+        result = subprocess.run(
+            ["hwp5html", "--output", str(out_dir), str(hwp_path)],
+            capture_output=True,
+            text=True,
+            timeout=90,
+        )
+        if result.returncode != 0:
+            raise RuntimeError(f"hwp5html 변환 실패: {result.stderr[:300]}")
+
+        candidates = list(out_dir.glob("*.xhtml")) + list(out_dir.glob("*.html"))
+        if not candidates:
+            raise RuntimeError("hwp5html 변환 결과에서 HTML 파일을 찾을 수 없음")
+
+        html_text = candidates[0].read_text(encoding="utf-8", errors="ignore")
+
+    soup = BeautifulSoup(html_text, "html.parser")
+    agenda_rows = []
+    for table in soup.find_all("table"):
+        for tr in table.find_all("tr"):
+            cells = [c.get_text(" ", strip=True) for c in tr.find_all(["td", "th"])]
+            cells = [c for c in cells if c != ""]
+            if not cells:
+                continue
+            if cells[0] in HEADER_CELL_HINTS or cells[0].lower() in HEADER_CELL_HINTS:
+                continue
+            # [연번, 안건명, 안건개요, 심의결과, 비고] 5칸 또는
+            # [안건명, 안건개요, 심의결과, 비고] 4칸 구조를 기대한다.
+            if len(cells) >= 5:
+                _, agenda_name, agenda_summary, result_text, note = cells[:5]
+            elif len(cells) == 4:
+                agenda_name, agenda_summary, result_text, note = cells
+            else:
+                continue
+            agenda_rows.append(
+                {
+                    "agenda_name": agenda_name,
+                    "agenda_summary": agenda_summary,
+                    "result": result_text,
+                    "note": note,
+                }
+            )
+    return agenda_rows
+
+
+def notify_committee(title, date, url, agenda_rows):
+    if not COMMITTEE_WEBAPP_URL or not agenda_rows:
+        return
+    m = COMMITTEE_TITLE_RE.search(title)
+    session_no = f"제{m.group(1)}차" if m else ""
+    committee_type = m.group(2) if m else title
+
+    for row in agenda_rows:
+        payload = {
+            "sheet": "committee",
+            "date": date,
+            "committee_type": committee_type,
+            "session": session_no,
+            "agenda_name": row["agenda_name"],
+            "agenda_summary": row["agenda_summary"],
+            "result": row["result"],
+            "note": row["note"],
+            "url": url,
+        }
+        try:
+            requests.post(
+                COMMITTEE_WEBAPP_URL,
+                data=json.dumps(payload).encode("utf-8"),
+                headers={"Content-Type": "text/plain;charset=utf-8"},
+                timeout=20,
+            )
+        except requests.exceptions.RequestException as e:
+            print(f"  [경고] 구글시트 전송 실패: {e}")
+
+
 def main():
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     existing = load_json(NEWS_JSON, [])
@@ -234,6 +330,17 @@ def main():
             }
         )
         seen.add(row["nttNo"])
+
+        if "위원회" in row["title"] and COMMITTEE_WEBAPP_URL:
+            try:
+                agenda_rows = extract_committee_agenda(row["nttNo"])
+                if agenda_rows:
+                    notify_committee(row["title"], row["date"], row["url"], agenda_rows)
+                    print(f"  [위원회] {row['title']} — 안건 {len(agenda_rows)}건 전송")
+                else:
+                    print(f"  [위원회] {row['title']} — 표를 찾지 못함 (건너뜀)")
+            except Exception as e:  # noqa: BLE001
+                print(f"  [경고] {row['nttNo']} 위원회 표 추출 실패: {e}")
 
     combined = new_items + existing
     combined.sort(key=lambda x: (x.get("date") or "", x["nttNo"]), reverse=True)

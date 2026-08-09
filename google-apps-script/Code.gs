@@ -8,28 +8,56 @@
  *    - 실행 계정: 나
  *    - 액세스 권한이 있는 사용자: 모든 사용자(익명 사용자 포함)
  * 5. "배포" 클릭 → 나오는 웹 앱 URL을 복사해서
- *    index.html 안의 FAVORITES_WEBAPP_URL 값으로 붙여넣는다.
- * 6. 이후 시트를 다시 열어보면 첫 즐겨찾기가 저장될 때 자동으로
- *    "즐겨찾기" 라는 이름의 시트 탭이 만들어지고 거기에 쌓인다.
+ *    - index.html 안의 FAVORITES_WEBAPP_URL 값
+ *    - scraper/scrape_seoul.py 안의 COMMITTEE_WEBAPP_URL 값
+ *    두 군데에 똑같이 붙여넣는다.
+ * 6. 이후 시트를 다시 열어보면:
+ *    - ★ 즐겨찾기를 누를 때마다 "즐겨찾기" 탭에
+ *    - 제목에 "위원회"가 들어간 서울시 보도자료의 안건표가 새로 감지될 때마다 "위원회" 탭에
+ *    자동으로 줄이 쌓인다. (탭이 없으면 첫 데이터가 들어올 때 자동 생성됨)
  */
 
-const SHEET_NAME = "즐겨찾기";
+const SHEETS = {
+  favorite: {
+    name: "즐겨찾기",
+    header: ["저장시각", "동작", "지역", "분야", "제목", "담당부서", "등록일", "링크"],
+  },
+  committee: {
+    name: "위원회",
+    header: ["감지시각", "날짜", "위원회구분", "회차", "안건명", "안건개요", "심의결과", "비고", "링크"],
+  },
+};
 
 function doPost(e) {
   try {
     const data = JSON.parse(e.postData.contents);
-    const sheet = getOrCreateSheet_();
+    const kind = data.sheet === "committee" ? "committee" : "favorite";
+    const sheet = getOrCreateSheet_(kind);
 
-    sheet.appendRow([
-      new Date(),          // 저장된 시각
-      data.action || "즐겨찾기",
-      data.region_name || "",
-      data.category || "",
-      data.title || "",
-      data.dept || "",
-      data.date || "",
-      data.url || "",
-    ]);
+    if (kind === "committee") {
+      sheet.appendRow([
+        new Date(),
+        data.date || "",
+        data.committee_type || "",
+        data.session || "",
+        data.agenda_name || "",
+        data.agenda_summary || "",
+        data.result || "",
+        data.note || "",
+        data.url || "",
+      ]);
+    } else {
+      sheet.appendRow([
+        new Date(),
+        data.action || "즐겨찾기",
+        data.region_name || "",
+        data.category || "",
+        data.title || "",
+        data.dept || "",
+        data.date || "",
+        data.url || "",
+      ]);
+    }
 
     return ContentService
       .createTextOutput(JSON.stringify({ ok: true }))
@@ -41,12 +69,13 @@ function doPost(e) {
   }
 }
 
-function getOrCreateSheet_() {
+function getOrCreateSheet_(kind) {
+  const conf = SHEETS[kind];
   const ss = SpreadsheetApp.getActiveSpreadsheet();
-  let sheet = ss.getSheetByName(SHEET_NAME);
+  let sheet = ss.getSheetByName(conf.name);
   if (!sheet) {
-    sheet = ss.insertSheet(SHEET_NAME);
-    sheet.appendRow(["저장시각", "동작", "지역", "분야", "제목", "담당부서", "등록일", "링크"]);
+    sheet = ss.insertSheet(conf.name);
+    sheet.appendRow(conf.header);
     sheet.setFrozenRows(1);
   }
   return sheet;
