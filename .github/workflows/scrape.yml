@@ -2,6 +2,7 @@ name: 지역 보도자료 수집
 
 on:
   schedule:
+    # 3시간마다 (KST 0,3,6,9,12,15,18,21시) — UTC 기준 매 3시간 정각
     - cron: "0 */3 * * *"
   workflow_dispatch: {}
 
@@ -31,6 +32,10 @@ jobs:
         run: python scraper/scrape_incheon.py
         continue-on-error: true
 
+      - name: 대전시 수집
+        run: python scraper/scrape_daejeon.py
+        continue-on-error: true
+
       - name: 변경사항 커밋
         run: |
           git config user.name "news-bot"
@@ -38,3 +43,4 @@ jobs:
           git add data/*.json
           git diff --cached --quiet && echo "변경 없음" || git commit -m "보도자료 자동 업데이트 $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
+
