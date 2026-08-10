@@ -1,5 +1,100 @@
 [
   {
+    "ntatcSeq": "1519955686",
+    "title": "대전농업기술센터, 폭염 대응 현장 지원 강화",
+    "dept": "대전농업기술센터",
+    "date": "2026-08-10",
+    "url": "https://www.daejeon.go.kr/drh/board/boardNormalView.do?boardId=normal_0189&menuSeq=6825&searchCondition=&searchKeyword=&pageIndex=1&recordCountPerPage=10&ntatcSeq=1519955686",
+    "id": "daejeon-1519955686",
+    "region": "daejeon",
+    "region_name": "대전광역시",
+    "nttNo": "1519955686",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "대전농업기술센터, 폭염 대응 현장 지원 강화 | 대전광역시청",
+      "이 누리집은 대한민국 공식 전자정부 누리집입니다.",
+      "대전농업기술센터, 폭염 대응 현장 지원 강화"
+    ]
+  },
+  {
+    "ntatcSeq": "1519954840",
+    "title": "대전시, 여름철 민간 다중이용시설 안전 점검 추진",
+    "dept": "사회재난과",
+    "date": "2026-08-10",
+    "url": "https://www.daejeon.go.kr/drh/board/boardNormalView.do?boardId=normal_0189&menuSeq=6825&searchCondition=&searchKeyword=&pageIndex=1&recordCountPerPage=10&ntatcSeq=1519954840",
+    "id": "daejeon-1519954840",
+    "region": "daejeon",
+    "region_name": "대전광역시",
+    "nttNo": "1519954840",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "대전시, 여름철 민간 다중이용시설 안전 점검 추진 | 대전광역시청",
+      "이 누리집은 대한민국 공식 전자정부 누리집입니다.",
+      "대전시, 여름철 민간 다중이용시설 안전 점검 추진"
+    ]
+  },
+  {
+    "ntatcSeq": "1519953938",
+    "title": "인공지능 악용 사이버공격, 자체 개발 도구로 대응한다",
+    "dept": "정보화정책과",
+    "date": "2026-08-10",
+    "url": "https://www.daejeon.go.kr/drh/board/boardNormalView.do?boardId=normal_0189&menuSeq=6825&searchCondition=&searchKeyword=&pageIndex=1&recordCountPerPage=10&ntatcSeq=1519953938",
+    "id": "daejeon-1519953938",
+    "region": "daejeon",
+    "region_name": "대전광역시",
+    "nttNo": "1519953938",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인공지능 악용 사이버공격, 자체 개발 도구로 대응한다 | 대전광역시청",
+      "이 누리집은 대한민국 공식 전자정부 누리집입니다.",
+      "인공지능 악용 사이버공격, 자체 개발 도구로 대응한다"
+    ]
+  },
+  {
+    "ntatcSeq": "1519952927",
+    "title": "대전시, 정비사업 조례·시행규칙 개정 시행",
+    "dept": "도시정비과",
+    "date": "2026-08-10",
+    "url": "https://www.daejeon.go.kr/drh/board/boardNormalView.do?boardId=normal_0189&menuSeq=6825&searchCondition=&searchKeyword=&pageIndex=1&recordCountPerPage=10&ntatcSeq=1519952927",
+    "id": "daejeon-1519952927",
+    "region": "daejeon",
+    "region_name": "대전광역시",
+    "nttNo": "1519952927",
+    "category": null,
+    "importance_score": 30,
+    "importance": "중간",
+    "summary": [
+      "대전시, 정비사업 조례·시행규칙 개정 시행 | 대전광역시청",
+      "이 누리집은 대한민국 공식 전자정부 누리집입니다.",
+      "대전시, 정비사업 조례·시행규칙 개정 시행"
+    ]
+  },
+  {
+    "ntatcSeq": "1519951484",
+    "title": "대전시, 전국기능경기대회 출전 선수단 결단식 개최",
+    "dept": "일자리경제정책과",
+    "date": "2026-08-10",
+    "url": "https://www.daejeon.go.kr/drh/board/boardNormalView.do?boardId=normal_0189&menuSeq=6825&searchCondition=&searchKeyword=&pageIndex=1&recordCountPerPage=10&ntatcSeq=1519951484",
+    "id": "daejeon-1519951484",
+    "region": "daejeon",
+    "region_name": "대전광역시",
+    "nttNo": "1519951484",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "대전시, 전국기능경기대회 출전 선수단 결단식 개최 | 대전광역시청",
+      "이 누리집은 대한민국 공식 전자정부 누리집입니다.",
+      "대전시, 전국기능경기대회 출전 선수단 결단식 개최"
+    ]
+  },
+  {
     "ntatcSeq": "1519858024",
     "title": "대전소방, 어려운 환경 속 응급처치 훈련으로 대응력 강화",
     "dept": "소방본부",
