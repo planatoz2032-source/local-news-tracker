@@ -1,5 +1,33 @@
 [
   {
+    "nttNo": "463822",
+    "title": "(엠바고14시30분)(자료제공) 청년이 서울 떠나는 이유가 집이어선 안 돼… 오세훈 시장, 청년 주거사다리 더 촘촘히",
+    "id": "seoul-463822",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "주택실 청년주거과",
+    "date": "2026-08-12",
+    "category": "주택",
+    "importance_score": 100,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=463822"
+  },
+  {
+    "nttNo": "463819",
+    "title": "(엠바고15시) 서울시, 장애아동 조기발견부터 맞춤지원까지 통합 지원센터 개소",
+    "id": "seoul-463819",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "복지실 장애인복지과",
+    "date": "2026-08-12",
+    "category": "복지",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=463819"
+  },
+  {
     "nttNo": "463807",
     "title": "(보도참고자료) 서울시, ''경의선숲길 최종 판결 겸허히 수용…철도공단과 향후 대책 모색''",
     "id": "seoul-463807",
