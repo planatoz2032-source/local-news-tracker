@@ -1,5 +1,19 @@
 [
   {
+    "nttNo": "464009",
+    "title": "(보도참고자료) 서울시 폭염 일일상황보고(26.8.14. 기준)",
+    "id": "seoul-464009",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "재난안전실 재난안전예방과",
+    "date": "2026-08-14",
+    "category": "안전",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464009"
+  },
+  {
     "nttNo": "463981",
     "title": "(자료제공) 한강버스 누적 탑승객 50만 명 돌파… 탑승객 97% 만족",
     "id": "seoul-463981",
