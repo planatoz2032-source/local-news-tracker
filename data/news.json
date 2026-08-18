@@ -1,5 +1,19 @@
 [
   {
+    "nttNo": "464157",
+    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 18일(화) 권영세 국민의힘 의원 면담",
+    "id": "seoul-464157",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "대변인 언론담당관",
+    "date": "2026-08-18",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464157"
+  },
+  {
     "nttNo": "464129",
     "title": "(엠바고15시) 서울시, 2026년 을지연습 18일~21일 4일간 실시",
     "id": "seoul-464129",
@@ -6334,19 +6348,5 @@
     "importance": "낮음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461353"
-  },
-  {
-    "nttNo": "461329",
-    "title": "(보도참고자료) 강우 상황보고(26.7.9. 13시 기준)",
-    "id": "seoul-461329",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "물순환안전국 치수안전과",
-    "date": "2026-07-09",
-    "category": "환경",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461329"
   }
 ]
