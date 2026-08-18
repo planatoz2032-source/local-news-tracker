@@ -1,5 +1,19 @@
 [
   {
+    "nttNo": "464163",
+    "title": "(보도참고자료) 서울시 폭염 일일상황보고(26.8.18. 기준)",
+    "id": "seoul-464163",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "재난안전실 재난안전예방과",
+    "date": "2026-08-18",
+    "category": "안전",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464163"
+  },
+  {
     "nttNo": "464157",
     "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 18일(화) 권영세 국민의힘 의원 면담",
     "id": "seoul-464157",
@@ -6334,19 +6348,5 @@
       "○ 전시 주제는 ‘덜하기’와 ‘더하기’ 두 방향으로 나뉜다.‘덜하기’는 생산과 폐기 과정에서 발생하는 환경 부담을 줄일 수 있는 방법을 모색하며,‘더하기’는 사용성을 잃은 재료와 부산물에 새로운 가치와 기능을 부여하는 가능성을 탐구한다."
     ],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461354"
-  },
-  {
-    "nttNo": "461353",
-    "title": "(보도참고자료) 강우 상황보고(26.7.9. 15시30분 기준)",
-    "id": "seoul-461353",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "물순환안전국 치수안전과",
-    "date": "2026-07-09",
-    "category": "환경",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461353"
   }
 ]
