@@ -1,5 +1,117 @@
 [
   {
+    "nttNo": "464220",
+    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 김진오 저고위 부위원장 면담",
+    "id": "seoul-464220",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "대변인 언론담당관",
+    "date": "2026-08-19",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464220"
+  },
+  {
+    "nttNo": "464205",
+    "title": "'강남 심야 자율주행택시' 7대→19대로 확대… 심야 이동편의 높인다",
+    "id": "seoul-464205",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "교통실 미래첨단교통과",
+    "date": "2026-08-19",
+    "category": "교통",
+    "importance_score": 105,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464205"
+  },
+  {
+    "nttNo": "464204",
+    "title": "서울시, 드론·AI 위협 직접 보고 만졌다…  을지연습 「시민참여 안보체험전」 개최",
+    "id": "seoul-464204",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "비상기획관 민방위담당관",
+    "date": "2026-08-19",
+    "category": "안전",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464204"
+  },
+  {
+    "nttNo": "464203",
+    "title": "서울시, 6,077억 원 투입해 정수센터 재정비 본격 추진",
+    "id": "seoul-464203",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울아리수본부 서울아리수본부",
+    "date": "2026-08-19",
+    "category": "환경",
+    "importance_score": 5,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464203"
+  },
+  {
+    "nttNo": "464202",
+    "title": "광화문광장서 즐기는 청년 건축가들의 '학교'... 서울시, 'UAUS 파빌리온' 전시 개최",
+    "id": "seoul-464202",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "주택실 한옥건축자산과",
+    "date": "2026-08-19",
+    "category": "주택",
+    "importance_score": 100,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464202"
+  },
+  {
+    "nttNo": "464201",
+    "title": "서울시, 발달장애인 '도전행동' AI로 자동 포착...전문가 맞춤 솔루션 제공",
+    "id": "seoul-464201",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "복지실 장애인복지과",
+    "date": "2026-08-19",
+    "category": "복지",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464201"
+  },
+  {
+    "nttNo": "464200",
+    "title": "“움직여도, 소리 내도 괜찮아요”...서울역사박물관, 하반기 배리어프리영화관 운영",
+    "id": "seoul-464200",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울역사박물관 서울역사박물관",
+    "date": "2026-08-19",
+    "category": "문화",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464200"
+  },
+  {
+    "nttNo": "464198",
+    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 19일(수) 국민의힘 서울시당과 부동산 정책 해법 모색",
+    "id": "seoul-464198",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "대변인 언론담당관",
+    "date": "2026-08-19",
+    "category": "행정",
+    "importance_score": 15,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464198"
+  },
+  {
     "nttNo": "464191",
     "title": "(자료제공) 서울시, 집중호우 피해 경남에 재해구호금 2억원 긴급 지원",
     "id": "seoul-464191",
@@ -6183,144 +6295,5 @@
       "○ 현재 폭염특보가 발효된 서울 24개 자치구에서는 구청사 등을 활용한 무더위 대피공간 24개소를 24시간 개방 운영한다."
     ],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461494"
-  },
-  {
-    "nttNo": "461481",
-    "title": "(보도참고자료) 서울시 폭염 일일상황보고(26.7.10.  기준)",
-    "id": "seoul-461481",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "재난안전실 재난안전예방과",
-    "date": "2026-07-10",
-    "category": "안전",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461481"
-  },
-  {
-    "nttNo": "461473",
-    "title": "(엠바고18시)(자료제공) 서울시, 서소문로 11일 0시 전면 개통… 고가 신설 본격화 '29.3월 개통 목표",
-    "id": "seoul-461473",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "도시기반시설본부 도시기반시설본부",
-    "date": "2026-07-10",
-    "category": "주택",
-    "importance_score": 105,
-    "importance": "높음",
-    "summary": [
-      "○ 시는 고가 철거 과정에서 발생한 사고 이후, 전문가 자문과 안전성 검토를 거쳐 철거 계획을 전면 재수립했다. 이후 국토교통부, 국가철도공단, 한국철도공사와의 긴밀한 협력을 통해 남은 구조물을 안전하게 모두 철거했다.",
-      "○ 서소문고가 하부를 지나는 경의중앙선 등 철도 노선은 하루 600여 회 이상의 열차가 운행되는 구간으로, 입체교차시설 설치를 통해 열차 운행의 안전성을 담보하고 서소문로 일대의 상습적인 교통 체증 해소를 위해 고가 신설이 결정되었다.",
-      "○ 특히 다리 기둥과 기둥 사이의 거리(최대 경간장)를 기존 28m에서 최대 45m까지 넓힌다. 이에 따라 복잡했던 교각(다리 기둥) 수가 기존 18개에서 7개로 11개나 줄어든다. 교각 수를 대폭 줄임으로써 철도시설과의 간섭을 최소화하고 유지관리 효율성도 함께 높였다.",
-      "○ 철도가 지나가는 구간의 고가 하부높이(형하고)도 기존 6.9m에서 8.7m로 크게 높여, 고가 하부 공간의 답답함을 해소하고 운전자의 시야와 개방감을 확 트이게 개선된다. 고가 상·하부 공간은 주변 도심 경관과 조화를 이루는 쾌적한 공공공간으로 통합 디자인될 예정이다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461473"
-  },
-  {
-    "nttNo": "461467",
-    "title": "(자료제공) 오 시장, 상봉먹자골목서 청년 사장님과 현장소통… 야장으로 골목상권 활력 키운다",
-    "id": "seoul-461467",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "민생노동국 상권활성화과",
-    "date": "2026-07-10",
-    "category": "경제",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461467"
-  },
-  {
-    "nttNo": "461454",
-    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 10일(금) 성수대교 램프 단차 현장 점검",
-    "id": "seoul-461454",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "대변인 언론담당관",
-    "date": "2026-07-10",
-    "category": "행정",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "□ 오세훈 서울시장이 10일(금) 오후 성수대교를 찾아 연결램프 단차 발생 구간을 직접 점검하고 시설물 안전관리 상황을 확인했다.",
-      "□ 오 시장은 현장에서 관계자로부터 단차 발생 원인과 안전성 검토 결과, 향후 관리 계획 등을 보고받았다. 이 자리에서 오 시장은 “교량은 시민들이 매일 이용하는 중요한 기반시설인 만큼 작은 변화라도 시민들이 불안해하지 않도록 한 치의 소홀함 없이 관리해야 한다”며 “현재 안전성에는 문제가 없는 것으로 확인됐지만, 시민들의 우려를 감안해 전문가 검증과 정밀검사 등을 실시하고 결과를 바탕으로 보강공사를 시행하겠다”고 말했다.",
-      "□ 한편, 성수대교 연결램프 구간의 단차는 기존 정밀안전진단 과정에서 확인돼 지속적으로 관리해 온 사항으로, 2016년 이후 현재까지 변화가 없고 추가 침하 등 진행성 변위도 확인되지 않아 구조적 안전성에는 문제가 없는 것으로 판단된다.",
-      "○ 해당 단차는 교량본체와 연결램프 옹벽부의 구조적 차이로 인해 장기간에 걸쳐 발생한 것으로 현재는 변화가 없는 안정화된 상태로 관리되고 있다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461454"
-  },
-  {
-    "nttNo": "461442",
-    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 10일(금) 「2026 서울청년정책박람회」 참석",
-    "id": "seoul-461442",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "대변인 언론담당관",
-    "date": "2026-07-10",
-    "category": "행정",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "□ 오세훈 서울시장은 10일(금) 오후 2시, 동대문디자인플라자(DDP)에서 열린 「2026 서울청년정책박람회」에 참석해 청년들과 소통하고 서울시 청년정책을 추진 방향을 공유했다.",
-      "○ 올해로 3회째를 맞는 「서울청년정책박람회」는 서울시가 주최하고 서울광역청년센터가 주관하는 행사로 10일(금)부터 11일(토)까지 이틀간 취업·창업·금융·주거 등 청년관심 분야별 다양한 프로그램을 운영한다.",
-      "○ 박람회장은 ▲청년 Zone ▲성장 Zone ▲특별 Zone ▲컨퍼런스 Zone 등 4개 구역으로 구성되며 참여자들은 취업·자산·주거·관계 회복 등 자신의 상황에 맞는 청년 지원사업을 직접 탐색하고 상담받을 수 있다.",
-      "□ 이날 박람회에는 청년취업사관학교, 서울 영테크 등 서울시 청년정책을 통해 사회에 첫발을 내디딘 청년 37명이 현직자 멘토로 참여해 경험과 조언을 전했다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461442"
-  },
-  {
-    "nttNo": "461408",
-    "title": "(자료제공) 호우특보 이후 다시 폭염특보… 11일 만에 서울 서남권에 폭염주의보 발효",
-    "id": "seoul-461408",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "재난안전실 재난안전예방과",
-    "date": "2026-07-10",
-    "category": "안전",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ 최근 호우특보 이후 높은 습도와 기온 상승이 이어지면서 체감온도가 높아질 것으로 예상됨에 따라, 온열질환 등 폭염 피해 예방을 위한 각별한 주의가 필요한 상황이다.",
-      "○ 폭염특보가 발효된 서울 서남권 7개 자치구도 상황실 운영과 냉방·응급구호물품 비축 등 대응체계를 유지하며 긴밀한 협업체계를 가동한다.",
-      "○ 자치구청사 무더위 대피공간(응급대피소)은 시민들이 쉽게 알고 편하게 이용할 수 있는 공공청사를 활용해 폭염 시 더위를 피할 수 있도록 마련한 공간이다.",
-      "○ 현재 폭염특보가 발효된 서남권 7개 자치구에서는 구청사 등을 활용한 무더위 대피공간 7개소를 24시간 개방 운영한다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461408"
-  },
-  {
-    "nttNo": "461403",
-    "title": "여름이 더 즐거운 서울의 공원! 물놀이터 10곳을 만나보세요",
-    "id": "seoul-461403",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "정원도시국 조경과",
-    "date": "2026-07-10",
-    "category": "환경",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ 서울시 공원·녹지 내 수경시설은 총 212개(바닥분수 142개, 물놀이장 70개)가 운영 중이다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461403"
-  },
-  {
-    "nttNo": "461402",
-    "title": "조선 선비의 풍류부터 한강 라면까지…폴란드 바르샤바에 피어나는 ‘서울의 멋’",
-    "id": "seoul-461402",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "서울역사박물관 서울역사박물관",
-    "date": "2026-07-10",
-    "category": "문화",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ 이번 전시는 서울의 역사와 문화, 그리고 오늘날 시민들의 삶을 '풍류(風流)'라는 문화적 키워드로 풀어내며 서울이 가진 도시의 매력을 세계 무대에 선보일 예정이다.",
-      "○ 문화체육관광부와 한국국제문화교류진흥원(KOFICE)이 후원하는 ‘2026 Touring K-Arts’ 사업의 일환으로 마련됐다. 서울역사박물관은 지난해 멕시코와 워싱턴 전시에 이어 2년 연속 사업에 선정되어 서울의 역사와 문화를 세계에 알리는 글로벌 문화교류를 지속하고 있다.",
-      "○ 지난해 멕시코에서 전통 복식을 선보인 데 이어, 미국에서는 민화를 중심으로 서울의 전통미를 소개하는 전시를 개최했다.",
-      "○ 풍류는 자연과 예술을 즐기고 사람들과 교류하며 삶을 풍요롭게 가꾸는 우리 고유의 생활 문화이자 삶의 태도이다. 조선시대 선비들의 풍류에서 오늘날 시민들이 전통을 새롭게 즐기는 뉴트로 문화와 한강 라이프스타일까지 이어지는 서울의 생활문화를 소개하고, 이를 통해 시대를 넘어 변화하고 계승되어 온 서울의 문화적 정체성을 조명한다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461402"
   }
 ]
