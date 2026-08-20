@@ -1,5 +1,103 @@
 [
   {
+    "nttNo": "464298",
+    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 20일(목) 민방위 훈련 연계 안보체험전 참관",
+    "id": "seoul-464298",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "대변인 언론담당관",
+    "date": "2026-08-20",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464298"
+  },
+  {
+    "nttNo": "464287",
+    "title": "신정4동 922 일대, 신속통합기획 확정, 국회대로 상부공원 품은 초품아 역세권 주거단지로 조성",
+    "id": "seoul-464287",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "도시공간본부 신속통합기획과",
+    "date": "2026-08-20",
+    "category": "주택",
+    "importance_score": 100,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464287"
+  },
+  {
+    "nttNo": "464286",
+    "title": "서울시, 직주락 갖춘 생활거점에 '아파트형 미리내집' 496세대 모집",
+    "id": "seoul-464286",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "주택실 청년주거과",
+    "date": "2026-08-20",
+    "category": "주택",
+    "importance_score": 100,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464286"
+  },
+  {
+    "nttNo": "464285",
+    "title": "서울시, 국내 최초 '중장년 삶의 질' 지표 공개… 9월 정책포럼서 서울형 해법 논의",
+    "id": "seoul-464285",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "주택실 청년주거과",
+    "date": "2026-08-20",
+    "category": "주택",
+    "importance_score": 100,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464285"
+  },
+  {
+    "nttNo": "464284",
+    "title": "여행의 힐링이 가족이 되는 설렘으로, 서울시 구조 강아지 20마리 공개 입양",
+    "id": "seoul-464284",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "정원도시국 동물보호과",
+    "date": "2026-08-20",
+    "category": "환경",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464284"
+  },
+  {
+    "nttNo": "464283",
+    "title": "서울시, 어린이 3만명 눈건강 챙겼다…안경 20% 할인쿠폰, 25일 3차 신청 오픈",
+    "id": "seoul-464283",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "여성가족실 아동담당관",
+    "date": "2026-08-20",
+    "category": "복지",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464283"
+  },
+  {
+    "nttNo": "464282",
+    "title": "(엠바고11시) 서울시립 서서울미술관, 미디어 작가전 《김희천 두더지들》 개최",
+    "id": "seoul-464282",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "시립미술관 시립미술관",
+    "date": "2026-08-20",
+    "category": "문화",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464282"
+  },
+  {
     "nttNo": "464272",
     "title": "(엠바고10시) 가을밤 한강 야경과 낭만 속으로… 서울시 한강야경투어 28일 시작",
     "id": "seoul-464272",
@@ -6159,117 +6257,5 @@
       "○ 자세한 사항은 ‘서울시 정비사업 정보몽땅’("
     ],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461461"
-  },
-  {
-    "nttNo": "461460",
-    "title": "(석간) 서울특별시 자치법규 제·개정 공포",
-    "id": "seoul-461460",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "기획조정실 법무담당관",
-    "date": "2026-07-13",
-    "category": "행정",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461460"
-  },
-  {
-    "nttNo": "461459",
-    "title": "(석간) 고전을 손으로 쓰고 마음을 쉬어가는 시간, 한성백제박물관에서 만나요!",
-    "id": "seoul-461459",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "한성백제박물관 한성백제박물관",
-    "date": "2026-07-13",
-    "category": "문화",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ 프로그램은 7월 20일부터 8월 31일까지 매주 월요일 오후 2시에서 4시까지 진행된다.",
-      "○ 자세한 내용은 한성백제박물관 누리집(baekjemuseum.seoul.go.kr)을 확인하거나 교육홍보과(☎02-2152-5839)로 문의하면 된다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461459"
-  },
-  {
-    "nttNo": "461458",
-    "title": "(석간) AI시대 경계성지능인에 대한 새로운 시선이 필요하다",
-    "id": "seoul-461458",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "서울시복지재단 서울시복지재단",
-    "date": "2026-07-13",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ 복지큐레이션 WISH는 기존 공유복지플랫폼을 새롭게 확장한 브랜드로, 단순한 정보 공유를 넘어 사회복지 현장에 필요한 지식을 선별하고 맥락을 해석해 질문을 실천으로 연결하는 플랫폼이다.",
-      "○ 경계성지능인은 우리 사회에 약 10%가 넘는 비율을 차지하고 있는 것으로 알려져 있지만 지적장애와 달리 아무런 지원을 받지 못하는 복지 사각지대에 놓여있다.",
-      "○ 이세형(2025) 경계선지능 청년의 대학 적응 경험과 지원 요구에 관한 질적 연구 : 경기도 A대학 사례를 중심으로. 대학 교수-학습 연구, 17(1), 1-30"
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461458"
-  },
-  {
-    "nttNo": "461457",
-    "title": "(석간) 서울연구원-나고야대학, AI 시대 도시 문제 해결을 위해 머리 맞댄다",
-    "id": "seoul-461457",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "서울연구원 서울연구원",
-    "date": "2026-07-13",
-    "category": "행정",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ 양 기관은 이번 협약을 통해 AI 등 첨단 기술을 활용한 도시 문제 해결에 나서며, 한·일 양국 메가시티의 지속가능성과 시민 안전 확보를 위해 긴밀히 협력하기로 했다.",
-      "○ 환경학연구과는 이학·공학·인문사회과학이 하나의 연구과로 결집해 ‘지속성’과 ‘안심·안전’을 이념으로 학제 간 연구를 추진하고 있다.",
-      "○ 감재연계연구센터는 산·관·학·민 연계를 통해 ‘자연재해 피해 경감’을 목표로 하는 실천형 연구를 수행하고 있다.",
-      "○ 특히 서울은 급속한 도시화와 고령화, 기반시설 노후화가 동시에 진행되고 있으며, 2022년 집중호우와 같은 기후재해에 대한 과학적·선제적 대응이 시급한 과제로 대두되고 있다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461457"
-  },
-  {
-    "nttNo": "461531",
-    "title": "(보도참고자료) 서울시 폭염 일일상황보고(26.7.12. 기준)",
-    "id": "seoul-461531",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "재난안전실 재난안전실",
-    "date": "2026-07-12",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461531"
-  },
-  {
-    "nttNo": "461517",
-    "title": "(자료제공) 시민 만족도 90.4% 쉬엄쉬엄 모닝 정례화… 서울, 건강도시로 한 걸음 더",
-    "id": "seoul-461517",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "대변인 언론담당관",
-    "date": "2026-07-12",
-    "category": "행정",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461517"
-  },
-  {
-    "nttNo": "461456",
-    "title": "낮은 수수료·풍성한 할인, 통했다… 서울배달+땡겨요 상반기 매출 2.5배 껑충",
-    "id": "seoul-461456",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "민생노동국 소상공인정책과",
-    "date": "2026-07-12",
-    "category": "경제",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ 실제로 올해 상반기 매출 819억 원 가운데 516억 원(63%)이 서울사랑상품권과 온누리상품권으로 결제돼, 지역 상권 내 소비 선순환 구조가 자리 잡았음을 보여준다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461456"
   }
 ]
