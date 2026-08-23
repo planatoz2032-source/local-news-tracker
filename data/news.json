@@ -1,5 +1,19 @@
 [
   {
+    "nttNo": "464432",
+    "title": "(보도참고자료) 서울시 폭염 일일상황보고(26.8.23. 기준)",
+    "id": "seoul-464432",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "재난안전실 재난안전예방과",
+    "date": "2026-08-23",
+    "category": "안전",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464432"
+  },
+  {
     "nttNo": "464426",
     "title": "(자료제공) 서울시장 사후동정-오세훈 시장. 23일(일) 「뷰티풀라이프 인 서울(BLS)」 개막식 참석",
     "id": "seoul-464426",
@@ -6194,23 +6208,5 @@
     "importance": "높음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461591"
-  },
-  {
-    "nttNo": "461590",
-    "title": "(석간) 서울시, 재난안전 중소기업 판로 개척 돕는다… 안전산업박람회 참가 기업 모집",
-    "id": "seoul-461590",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "재난안전실 재난안전정책과",
-    "date": "2026-07-14",
-    "category": "안전",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ 대한민국 안전산업 박람회는 국내 최대 규모의 안전산업 전문 박람회로, 올해는 행정안전부와 부산광역시가 공동 주최해 9월 2일(수)부터 4일(금)까지 부산 벡스코 제1전시장에서 개최된다.",
-      "○ 다만, 전시부스 내 영상 송출장비 등 부대시설 및 홍보 콘텐츠는 참가기업이 자체적으로 준비해야 한다.",
-      "○ 선정심사는 서울시 정책방향과의 부합성, 기술·성능·품질의 우수성, 박람회 참가 필요성, 박람회 운영 역량 등을 종합적으로 평가한다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461590"
   }
 ]
