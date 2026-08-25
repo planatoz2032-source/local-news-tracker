@@ -1,5 +1,62 @@
 [
   {
+    "repSeq": "DOM_0000000015399359",
+    "title": "인천시 인공지능 등 핵심 인재 육성, 인천 ICT콤플렉스 개소",
+    "date": "2026-08-25",
+    "dept": "AI혁신과",
+    "id": "incheon-DOM_0000000015399359",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015399359",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시 인공지능 등 핵심 인재 육성, 인천 ICT콤플렉스 개소",
+      "인천시 인공지능 등 핵심 인재 육성, 인천 ICT콤플렉스 개소",
+      "AI혁신과 / 이창환 (032-440-4943)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015399359"
+  },
+  {
+    "repSeq": "DOM_0000000015395970",
+    "title": "인천시, 어르신 교통사고 예방 위해 강화 조산리마을 찾아가 교통안전 교육 및 캠페인 실시",
+    "date": "2026-08-25",
+    "dept": "교통안전과",
+    "id": "incheon-DOM_0000000015395970",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015395970",
+    "category": null,
+    "importance_score": 115,
+    "importance": "높음",
+    "summary": [
+      "인천시, 어르신 교통사고 예방 위해 강화 조산리마을 찾아가 교통안전 교육 및 캠페인 실시",
+      "인천시, 어르신 교통사고 예방 위해 강화 조산리마을 찾아가 교통안전 교육 및 캠페인 실시",
+      "교통안전과 / 양승정 (032-440-3867)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015395970"
+  },
+  {
+    "repSeq": "DOM_0000000015395966",
+    "title": "인천시,‘제7회 푸른 하늘의 날’기념 대기환경정책 포럼 성료…",
+    "date": "2026-08-25",
+    "dept": "대기보전과",
+    "id": "incheon-DOM_0000000015395966",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015395966",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시,‘제7회 푸른 하늘의 날’기념 대기환경정책 포럼 성료…",
+      "인천시,‘제7회 푸른 하늘의 날’기념 대기환경정책 포럼 성료…",
+      "대기보전과 / 김미아 (032-440-3502)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015395966"
+  },
+  {
     "repSeq": "DOM_0000000015394292",
     "title": "인천시, 전국 최대 규모 ‘노후계획도시정비 선도지구’최종 6개 구역 확정… 총 1만 6,267호 공급 탄력",
     "date": "2026-08-25",
