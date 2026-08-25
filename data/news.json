@@ -1,5 +1,89 @@
 [
   {
+    "nttNo": "464541",
+    "title": "(석간) '先이주-善순환' 첫 사례, 남대문‘해든집’쪽방주민 추가 42세대 주거상향",
+    "id": "seoul-464541",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "복지실 자활지원과",
+    "date": "2026-08-25",
+    "category": "복지",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464541"
+  },
+  {
+    "nttNo": "464540",
+    "title": "(석간) 서울시, 동물행복페스타 개최…댕댕이와 함께 한강변 산책할 500팀 모집",
+    "id": "seoul-464540",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "정원도시국 동물보호과",
+    "date": "2026-08-25",
+    "category": "환경",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464540"
+  },
+  {
+    "nttNo": "464539",
+    "title": "(석간) 사찰·한방과 디지털의 만남… 서울시, 외래관광객 위한 스타트업 발굴",
+    "id": "seoul-464539",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "관광체육국 관광산업과",
+    "date": "2026-08-25",
+    "category": "문화",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464539"
+  },
+  {
+    "nttNo": "464538",
+    "title": "(석간) 서울물재생시설공단 체험형 인턴십 5년간 11개국 참여… K-물재생기술 글로벌 전파",
+    "id": "seoul-464538",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울물재생시설공단 서울물재생시설공단",
+    "date": "2026-08-25",
+    "category": "환경",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464538"
+  },
+  {
+    "nttNo": "464537",
+    "title": "(석간) 서울연구원, 27일‘중장년 생애전환 지원 정책 포럼’개최",
+    "id": "seoul-464537",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울연구원 서울연구원",
+    "date": "2026-08-25",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464537"
+  },
+  {
+    "nttNo": "464536",
+    "title": "(석간) 발굴현장에서 미래의 고고학자 키운다…한성백제박물관‘청년 고고(考古)’",
+    "id": "seoul-464536",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "한성백제박물관 한성백제박물관",
+    "date": "2026-08-25",
+    "category": "문화",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464536"
+  },
+  {
     "nttNo": "464531",
     "title": "(보도참고자료) 서울시 폭염 일일상황보고(26.8.24. 기준)",
     "id": "seoul-464531",
@@ -6003,109 +6087,5 @@
       "○ 클래식 공연은 식물과 음악, 프리다 칼로의 작품이 함께 품고 있는‘치유’를 주제로 남미의 정취가 담긴 클래식 음악과 친숙한 명곡을 선보인다."
     ],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461790"
-  },
-  {
-    "nttNo": "461789",
-    "title": "서북병원-보라매병원, 환자중심 의료서비스 강화한다",
-    "id": "seoul-461789",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "서북병원 서북병원",
-    "date": "2026-07-16",
-    "category": "복지",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461789"
-  },
-  {
-    "nttNo": "461788",
-    "title": "(석간) 서울시, 준공업지역 용적률 400% 규제혁신 성과 가시화… 2만 7천 세대 공급 탄력",
-    "id": "seoul-461788",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "도시공간본부 도시계획과",
-    "date": "2026-07-16",
-    "category": "주택",
-    "importance_score": 145,
-    "importance": "높음",
-    "summary": [
-      "○ ▲문래국화아파트, ▲양평신동아아파트, ▲성수1, ▲삼환도봉아파트 등 재건축·재개발사업 24개소에서 총 1만9,122세대 공급을 추진 중이다.",
-      "○ ▲양평제13구역, ▲문래동4가, ▲옛 방림부지, ▲교학사부지 등 도시정비형 재개발사업과 지구단위계획사업 8개소에서도 총 8,053세대 공급을 추진 중이다.",
-      "○ 용적률 400% 적용에 따라 세대수 199세대 증가(563세대→762세대)하여 사업성이 크게 개선되었으며, 이에 따라 조합원 부담금 감소 효과가 기대된다.",
-      "○ 주관부서 직접 협의, SH사전타당성 검증 의뢰, 지연요인 사전점검·관리 등을 통해 사업시행계획인가, 관리처분계획인가, 이주ㆍ해체 단계를 각 4개월씩 단축할 계획이다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461788"
-  },
-  {
-    "nttNo": "461766",
-    "title": "(석간) 홀덤펍·룸카페 등 특별단속으로 여름방학 청소년 보호 강화한다",
-    "id": "seoul-461766",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "민생사법경찰국 경제수사과",
-    "date": "2026-07-16",
-    "category": "안전",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ 여름방학 기간에는 청소년들의 야간 외출과 여가활동이 증가하면서 청소년 출입·고용금지업소 출입 등 불법행위가 발생할 우려가 커짐에 따라 집중 단속을 추진한다.",
-      "○ 포커게임(텍사스 홀덤 등)을 제공하는 영업형태는 도박·사행심 조장 우려가 있는 게임 제공업소에 해당하여 청소년 출입과 고용 금지 업소로 2024년 5월부터 지정되어 있으며, 룸카페는 밀실 구조 등으로 인해 신체접촉이나 성행위 등이 이루어질 우려가 있는 영업형태의 경우에는 「청소년 보호법」에 따라 2023년 4월부터 청소년 출입·고용금지업소로 지정되어 있다",
-      "○ 학교 주변 200미터이내 교육환경보호구역 인근 청소년 출입·고용금지업소와 대학가, 번화가 등 주요 상권내 청소년 접근이 용이한 지역을 중심으로 서울시교육청 및 경찰과 합동단속을 실시할 예정이다.",
-      "○ 청소년 출입·고용금지업소에 청소년을 출입시키거나 고용한 경우에는 청소년 보호법에 따라 2년 이하의 징역 또는 2천만 원 이하의 벌금에 처해질 수 있다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461766"
-  },
-  {
-    "nttNo": "461765",
-    "title": "(석간) 서울시, ‘서울형 친환경공사장’ 자율협약 건설사 확대",
-    "id": "seoul-461765",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "기후환경본부 대기정책과",
-    "date": "2026-07-16",
-    "category": "환경",
-    "importance_score": 20,
-    "importance": "낮음",
-    "summary": [
-      "○ ‘서울형 친환경공사장’은 2022년부터 서울시와 건설사가 자율협약을 통해 일반 공사장 보다 강화된 비산먼지 억제 기준과 친환경 건설기계 사용을 실천하는 제도이다.",
-      "○ 덤프트럭, 콘크리트믹서트럭, 콘크리트펌프트럭, 굴착기, 지게차 등 주요 건설기계 5종 장비는 친환경 건설기계를 원칙적으로 사용해 건설기계 배출 초미세먼지를 획기적으로 줄일 계획이다. 친환경 도료 도입은 휘발성유기화합물(VOCs) 배출을 낮춰 오존 발생을 줄이고 쾌적한 생활환경 조성에도 기여할 것으로 기대된다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461765"
-  },
-  {
-    "nttNo": "461764",
-    "title": "(석간) 응답하라 1995… 30년간의 기록을 담은 서울경관기록화 광화문 전시",
-    "id": "seoul-461764",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "디자인정책관 도시경관담당관",
-    "date": "2026-07-16",
-    "category": "문화",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ 주요 배포처는 구청, 공공도서관, 도시연구 관련 기관, 주한 대사관 등 300여 개소로 배포되어 전문 현장과 시민사회 전반에 개방됨으로써, 내·외국인 누구나 폭넓게 향유할 수 있다.",
-      "○ 서울갤러리에서 초대형 U자형 미디어월로 선보였던 서울경관기록화 미디어전시 「서울, 시간이 그린 도시」展 영상을 해치마당 미디어월에 맞게 재구성해 시민들의 일상 속에서 서울의 30년 변화를 접할 수 있도록 했다.",
-      "○ 출근 및 퇴근, 점심시간 등 해치마당 미디어월의 유동인구가 가장 많은 시간대에 12분 분량의 스페셜 에디션을 상영하고, 그 외 시간에는 화보집과 연계한 전시 챕터별 테마 영상과 해치마당 미디어아트 콘텐츠를 교차 송출한다.",
-      "○ 특히 서울연구원「사진으로 본 서울」에서는 저작권 표시(공공유형 제1유형)에 따라 출처만 기록하면 시민·연구자·창작자 등 누구나 이미지를 자유롭게 활용할 수 있다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461764"
-  },
-  {
-    "nttNo": "461763",
-    "title": "(석간) 폭염 속 리어카 밀어주는 시원한 동행 서울시자원봉사센터, 무더위 속 폐지 수집 어르신 1,000명 찾는다 “여름愛 나눔 - 무더위를 無더위로”",
-    "id": "seoul-461763",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "서울시자원봉사센터 서울시자원봉사센터",
-    "date": "2026-07-16",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○내곁에 자원봉사"
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461763"
   }
 ]
