@@ -1,5 +1,19 @@
 [
   {
+    "nttNo": "464602",
+    "title": "(보도참고자료) 서울시 폭염 일일상황보고(26.8.25. 기준)",
+    "id": "seoul-464602",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "재난안전실 재난안전예방과",
+    "date": "2026-08-25",
+    "category": "안전",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464602"
+  },
+  {
     "nttNo": "464600",
     "title": "(자료제공) 현장에서 재건축 물꼬 튼다… 서울시, '찾아가는 재건축 신통자문' 첫 개최",
     "id": "seoul-464600",
@@ -6041,19 +6055,5 @@
       "○ 서울대공원은 지난 2019년부터 시베리아호랑이 종 보전 프로그램에 참여하고 있다. 프로그램 권고에 따라 2019년 일본 니시무로 어드벤쳐월드로 이동한 암컷 호랑이 ‘한라’가 현지에서 여러 차례 번식에 성공하며 활발히 종 보전에 기여하고 있다."
     ],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461832"
-  },
-  {
-    "nttNo": "461851",
-    "title": "(자료제공) 서울시, 17시 기준 오존 주의보 해제",
-    "id": "seoul-461851",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "보건환경연구원 보건환경연구원",
-    "date": "2026-07-16",
-    "category": "복지",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=461851"
   }
 ]
