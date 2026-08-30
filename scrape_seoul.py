@@ -371,6 +371,14 @@ def main():
                 print(f"  [경고] {row['nttNo']} 위원회 표 추출 실패: {e}")
 
     combined = new_items + existing
+    deduped = []
+    seen_ntt_in_combined = set()
+    for item in combined:
+        if item["nttNo"] in seen_ntt_in_combined:
+            continue
+        seen_ntt_in_combined.add(item["nttNo"])
+        deduped.append(item)
+    combined = deduped
     combined.sort(key=lambda x: (x.get("date") or "", x["nttNo"]), reverse=True)
     combined = combined[:MAX_KEEP_ITEMS]
 

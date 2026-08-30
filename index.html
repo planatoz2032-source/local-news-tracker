@@ -284,7 +284,9 @@
   .committee-card{
     border-bottom:1px solid var(--line);
     padding:14px 0;
+    cursor:pointer;
   }
+  .committee-card:hover{background:var(--panel);}
   .committee-top{
     display:flex;
     align-items:baseline;
@@ -292,24 +294,64 @@
     flex-wrap:wrap;
     margin-bottom:6px;
   }
+  .committee-date{
+    font-family:'Space Mono',monospace;
+    font-size:11px;
+    color:var(--sub);
+  }
   .committee-title{
     font-family:'Noto Serif KR',serif;
     font-weight:500;
     font-size:16px;
     margin:0;
+    line-height:1.5;
   }
-  .committee-fields{
-    font-size:14px;
-    line-height:1.7;
-    margin:6px 0 0;
-  }
-  .committee-fields dt{
-    font-family:'Space Mono',monospace;
-    font-size:11px;
-    color:var(--sub);
+  .committee-actions{
+    display:flex;
+    align-items:center;
+    gap:14px;
     margin-top:8px;
   }
-  .committee-fields dd{margin:0;}
+  .committee-toggle-btn{
+    font-family:'Space Mono',monospace;
+    font-size:12px;
+    color:var(--navy);
+    background:none;
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:4px 10px;
+    cursor:pointer;
+  }
+  .committee-actions a{
+    font-family:'Space Mono',monospace;
+    font-size:12px;
+    color:var(--navy);
+  }
+  .committee-detail{
+    display:none;
+    margin-top:10px;
+    padding-top:6px;
+    border-top:1px dashed var(--line);
+  }
+  .committee-detail.open{display:block;}
+  .committee-fields{
+    font-size:14px;
+    line-height:1.6;
+    margin:0;
+  }
+  .committee-fields dt{
+    font-weight:500;
+    font-size:14px;
+    margin-top:12px;
+  }
+  .committee-fields dt:first-child{margin-top:0;}
+  .committee-fields dd{margin:4px 0 0;color:var(--sub);}
+  .committee-fields dd .committee-result,
+  .committee-fields dd .committee-note{
+    font-family:'Space Mono',monospace;
+    font-size:12px;
+    margin-top:2px;
+  }
   .committee-meta{
     font-family:'Space Mono',monospace;
     font-size:11px;
@@ -485,46 +527,109 @@ function matchesCommitteeQuery(item, q){
   return hay.includes(q.toLowerCase());
 }
 
+let committeeExpanded = new Set();
+
+function escapeAttr(str){
+  return String(str || "").replace(/&/g, "&amp;").replace(/"/g, "&quot;");
+}
+
+function groupCommitteeItems(items){
+  const map = new Map();
+  items.forEach(item => {
+    const key = item.url || `${item.committee_type || ""}|${item.session || ""}|${item.date || ""}`;
+    if(!map.has(key)){
+      map.set(key, {
+        key,
+        committee_type: item.committee_type,
+        session: item.session,
+        date: item.date,
+        url: item.url,
+        detected_at: item.detected_at,
+        items: [],
+      });
+    }
+    map.get(key).items.push(item);
+  });
+  return Array.from(map.values()).sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+}
+
+function committeeSummaryLine(group){
+  const first = group.items[0] || {};
+  if(group.items.length === 1){
+    return first.agenda_summary || first.agenda_name || "안건 개요가 없습니다.";
+  }
+  const names = group.items.map(i => i.agenda_name).filter(Boolean).slice(0, 3).join(", ");
+  return `안건 ${group.items.length}건 처리 · ${names}${group.items.length > 3 ? " 외" : ""}`;
+}
+
 function renderCommittee(){
   document.getElementById("top-bar-title").textContent = "위원회 안건";
 
-  let filtered = committeeItems;
-  if(currentQuery) filtered = filtered.filter(i => matchesCommitteeQuery(i, currentQuery));
+  let filteredItems = committeeItems;
+  if(currentQuery) filteredItems = filteredItems.filter(i => matchesCommitteeQuery(i, currentQuery));
 
-  document.getElementById("totalCount").textContent = `총 ${filtered.length}건`;
+  const groups = groupCommitteeItems(filteredItems);
+
+  document.getElementById("totalCount").textContent = `총 ${groups.length}건 (안건 ${filteredItems.length}건)`;
 
   const listEl = document.getElementById("main-list");
 
   const sheetBar = COMMITTEE_SHEET_URL
-    ? `<div class="sheet-link-bar"><span>안건표는 첨부 한글파일에서 자동 추출됩니다. 원문과 다르면 링크를 눌러 확인하세요.</span><a href="${COMMITTEE_SHEET_URL}" target="_blank" rel="noopener">구글시트에서 전체 보기 →</a></div>`
+    ? `<div class="sheet-link-bar"><span>안건표는 첨부 한글파일에서 자동 추출됩니다. 표가 이상하면 구글시트 원본을 확인하세요.</span><a href="${COMMITTEE_SHEET_URL}" target="_blank" rel="noopener">구글시트에서 전체 보기 →</a></div>`
     : "";
 
-  if(filtered.length === 0){
+  if(groups.length === 0){
     listEl.innerHTML = sheetBar + '<div class="empty">아직 수집된 위원회 안건이 없습니다.</div>';
     return;
   }
 
-  listEl.innerHTML = sheetBar + filtered.map(renderCommitteeItem).join("");
+  listEl.innerHTML = sheetBar + groups.map(renderCommitteeGroup).join("");
+
+  listEl.querySelectorAll(".committee-card").forEach(el => {
+    el.addEventListener("click", (e) => {
+      if(e.target.closest("a")) return;
+      const key = el.dataset.key;
+      const detail = el.querySelector(".committee-detail");
+      const btn = el.querySelector(".committee-toggle-btn");
+      const isOpen = detail.classList.toggle("open");
+      if(isOpen) committeeExpanded.add(key); else committeeExpanded.delete(key);
+      if(btn) btn.textContent = isOpen ? "안건 접기 ▴" : `안건 ${el.dataset.count}건 펼쳐보기 ▾`;
+    });
+  });
 }
 
-function renderCommitteeItem(item){
+function renderCommitteeGroup(group){
+  const isOpen = committeeExpanded.has(group.key);
   return `
-    <div class="committee-card">
+    <div class="committee-card" data-key="${escapeAttr(group.key)}" data-count="${group.items.length}">
       <div class="committee-top">
-        <span class="badge region">${item.committee_type || "위원회"}</span>
-        ${item.session ? `<span class="badge cat">${item.session}</span>` : ""}
-        <p class="committee-title">${item.agenda_name || "(안건명 미확인)"}</p>
+        <span class="badge region">${group.committee_type || "위원회"}</span>
+        ${group.session ? `<span class="badge cat">${group.session}</span>` : ""}
+        <span class="committee-date">${group.date || ""}</span>
       </div>
-      <dl class="committee-fields">
-        ${item.agenda_summary ? `<dt>안건개요</dt><dd>${item.agenda_summary}</dd>` : ""}
-        ${item.result ? `<dt>심의결과</dt><dd>${item.result}</dd>` : ""}
-        ${item.note ? `<dt>비고</dt><dd>${item.note}</dd>` : ""}
-      </dl>
-      <div class="committee-meta">
-        ${item.date || ""} · 수집 ${item.detected_at || ""}
-        ${item.url ? `<a href="${item.url}" target="_blank" rel="noopener">원문 보기 →</a>` : ""}
+      <p class="committee-title">${committeeSummaryLine(group)}</p>
+      <div class="committee-actions">
+        <button class="committee-toggle-btn">${isOpen ? "안건 접기 ▴" : `안건 ${group.items.length}건 펼쳐보기 ▾`}</button>
+        ${group.url ? `<a href="${group.url}" target="_blank" rel="noopener">원문 보기 →</a>` : ""}
       </div>
+      <div class="committee-detail ${isOpen ? "open" : ""}">
+        <dl class="committee-fields">
+          ${group.items.map(renderCommitteeAgendaRow).join("")}
+        </dl>
+      </div>
+      <div class="committee-meta">수집 ${group.detected_at || ""}</div>
     </div>
+  `;
+}
+
+function renderCommitteeAgendaRow(item){
+  return `
+    <dt>${item.agenda_name || "(안건명 미확인)"}</dt>
+    <dd>
+      ${item.agenda_summary ? `<div>${item.agenda_summary}</div>` : ""}
+      ${item.result ? `<div class="committee-result">심의결과: ${item.result}</div>` : ""}
+      ${item.note ? `<div class="committee-note">비고: ${item.note}</div>` : ""}
+    </dd>
   `;
 }
 

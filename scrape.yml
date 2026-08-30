@@ -1,0 +1,52 @@
+name: 지역 보도자료 수집
+
+on:
+  schedule:
+    # 3시간마다 (KST 0,3,6,9,12,15,18,21시) — UTC 기준 매 3시간 정각
+    - cron: "0 */3 * * *"
+  workflow_dispatch: {}
+
+# 예약 실행과 수동 실행("Run workflow")이 겹치면 같은 base에서 각자 새 글을 계산해
+# 커밋 충돌·중복 데이터가 생길 수 있으므로, 항상 하나의 실행만 돌게 강제한다.
+concurrency:
+  group: scrape-seoul-incheon-daejeon
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: 파이썬 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 라이브러리 설치
+        run: pip install -r scraper/requirements.txt
+
+      - name: 서울시 수집
+        run: python scraper/scrape_seoul.py
+        continue-on-error: true
+
+      - name: 인천시 수집
+        run: python scraper/scrape_incheon.py
+        continue-on-error: true
+
+      - name: 대전시 수집
+        run: python scraper/scrape_daejeon.py
+        continue-on-error: true
+
+      - name: 변경사항 커밋
+        run: |
+          git config user.name "news-bot"
+          git config user.email "news-bot@users.noreply.github.com"
+          git add data/*.json
+          git diff --cached --quiet && echo "변경 없음" || git commit -m "보도자료 자동 업데이트 $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin main
+          git push
