@@ -262,6 +262,62 @@
     text-align:center;
   }
 
+  /* ---------- 위원회 안건 ---------- */
+  .sheet-link-bar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    margin-bottom:14px;
+    padding:10px 14px;
+    background:var(--panel);
+    border-radius:8px;
+    font-size:13px;
+    color:var(--sub);
+  }
+  .sheet-link-bar a{
+    font-family:'Space Mono',monospace;
+    font-size:12px;
+    color:var(--navy);
+    white-space:nowrap;
+  }
+  .committee-card{
+    border-bottom:1px solid var(--line);
+    padding:14px 0;
+  }
+  .committee-top{
+    display:flex;
+    align-items:baseline;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-bottom:6px;
+  }
+  .committee-title{
+    font-family:'Noto Serif KR',serif;
+    font-weight:500;
+    font-size:16px;
+    margin:0;
+  }
+  .committee-fields{
+    font-size:14px;
+    line-height:1.7;
+    margin:6px 0 0;
+  }
+  .committee-fields dt{
+    font-family:'Space Mono',monospace;
+    font-size:11px;
+    color:var(--sub);
+    margin-top:8px;
+  }
+  .committee-fields dd{margin:0;}
+  .committee-meta{
+    font-family:'Space Mono',monospace;
+    font-size:11px;
+    color:var(--sub);
+    margin-top:8px;
+  }
+  .committee-meta a{color:var(--navy);margin-left:8px;}
+
   @media (max-width: 720px){
     .layout{flex-direction:column;}
     .sidebar{width:100%;flex:none;border-right:none;border-bottom:1px solid var(--line);}
@@ -277,11 +333,18 @@
     <h2>지역</h2>
     <ul class="region-list" id="regionList"></ul>
     <button class="fav-shortcut" id="favShortcut">★ 즐겨찾기만 보기</button>
+
+    <h2 style="margin-top:20px;">안건</h2>
+    <ul class="region-list" id="committeeNav">
+      <li><button class="region-btn" id="committeeBtn" data-view="committee">
+        <span>🏛 위원회</span><span class="region-count" id="committeeCount"></span>
+      </button></li>
+    </ul>
   </aside>
 
   <main class="main">
     <div class="top-bar">
-      <h1>보도자료</h1>
+      <h1 id="top-bar-title">보도자료</h1>
       <span class="count" id="totalCount"></span>
     </div>
 
@@ -300,13 +363,16 @@
 
 <script>
 const FAVORITES_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbwtoiQ12i61rndH4xhX-b8qGAxM0aJi4agYvBUoOv6CKHRj-GRNRQ5MDDFSYFXkTI-I6g/exec"; // google-apps-script/Code.gs 배포 후 여기에 웹 앱 URL 붙여넣기
+const COMMITTEE_SHEET_URL = "https://docs.google.com/spreadsheets/d/1rwW4vfoeqlC89j8F8A1iz5Ol71yxIy07s5YLPjYYGoY/edit"; // news tracker DB 구글시트
 
 let regions = [];
 let allItems = [];
+let committeeItems = [];
 let currentRegion = "all";
 let currentCat = "전체";
 let currentQuery = "";
 let showFavOnly = false;
+let viewMode = "news"; // "news" | "committee"
 
 function favKey(){ return "favorites_v1"; }
 function loadFavorites(){
@@ -380,7 +446,10 @@ function buildRegionList(){
     btn.addEventListener("click", () => {
       currentRegion = btn.dataset.region;
       showFavOnly = false;
+      viewMode = "news";
       document.getElementById("favShortcut").classList.remove("active");
+      document.getElementById("committeeBtn").classList.remove("active");
+      document.getElementById("catFilters").style.display = "";
       buildRegionList();
       render();
     });
@@ -409,7 +478,59 @@ function matchesQuery(item, q){
   return hay.includes(q.toLowerCase());
 }
 
+function matchesCommitteeQuery(item, q){
+  if(!q) return true;
+  const hay = [item.committee_type, item.session, item.agenda_name, item.agenda_summary, item.result, item.note]
+    .filter(Boolean).join(" ").toLowerCase();
+  return hay.includes(q.toLowerCase());
+}
+
+function renderCommittee(){
+  document.getElementById("top-bar-title").textContent = "위원회 안건";
+
+  let filtered = committeeItems;
+  if(currentQuery) filtered = filtered.filter(i => matchesCommitteeQuery(i, currentQuery));
+
+  document.getElementById("totalCount").textContent = `총 ${filtered.length}건`;
+
+  const listEl = document.getElementById("main-list");
+
+  const sheetBar = COMMITTEE_SHEET_URL
+    ? `<div class="sheet-link-bar"><span>안건표는 첨부 한글파일에서 자동 추출됩니다. 원문과 다르면 링크를 눌러 확인하세요.</span><a href="${COMMITTEE_SHEET_URL}" target="_blank" rel="noopener">구글시트에서 전체 보기 →</a></div>`
+    : "";
+
+  if(filtered.length === 0){
+    listEl.innerHTML = sheetBar + '<div class="empty">아직 수집된 위원회 안건이 없습니다.</div>';
+    return;
+  }
+
+  listEl.innerHTML = sheetBar + filtered.map(renderCommitteeItem).join("");
+}
+
+function renderCommitteeItem(item){
+  return `
+    <div class="committee-card">
+      <div class="committee-top">
+        <span class="badge region">${item.committee_type || "위원회"}</span>
+        ${item.session ? `<span class="badge cat">${item.session}</span>` : ""}
+        <p class="committee-title">${item.agenda_name || "(안건명 미확인)"}</p>
+      </div>
+      <dl class="committee-fields">
+        ${item.agenda_summary ? `<dt>안건개요</dt><dd>${item.agenda_summary}</dd>` : ""}
+        ${item.result ? `<dt>심의결과</dt><dd>${item.result}</dd>` : ""}
+        ${item.note ? `<dt>비고</dt><dd>${item.note}</dd>` : ""}
+      </dl>
+      <div class="committee-meta">
+        ${item.date || ""} · 수집 ${item.detected_at || ""}
+        ${item.url ? `<a href="${item.url}" target="_blank" rel="noopener">원문 보기 →</a>` : ""}
+      </div>
+    </div>
+  `;
+}
+
 function render(){
+  if(viewMode === "committee"){ renderCommittee(); return; }
+  document.getElementById("top-bar-title").textContent = "보도자료";
   const favs = loadFavorites();
   let filtered = allItems;
   if(currentRegion !== "all") filtered = filtered.filter(i => i.region === currentRegion);
@@ -479,7 +600,21 @@ document.getElementById("searchInput").addEventListener("input", (e) => {
 });
 document.getElementById("favShortcut").addEventListener("click", (e) => {
   showFavOnly = !showFavOnly;
+  viewMode = "news";
+  document.getElementById("committeeBtn").classList.remove("active");
+  document.getElementById("catFilters").style.display = "";
   e.currentTarget.classList.toggle("active", showFavOnly);
+  render();
+});
+document.getElementById("committeeBtn").addEventListener("click", (e) => {
+  viewMode = "committee";
+  showFavOnly = false;
+  currentQuery = "";
+  document.getElementById("searchInput").value = "";
+  document.getElementById("favShortcut").classList.remove("active");
+  document.getElementById("catFilters").style.display = "none";
+  document.querySelectorAll("#regionList button").forEach(b => b.classList.remove("active"));
+  e.currentTarget.classList.add("active");
   render();
 });
 
@@ -503,6 +638,16 @@ fetch("data/regions.json?_=" + Date.now())
     document.getElementById("main-list").innerHTML =
       '<div class="empty">데이터를 아직 불러올 수 없습니다. Actions가 한 번 실행된 후 다시 열어보세요.</div>';
   });
+
+fetch("data/committee.json?_=" + Date.now())
+  .then(r => r.json())
+  .catch(() => [])
+  .then(data => {
+    committeeItems = data || [];
+    document.getElementById("committeeCount").textContent = committeeItems.length || "";
+    if(viewMode === "committee") render();
+  })
+  .catch(() => {});
 </script>
 
 </body>
