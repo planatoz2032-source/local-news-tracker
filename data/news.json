@@ -1,5 +1,47 @@
 [
   {
+    "nttNo": "465058",
+    "title": "(석간) 서울 곳곳에서 만나는 새로운 웰니스…_서울 웰니스 관광 100선_ 선정",
+    "id": "seoul-465058",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "관광체육국 관광산업과",
+    "date": "2026-09-01",
+    "category": "문화",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=465058"
+  },
+  {
+    "nttNo": "465056",
+    "title": "(석간) ‘서울 핫플 10곳 방문객 누구나’ 2만 원 이상 결제 시 7천 원 할인 혜택",
+    "id": "seoul-465056",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울신용보증재단 서울신용보증재단",
+    "date": "2026-09-01",
+    "category": "경제",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=465056"
+  },
+  {
+    "nttNo": "465055",
+    "title": "(석간) 가을의 시작, 서서울호수공원에서‘추억의 음악’과 함께해요",
+    "id": "seoul-465055",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서부공원여가센터 서부공원여가센터",
+    "date": "2026-09-01",
+    "category": "환경",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=465055"
+  },
+  {
     "nttNo": "465026",
     "title": "(자료제공) 폭염엔 차양, 한파엔 덧유리…서울시·애큐온 에너지 취약계층 지원",
     "id": "seoul-465026",
@@ -6389,52 +6431,5 @@
     "importance": "낮음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=463793"
-  },
-  {
-    "nttNo": "463791",
-    "title": "(석간) 8월은 주민세 납부의 달…8월 31일까지 꼭 납부하세요",
-    "id": "seoul-463791",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "재무국 세무과",
-    "date": "2026-08-12",
-    "category": "행정",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ 외국인 주민의 언어별 부과 건수는 중국이 9만 9,623건으로 가장 많고, 외국인 거주 자치구는 구로구 1만 7,232건, 영등포구 1만 6,122건, 동대문구 1만 3,010건 순이다.",
-      "○ 자치구별로 살펴보면 인구가 가장 많은 송파구의 부과 건수가 25만 7,794건(15억 원)으로 가장 많고, 강서구, 강남구 등의 순으로 나타난다.",
-      "○ 개인사업자는 5만 원, 법인은 자본금액 또는 출자금액 규모에 따라 5만 원에서 20만 원의 기본세율이 적용된다(기본세율의 25%인 지방교육세 별도 부과). 또한 사업소의 연면적이 330㎡를 초과하면 1㎡당 250원의 연면적 세율을 추가 적용하여 합산한 금액으로 부과된다.",
-      "○ 시는 사업소분 주민세 대상자에게 납부기간이 기재된 납부서를 이미 발송했으며, 납부서상 세액과 신고 세액이 동일한 경우에 기한 내 납부하면 별도의 절차 없이 신고·납부한 것으로 간주된다고 밝혔다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=463791"
-  },
-  {
-    "nttNo": "463791",
-    "title": "(석간) 8월은 주민세 납부의 달…8월 31일까지 꼭 납부하세요",
-    "id": "seoul-463791",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "재무국 세무과",
-    "date": "2026-08-12",
-    "category": "행정",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=463791"
-  },
-  {
-    "nttNo": "463790",
-    "title": "(석간) 서울시복지재단-서민금융진흥원, 청년 자산형성 지원 업무협약",
-    "id": "seoul-463790",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "서울시복지재단 서울시복지재단",
-    "date": "2026-08-12",
-    "category": null,
-    "importance_score": 15,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=463790"
   }
 ]
