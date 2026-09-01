@@ -1,5 +1,19 @@
 [
   {
+    "nttNo": "465059",
+    "title": "(엠바고10시30분)(석간) \"집 걱정 줄어 아이 한명 더 생각\"… 서울시, 미리내집 2030년까지 1만7,500호 추가 공급",
+    "id": "seoul-465059",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "주택실 청년주거과",
+    "date": "2026-09-01",
+    "category": "주택",
+    "importance_score": 115,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=465059"
+  },
+  {
     "nttNo": "465058",
     "title": "(석간) 서울 곳곳에서 만나는 새로운 웰니스…_서울 웰니스 관광 100선_ 선정",
     "id": "seoul-465058",
@@ -6416,20 +6430,6 @@
     "summary": [
       "○ 창고시설은 「화재의 예방 및 안전관리에 관한 법률 시행령」 별표 4에 따라 특급(연면적 10만㎡ 이상), 1급(연면적 1만 5천㎡ 이상, 특급 제외), 2급(옥내소화전설비 또는 스프링클러설비 설치 대상, 특급ㆍ1급 제외) 소방안전관리대상물로 구분된다."
     ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=463793"
-  },
-  {
-    "nttNo": "463793",
-    "title": "(석간) 서울시, 대규모 창고시설 화재안전조사…위반사항 42건 적발",
-    "id": "seoul-463793",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "소방재난본부 소방재난본부",
-    "date": "2026-08-12",
-    "category": "안전",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=463793"
   }
 ]
