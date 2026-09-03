@@ -1,5 +1,47 @@
 [
   {
+    "nttNo": "465351",
+    "title": "(석간) 쓰레기 주워 수달 구출, 자전거로 솜사탕… 서울시, 환경 축제 'GREEN 한강'",
+    "id": "seoul-465351",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "미래한강본부 미래한강본부",
+    "date": "2026-09-04",
+    "category": "환경",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=465351"
+  },
+  {
+    "nttNo": "465350",
+    "title": "(석간) 조선의 한양 사람 되어 걷는 성곽길…한양도성 ‘백로’ 절기행사",
+    "id": "seoul-465350",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "문화본부 문화유산과",
+    "date": "2026-09-04",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=465350"
+  },
+  {
+    "nttNo": "465349",
+    "title": "(석간) 600년 전 서울 노래한 정도전의 『삼봉선생집』, 보물로 지정",
+    "id": "seoul-465349",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울역사박물관 서울역사박물관",
+    "date": "2026-09-04",
+    "category": "문화",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=465349"
+  },
+  {
     "nttNo": "465283",
     "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 서울세계불꽃축제 앞두고 3일(목) 현장 안전점검",
     "id": "seoul-465283",
@@ -6434,52 +6476,5 @@
       "○ 공개일시 : 2026.08.28.(금), 08.29.(토) 10:00 ~ 17:00"
     ],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=463882"
-  },
-  {
-    "nttNo": "463882",
-    "title": "서울시, 올해 첫 '일반주택형 미리내집' 128세대 공급... 14일부터 입주자 모집",
-    "id": "seoul-463882",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "주택실 주택정책과",
-    "date": "2026-08-13",
-    "category": "주택",
-    "importance_score": 130,
-    "importance": "높음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=463882"
-  },
-  {
-    "nttNo": "463881",
-    "title": "< 서울시청‘하늘광장 갤러리’2026년도 두 번째 전시 개최 > 사라져가는 도시의 풍경을 기억하다...‘서울의 흔적’회화전",
-    "id": "seoul-463881",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "행정국 총무과",
-    "date": "2026-08-13",
-    "category": "행정",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ ‘하늘광장 갤러리(Sky Plaza Gallery)’는 서울광장을 한눈에 내려다볼 수 있는 서울시청 본관 8층에 위치한 문화예술 공간으로 누구나 자유롭게 전시를 관람할 수 있다. 서울시는 2014년부터 매년 작가 공모를 통해 시민들의 일상 가까이에서 수준 높은 문화예술을 향유할 수 있는 기회를 제공하고 있다.",
-      "○ 특히 올해 첫 번째 전시인‘곤충도감(昆蟲道感)’에는 총 8,103명이 방문하였고 하루 최대 726명이 관람하는 등‘하늘광장 갤러리’는 지난달 개장한‘하늘전망대’와 함께 청사 방문객들이 즐겨 찾는 서울시 대표 문화예술 공간으로 자리매김하고 있다.",
-      "○ 체험 프로그램은 10월 14일(수) 오후 3시 30분과 10월 21일(수) 오후 3시 30분, 총 2회 진행 예정이며, 참여 신청은 10월 7일(수) 오전 10시부터 서울특별시 공공서비스 예약사이트(https://yeyak.seoul.go.kr)를 통해 선착순 접수한다.",
-      "○ 체험 시간은 1회당 약 60분이며 참가비는 재료비를 포함해 5천 원으로 회차당 8명을 모집한다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=463881"
-  },
-  {
-    "nttNo": "463881",
-    "title": "< 서울시청‘하늘광장 갤러리’2026년도 두 번째 전시 개최 > 사라져가는 도시의 풍경을 기억하다...‘서울의 흔적’회화전",
-    "id": "seoul-463881",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "행정국 총무과",
-    "date": "2026-08-13",
-    "category": "행정",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=463881"
   }
 ]
