@@ -1,5 +1,19 @@
 [
   {
+    "nttNo": "466483",
+    "title": "(자료제공) 서울 시내버스 노사 협상 타결·파업 전면 철회… 16일 첫차부터 평시와 같이 정상운행",
+    "id": "seoul-466483",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "교통실 버스정책과",
+    "date": "2026-09-16",
+    "category": "교통",
+    "importance_score": 115,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=466483"
+  },
+  {
     "nttNo": "466471",
     "title": "(자료제공) 서울시민, 시내버스 파업 81.3% 반대…출퇴근·통학 등 일상 불편 우려",
     "id": "seoul-466471",
@@ -6558,20 +6572,6 @@
       "○ 폭염으로 인한 온열 사고를 예방하기 위해 9월까지 1일 1회(오전 10~12시) 진행되며, 10월부터 1일 2회(오전 10~12시, 오후 2~4시) 운영된다.",
       "○ 서울세계불꽃축제(9. 4.~9. 5.) 기간과 추석 연휴(9.24.~9.27.)에는 두 프로그램 모두 운영하지 않는다."
     ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464272"
-  },
-  {
-    "nttNo": "464272",
-    "title": "(엠바고10시) 가을밤 한강 야경과 낭만 속으로… 서울시 한강야경투어 28일 시작",
-    "id": "seoul-464272",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "미래한강본부 미래한강본부",
-    "date": "2026-08-20",
-    "category": "환경",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464272"
   }
 ]
