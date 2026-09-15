@@ -1,5 +1,47 @@
 [
   {
+    "nttNo": "466471",
+    "title": "(자료제공) 서울시민, 시내버스 파업 81.3% 반대…출퇴근·통학 등 일상 불편 우려",
+    "id": "seoul-466471",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "교통실 교통정책과",
+    "date": "2026-09-15",
+    "category": "교통",
+    "importance_score": 115,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=466471"
+  },
+  {
+    "nttNo": "466426",
+    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 15일(화) 추석맞이 서로장터 개막식 참여",
+    "id": "seoul-466426",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "대변인 언론담당관",
+    "date": "2026-09-15",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=466426"
+  },
+  {
+    "nttNo": "466424",
+    "title": "(자료제공) 버스 파업 땐 출근·등교시간 조정…서울시, 기업·학교에 '교통수요' 분산 협조 요청",
+    "id": "seoul-466424",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "경제실 경제정책과",
+    "date": "2026-09-15",
+    "category": "경제",
+    "importance_score": 30,
+    "importance": "중간",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=466424"
+  },
+  {
     "nttNo": "466383",
     "title": "(엠바고10시)(자료제공) 서울시, 버스노조 파업예고에 따른 비상수송대책 점검...시민 이동권 보호 총력전",
     "id": "seoul-466383",
@@ -6531,52 +6573,5 @@
     "importance": "낮음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464272"
-  },
-  {
-    "nttNo": "464267",
-    "title": "(엠바고10시)(기자설명회) 더 많이 소비하는 밤 아닌, 더 잘 누리는 밤… '서울형 야간경제' 본격화",
-    "id": "seoul-464267",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "경제실 경제정책과",
-    "date": "2026-08-20",
-    "category": "경제",
-    "importance_score": 5,
-    "importance": "낮음",
-    "summary": [
-      "○‘7979 서울 러닝크루’와 테마형 러닝 프로그램을 확대하고, 지하철 유휴공간을 활용한‘펀스테이션’도 18곳으로 늘린다. 운동과 샤워, 휴식까지 일상 동선 안에서 해결할 수 있는 생활밀착형 웰니스 공간으로 조성한다.",
-      "○ 서울숲과 매헌시민의숲 등 도심 공원에는 정원극장과 야간 프로그램을 마련하고, 권역별 공원에서는 요가·스트레칭 등 하루의 피로를 풀고 몸과 마음을 회복할 수 있는 프로그램을 확대한다.",
-      "○ 올해 9~11월 시범운영을 거쳐 2027년부터 상시 운영한다. 서울공예박물관 야외마당과 세종문화회관 옥상·뒤뜰, 대학로 등 도심 속 공간도 공연·전시·야간투어·살롱 프로그램이 이어지는 문화공간으로 활용한다.",
-      "○ DDP·동대문은 오는 9월부터 ‘DDP 365 라이트’를 시범운영하고 패션·디자인·먹거리·쇼핑을 연계해 365일 머무는 야간거점으로 만들어 방문객의 체류와 소비가 동대문 일대 상권으로 확산되도록 한다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464267"
-  },
-  {
-    "nttNo": "464267",
-    "title": "(엠바고10시)(기자설명회) 더 많이 소비하는 밤 아닌, 더 잘 누리는 밤… '서울형 야간경제' 본격화",
-    "id": "seoul-464267",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "경제실 경제정책과",
-    "date": "2026-08-20",
-    "category": "경제",
-    "importance_score": 5,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464267"
-  },
-  {
-    "nttNo": "464255",
-    "title": "(엠바고10시)(석간) 제13차 서울시 도시계획위원회 개최결과",
-    "id": "seoul-464255",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "도시공간본부 도시계획과",
-    "date": "2026-08-20",
-    "category": "주택",
-    "importance_score": 125,
-    "importance": "높음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464255"
   }
 ]
