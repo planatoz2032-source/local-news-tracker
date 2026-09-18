@@ -1,5 +1,43 @@
 [
   {
+    "repSeq": "DOM_0000000015575813",
+    "title": "인천시,‘2028 G20 정상회의’유치전 돌입 범시정 대응체계 가동",
+    "date": "2026-09-18",
+    "dept": "마이스산업과",
+    "id": "incheon-DOM_0000000015575813",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015575813",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시,‘2028 G20 정상회의’유치전 돌입 범시정 대응체계 가동",
+      "인천시,‘2028 G20 정상회의’유치전 돌입 범시정 대응체계 가동",
+      "마이스산업과 / 박봉화 (032-440-1505)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015575813"
+  },
+  {
+    "repSeq": "DOM_0000000015575812",
+    "title": "인천시, 제2회 추경예산 17조 193억 원 확정",
+    "date": "2026-09-18",
+    "dept": "예산담당관",
+    "id": "incheon-DOM_0000000015575812",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015575812",
+    "category": null,
+    "importance_score": 15,
+    "importance": "낮음",
+    "summary": [
+      "인천시, 제2회 추경예산 17조 193억 원 확정",
+      "인천시, 제2회 추경예산 17조 193억 원 확정",
+      "예산담당관 / 태영은 (032-440-2252)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015575812"
+  },
+  {
     "repSeq": "DOM_0000000015570479",
     "title": "인천시, 간석오거리 등 주요 교차로 21개소에 ‘스마트 횡단보도’설치 완료",
     "date": "2026-09-18",
