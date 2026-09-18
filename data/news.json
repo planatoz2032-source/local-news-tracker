@@ -1,5 +1,19 @@
 [
   {
+    "nttNo": "466826",
+    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 18일(금) 서울어텀페스타 개막행사 참석",
+    "id": "seoul-466826",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "대변인 언론담당관",
+    "date": "2026-09-18",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=466826"
+  },
+  {
     "nttNo": "466809",
     "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 18일(금) '엔터테크·GES 서울 2026' 개막식 참석",
     "id": "seoul-466809",
@@ -6599,20 +6613,6 @@
       "○‘이동수단 바꾸기’는 걷기·자전거타기·대중교통 이용하기로 자동차 운행을 줄여 배출가스와 대기오염물질 발생을 낮추는 실천이다.",
       "○‘야간 주유 실천’은 기온이 낮은 밤에 주유해 오존 생성 원인물질인 휘발성유기화합물(VOCs) 배출을 줄이는 과제다."
     ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464441"
-  },
-  {
-    "nttNo": "464441",
-    "title": "서울시,‘푸른하늘의 날’캠페인 추진…일상 속 작은 실천으로 더 맑은 하늘 만든다!",
-    "id": "seoul-464441",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "기후환경본부 대기정책과",
-    "date": "2026-08-23",
-    "category": "환경",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464441"
   }
 ]
