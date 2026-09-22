@@ -1,5 +1,33 @@
 [
   {
+    "nttNo": "466999",
+    "title": "(자료제공) 서울시, 소나무재선충병 확산 차단 총력…관계기관 협력 강화",
+    "id": "seoul-466999",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "정원도시국 자연생태과",
+    "date": "2026-09-22",
+    "category": "환경",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=466999"
+  },
+  {
+    "nttNo": "466993",
+    "title": "(보도참고자료) 英로이터, '용산공원 보존' 강조한 오세훈 서울시장 집중 조명",
+    "id": "seoul-466993",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "대변인 언론담당관",
+    "date": "2026-09-22",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=466993"
+  },
+  {
     "nttNo": "466986",
     "title": "(자료제공) 영등포구 신길동 성락주유소 앞 교차로 상수도관 누수 발생…교통 통제중",
     "id": "seoul-466986",
@@ -6600,38 +6628,5 @@
       "□ 첫 번째 발표에서는 최지은 서울연구원 인구변화대응연구센터 부연구위원이 ‘서울 시민의 더블케어(이중 부양·돌봄) 실태와 지원 방안’을 주제로 발표한다."
     ],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464537"
-  },
-  {
-    "nttNo": "464537",
-    "title": "(석간) 서울연구원, 27일‘중장년 생애전환 지원 정책 포럼’개최",
-    "id": "seoul-464537",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "서울연구원 서울연구원",
-    "date": "2026-08-25",
-    "category": "행정",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464537"
-  },
-  {
-    "nttNo": "464536",
-    "title": "(석간) 발굴현장에서 미래의 고고학자 키운다…한성백제박물관‘청년 고고(考古)’",
-    "id": "seoul-464536",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "한성백제박물관 한성백제박물관",
-    "date": "2026-08-25",
-    "category": "문화",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ 2022년 시작된 ‘청년 고고’는 현재까지 총 10회 운영됐으며, 누적 수료자는 52명이다. 참여 인원을 단순히 늘리기보다 참가자 개개인이 조사·연구의 흐름을 충분히 이해하고 실질적인 업무 역량을 쌓을 수 있도록 소규모 집중교육 방식으로 운영하고 있다.",
-      "○ 제1회차 공개채용형에는 관련 전공 대학생·대학원생과 수료·졸업생 6명이 참여했다. 참가자들은 4월 1일부터 5월 31일까지 9주간 기간제근로자로 근무하며 발굴조사와 실내조사, 관련 학예업무를 경험했다.",
-      "○ 제2회차 대학 연계형 과정은 서울대학교 인문대학‘SNU CORE 인턴십’과 연계해, 고고미술사학과를 중심으로 선발된 학부생 6명이 6월 22일부터 7월 17일까지 4주간 실습에 참여했다.",
-      "○ 오는 9월 진행되는 제3회차 대학 부설 연구기관 연계형 과정에는 경희대학교 한국고대사·고고학연구소와 협업해 대학원생 3~6명이 참여할 예정이다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464536"
   }
 ]
