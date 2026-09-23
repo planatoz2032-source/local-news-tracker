@@ -1,5 +1,33 @@
 [
   {
+    "nttNo": "467071",
+    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 23일(수) 추석 연휴 앞두고 민생 현장 점검",
+    "id": "seoul-467071",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "대변인 언론담당관",
+    "date": "2026-09-23",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467071"
+  },
+  {
+    "nttNo": "467058",
+    "title": "(자료제공) 서울시 \"GTX-A 삼성역 기둥 보강, 늦어질수록 어려워져…국토부 조속히 결정해야\"",
+    "id": "seoul-467058",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "도시기반시설본부 도시기반시설본부",
+    "date": "2026-09-23",
+    "category": "주택",
+    "importance_score": 100,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467058"
+  },
+  {
     "nttNo": "467031",
     "title": "日 SNS서 270만 뷰 기록한 그 모자 … 외국인도 반한 '서울굿즈'",
     "id": "seoul-467031",
@@ -6628,38 +6656,5 @@
     "importance": "낮음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464566"
-  },
-  {
-    "nttNo": "464565",
-    "title": "낮부터 밤까지 서울은 ‘지붕 없는 미술관’…제3회 서울조각페스티벌",
-    "id": "seoul-464565",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "문화본부 박물관과",
-    "date": "2026-08-25",
-    "category": "문화",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ 열린송현녹지광장·뚝섬한강공원·서울숲·서울어린이대공원·풍납토성 동성벽 일대 5곳에서 총 123점의 조각작품을 만나볼 수 있다. 공연과 체험 등 주요 축제 프로그램은 9월 4일까지 진행되며, 야외 조각 전시는 11월 30일(월)까지 이어진다.",
-      "○ 젊은 작가들과 원로작가들의 작품을 함께 구성해 빠르게 변화하는 시대 속에서도 변하지 않는 인간적 가치와 예술의 본질을 되짚어보고, 세대를 아우르며 폭넓게 공감할 수 있는 전시로 마련됐다.",
-      "○ 참여 원로조각가는 고정수, 김영원, 배형경, 신은숙, 심정수, 안병철, 원인종, 이용덕, 이정자, 정보원, 정현이다. (성명 가나다순)",
-      "○ 입선작 중 전문가 평가를 거쳐 대상작 1점이 선정되며, 올해부터는 대상작을 서울시가 매입해 작품에 대한 지원을 확대한다. 관람객 투표로 선정하는 ‘시민상’도 새롭게 도입해 시민이 직접 수상작 선정에 참여할 수 있도록 했다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464565"
-  },
-  {
-    "nttNo": "464565",
-    "title": "낮부터 밤까지 서울은 ‘지붕 없는 미술관’…제3회 서울조각페스티벌",
-    "id": "seoul-464565",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "문화본부 박물관과",
-    "date": "2026-08-25",
-    "category": "문화",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464565"
   }
 ]
