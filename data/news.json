@@ -1,5 +1,52 @@
 [
   {
+    "nttNo": "467117",
+    "title": "(엠바고09시)(자료제공) 서울시, 추석에도 '복지안전망 정상 가동'… 취약 어르신 4만명·고립위험 7만가구 안부 확인",
+    "id": "seoul-467117",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "복지실 복지정책과",
+    "date": "2026-09-25",
+    "category": "복지",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467117"
+  },
+  {
+    "nttNo": "467116",
+    "title": "(엠바고09시)(자료제공) 여름철 노로바이러스 전년보다 70배 급증… 서울시, “추석 식중독 주의”",
+    "id": "seoul-467116",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "보건환경연구원 보건환경연구원",
+    "date": "2026-09-24",
+    "category": "복지",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "□ 서울시보건환경연구원(이하 ‘연구원’)은 올해 서울 지역 노로바이러스 검출이 예년과 다른 양상을 보이고 있어 추석 연휴 식중독 예방에 각별한 주의가 필요하다고 당부했다.",
+      "□ 올해 8월까지 노로바이러스 검출 건수는 345건으로 지난해 한 해 전체 검출 건수(242건)를 이미 넘어섰으며, 특히 여름철(6~8월)에는 141건이 검출돼 전년 같은 기간(2건)보다 약 70.5배 많았다.",
+      "○ 연구원은 올해 8월까지 바이러스성 식중독 검사 3,575건을 실시했으며, 지난 한 해 전체 검사 건수(3,038건)도 넘어섰다.",
+      "□ 노로바이러스는 일반적으로 겨울철에 유행하는 바이러스지만, 올해는 여름철에도 검출이 크게 증가했으며 유전자 분석 결과에서도 예년과 다른 양상이 확인됐다."
+    ],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467116"
+  },
+  {
+    "nttNo": "467115",
+    "title": "(엠바고09시)(자료제공) \"이번 추석, 고민 말고 한강으로 오세요\"…한강서 즐기는 풍성한 한가위",
+    "id": "seoul-467115",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "미래한강본부 미래한강본부",
+    "date": "2026-09-24",
+    "category": "환경",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467115"
+  },
+  {
     "nttNo": "467110",
     "title": "(자료제공) 서울시장 사후동정 -오세훈 시장, 24일(목) 한부모가족 복지시설 ‘애란원’ 방문",
     "id": "seoul-467110",
@@ -6611,55 +6658,5 @@
     "importance": "낮음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464580"
-  },
-  {
-    "nttNo": "464567",
-    "title": "누적 관광객 647만 명 '잠수교 뚜벅뚜벅 축제'… 올가을 8주간 매주 다른 축제",
-    "id": "seoul-464567",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "미래한강본부 미래한강본부",
-    "date": "2026-08-25",
-    "category": "환경",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ ‘차 없는 잠수교 뚜벅뚜벅 축제’는 2022년 하반기 잠수교를 온전히 시민 품에 돌려주기 위한 첫걸음으로 시작돼 올해로 5년째를 맞았다.",
-      "○ 2022년 하반기 52만 명, 2023년 200만 명, 2024년 150만 명, 2025년 128만 명, 2026년 상반기에는 117만 명의 관광객이 방문했다.",
-      "○ 공식 누리집(http://www.festa-ddooddoo.com)에서 사전 접수를 통해 참여신청을 할 수 있다.",
-      "○ 이번 특별 프로그램은 서울시 청년정책담당관의 서울 동아리ON(대학생 동아리 지원사업)의 일환으로 진행된다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464567"
-  },
-  {
-    "nttNo": "464567",
-    "title": "누적 관광객 647만 명 '잠수교 뚜벅뚜벅 축제'… 올가을 8주간 매주 다른 축제",
-    "id": "seoul-464567",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "미래한강본부 미래한강본부",
-    "date": "2026-08-25",
-    "category": "환경",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464567"
-  },
-  {
-    "nttNo": "464566",
-    "title": "서울시, 거제 수해현장에 '바로봉사단' 긴급 파견… 지역 넘어 복구에 힘 보탠다",
-    "id": "seoul-464566",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "행정국 시민협력과",
-    "date": "2026-08-25",
-    "category": "행정",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ 특히 약 100m 길이의 포도밭 고랑 11개에 쌓인 진흙을 제거하고 주변을 정리했다. 작업량이 많아 피해 주민들만으로는 복구가 쉽지 않았던 현장에 봉사단원들이 힘을 모아 실질적인 일손을 보탰다.",
-      "○ 2025년에는 경북 안동 등 산불 피해지역과 충남 예산·경기 가평 등 수해지역에 총 5차례 바로봉사단을 파견해 복구활동을 지원한 바 있다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464566"
   }
 ]
