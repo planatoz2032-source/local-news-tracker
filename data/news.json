@@ -1,5 +1,75 @@
 [
   {
+    "nttNo": "467237",
+    "title": "(석간) 한강 배달 할인에, 상품권 환급 두 배로… 서울시, 서울배달+땡겨요 혜택 더한다",
+    "id": "seoul-467237",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "민생노동국 소상공인정책과",
+    "date": "2026-09-29",
+    "category": "경제",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467237"
+  },
+  {
+    "nttNo": "467236",
+    "title": "(석간) 서울시, 깨끗한 아리수 이어가기 위해 전문가·시민 집단지성 모은다",
+    "id": "seoul-467236",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울아리수본부 서울아리수본부",
+    "date": "2026-09-29",
+    "category": "환경",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467236"
+  },
+  {
+    "nttNo": "467235",
+    "title": "(석간) 서울시, 판소리·악기장 보유자 3명 새로 인정…'불교지화장엄' 첫 보유단체도",
+    "id": "seoul-467235",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "문화본부 문화유산과",
+    "date": "2026-09-29",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467235"
+  },
+  {
+    "nttNo": "467234",
+    "title": "(석간) 서울역사박물관, 인사도시유적전시관 개관 기념 학술대회 개최",
+    "id": "seoul-467234",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울역사박물관 서울역사박물관",
+    "date": "2026-09-29",
+    "category": "문화",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467234"
+  },
+  {
+    "nttNo": "467233",
+    "title": "(석간) 서울대공원 식물원, 제20회 식충식물 특별전시회 개최",
+    "id": "seoul-467233",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울대공원 서울대공원",
+    "date": "2026-09-29",
+    "category": "환경",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467233"
+  },
+  {
     "nttNo": "467139",
     "title": "300만 명 쓰는 손목닥터9988… 적극 참여 어르신 10명 중 9명 \"외부활동 늘었다\"",
     "id": "seoul-467139",
@@ -6564,90 +6634,5 @@
     "importance": "낮음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464623"
-  },
-  {
-    "nttNo": "464622",
-    "title": "서울식물원, 식물자원 확보 속도낸다… 2027년까지 8,000종으로 확대",
-    "id": "seoul-464622",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "서울식물원 서울식물원",
-    "date": "2026-08-26",
-    "category": "환경",
-    "importance_score": 5,
-    "importance": "낮음",
-    "summary": [
-      "○ 서울식물원은 2019년 개원 당시 3,016종의 식물유전자원으로 시작해 지난 7년간 3,542종을 추가 확보하여, 현재 6,558종 219만 개체를 보유하고 있다. 개원 당시보다 식물유전자원 규모를 2배 이상 확대하며 식물 수집, 종자 교류, 개체 증식 등 다양한 방법을 통해 식물 다양성을 확보해 왔다.",
-      "○ 서울식물원은 국립생태원 등 국내외 식물기관과의 업무협약(MOU) 4건을 체결하였으며 산림청, 국립생태원 등 주요 기관과 함께 자생식물 및 희귀·특산식물 관련 협의체 2곳에 참여하고 있다. 이를 통해 자생지 공동조사와 식물 수집을 진행해 현재까지 508종을 확보했다.",
-      "○ 또한, 국내외 식물 관련기관과 보유한 잉여종자를 무상 자율 교환방식으로 종자를 교류하는 프로그램인 ‘인덱스 세미넘(Index Seminum)’을 2020년부터 매년 활발하게 추진하고 있으며, 현재까지 22개국과 종자를 교류하여 총 1,442종을 확보하는 등 식물유전자원 확대에 힘쓰고 있다.",
-      "○ 개원 이후 추가 확보한 3,558종을 수집 경로별로 살펴보면 현지 수집 및 구매가 80%, 국내 기관 간 교류가 16%, 종자 교류가 4%를 차지한다. 앞으로는 기관 간 교류를 더욱 확대해 보전 가치가 높은 식물유전자원을 적극적으로 확보할 계획이다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464622"
-  },
-  {
-    "nttNo": "464622",
-    "title": "서울식물원, 식물자원 확보 속도낸다… 2027년까지 8,000종으로 확대",
-    "id": "seoul-464622",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "서울식물원 서울식물원",
-    "date": "2026-08-26",
-    "category": "환경",
-    "importance_score": 5,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464622"
-  },
-  {
-    "nttNo": "464620",
-    "title": "서울시, 9월 '수도요금 체납 집중정리'…장기·고액 체납액 55억 징수 나선다",
-    "id": "seoul-464620",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "서울아리수본부 서울아리수본부",
-    "date": "2026-08-26",
-    "category": "환경",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ 수도요금은 수돗물 생산과 시설 운영·정비 등에 사용되는 재원인 만큼, 시는 적극적인 징수 활동을 통해 안정적인 아리수 생산·공급을 위한 재원을 확보하고 있다.",
-      "○ 합동징수반은 체납 기간·금액과 납부 여건 등을 종합적으로 고려해 납부 독려, 정수(단수)·재산압류 예고, 납부계획서 징구 등 단계별 징수 활동을 펼친다.",
-      "○ 6회 이상·20만 원 이상 체납한 ‘장기 체납’과 100만 원 이상 체납한 ‘고액 체납’을 중점 관리 대상으로 분류하고, 정수(단수)나 재산압류 등 행정처분에 앞서 SMS, 카카오 알림톡, 우편, 전화 등을 통해 체납 사실을 사전 안내해 자진 납부를 유도할 예정이다.",
-      "○ 또한 현장 징수 과정에서 복지 사각지대에 놓인 위기가구를 발굴해 동주민센터 등 관계기관의 복지서비스와 연계하는 등 생계형 체납자에 대한 지원도 병행할 계획이다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464620"
-  },
-  {
-    "nttNo": "464620",
-    "title": "서울시, 9월 '수도요금 체납 집중정리'…장기·고액 체납액 55억 징수 나선다",
-    "id": "seoul-464620",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "서울아리수본부 서울아리수본부",
-    "date": "2026-08-26",
-    "category": "환경",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464620"
-  },
-  {
-    "nttNo": "464619",
-    "title": "대치동 업무 시설·코엑스 리모델링, 글로벌 MICE 허브로 재탄생",
-    "id": "seoul-464619",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "주택실 건축기획과",
-    "date": "2026-08-26",
-    "category": "주택",
-    "importance_score": 100,
-    "importance": "높음",
-    "summary": [
-      "○ 저층부에는 가로 활성화를 위한 전시공간과 다양한 형태의 공동업무·협업이 가능한 회의공간을 배치하고, 상층부에는 대규모 업무공간을 마련해 다양한 비즈니스 수요에 대응할 계획이다.",
-      "○ 전체 연면적 972,598.70㎡, 지하 6층~지상 54층 규모의 시설 중 일부 공간을 리모델링하고, 지상부 컨벤션센터의 입면을 새롭게 디자인해 단지의 상징성을 높인다.",
-      "○ 변화하는 국제 전시·회의 수요에 대응할 수 있도록 전시·컨벤션과 업무·문화·상업 기능을 정비하는 동시에 시민이 일상에서 이용할 수 있는 외부공간도 확충한다.",
-      "○ 영동대로 가로변을 따라 3열의 풍성한 수목을 심어 자연 친화적인 활력을 불어넣고, 영동대로 복합환승센터 지상부에 들어설 상징적 녹지 공간과 유기적으로 연계된다. 무역센터 전면 광장이자 축제 시 시민 휴게 쉼터로 활용되는 확장된 시민 광장으로 조성된다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464619"
   }
 ]
