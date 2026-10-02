@@ -1,5 +1,41 @@
 [
   {
+    "repSeq": "DOM_0000000015687707",
+    "title": "인천시, 중소기업 노동자 자녀 장학증서 수여식 개최",
+    "date": "2026-10-02",
+    "dept": "노동정책과",
+    "id": "incheon-DOM_0000000015687707",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015687707",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시, 중소기업 노동자 자녀 장학증서 수여식 개최",
+      "인천시, 중소기업 노동자 자녀 장학증서 수여식 개최",
+      "노동정책과 / 민준기 (032-440-4411)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015687707"
+  },
+  {
+    "repSeq": "DOM_0000000015687691",
+    "title": "인천시민이 그린 2045년 미래, 시민제안서로 첫걸음",
+    "date": "2026-10-02",
+    "dept": "도시계획과",
+    "id": "incheon-DOM_0000000015687691",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015687691",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시가 시민들의 손으로 직접 구상한 2045년 미래 도시발전 구상을 전달받으며 주민 참여형 협치 행정에 속도를 내고 있다.\r\n \r\n인천광역시(시장 박찬대)는 지난 1일 시청 영상회의실에서 「2045년 인천도시기본계획(생활권계획) 시민계획단 제안서 전달식」을"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015687691"
+  },
+  {
     "repSeq": "DOM_0000000015681615",
     "title": "인천시, 15년 투자유치 결실... 하나금융그룹과 함께 여는 새로운 100년",
     "date": "2026-10-02",
@@ -7466,43 +7502,5 @@
       "-여름철 집중호우·폭염 등 자연재해로 인한 축산농가 피해 예방-"
     ],
     "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015252795"
-  },
-  {
-    "repSeq": "DOM_0000000015250016",
-    "title": "인천시, 1조 원대 AI 커넥티드카 국비사업 유치 총력전 돌입",
-    "date": "2026-07-30",
-    "dept": "산업창업정책과",
-    "id": "incheon-DOM_0000000015250016",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015250016",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 1조 원대 AI 커넥티드카 국비사업 유치 총력전 돌입",
-      "인천시, 1조 원대 AI 커넥티드카 국비사업 유치 총력전 돌입",
-      "-박찬대 시장 직속 전담조직(T/F) 가동, 커넥티드카·사이버보안 산업 집중 육성 방안 마련-"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015250016"
-  },
-  {
-    "repSeq": "DOM_0000000015248066",
-    "title": "인천시, 공공주도 해상풍력 집적화단지(IC1) 발전사업허가 신청",
-    "date": "2026-07-30",
-    "dept": "신재생에너지과",
-    "id": "incheon-DOM_0000000015248066",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015248066",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 공공주도 해상풍력 집적화단지(IC1) 발전사업허가 신청",
-      "인천시, 공공주도 해상풍력 집적화단지(IC1) 발전사업허가 신청",
-      "-680MW 규모 우선 신청… 풍황계측기 유효기간 내 사업 연속성 확보 목적-"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015248066"
   }
 ]
