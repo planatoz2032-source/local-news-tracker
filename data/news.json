@@ -1,5 +1,19 @@
 [
   {
+    "nttNo": "467604",
+    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 2일(금) 2026 서울라이트 한강 빛섬축제 참석",
+    "id": "seoul-467604",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "대변인 언론담당관",
+    "date": "2026-10-02",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467604"
+  },
+  {
     "nttNo": "467532",
     "title": "(석간) ‘금2·은3·동4’서울시청 선수단, 아시안게임 빛냈다…추가 메달 도전",
     "id": "seoul-467532",
@@ -6622,20 +6636,6 @@
       "○ 또한, 기존 ‘주민참여단’ 중심의 협의에서 나아가, 구역지정 전 「도시정비법」에 따른 추진위원회가 구성되면 추진위원의 10% 내외를 협의주체에 포함해 주민참여의 대표성을 강화한다.",
       "○ 우선 신속통합기획 자문회의에 통합심의위원의 참여를 확대해 기획단계부터 향후 통합심의에서 예상되는 주요 쟁점을 사전에 검토한다. 이를 통해 계획 완성도와 예측가능성을 높일 계획이다."
     ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464806"
-  },
-  {
-    "nttNo": "464806",
-    "title": "(석간) 서울시 ‘신통기획’운영 개선…소통은 가깝게·절차는 신속하게",
-    "id": "seoul-464806",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "도시공간본부 신속통합기획과",
-    "date": "2026-08-28",
-    "category": "주택",
-    "importance_score": 100,
-    "importance": "높음",
-    "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464806"
   }
 ]
