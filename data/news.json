@@ -1,5 +1,52 @@
 [
   {
+    "nttNo": "467587",
+    "title": "(석간) 1~8월 서울방문 외국인 관광객 21.6% 늘 때 카드소비는 59.9% 증가",
+    "id": "seoul-467587",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "관광체육국 관광정책과",
+    "date": "2026-10-06",
+    "category": "문화",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467587"
+  },
+  {
+    "nttNo": "467585",
+    "title": "(석간) 임산부의 날 앞두고 가족 독서 한마당…서울시 ‘엄마 북(Book) 돋움’ 특별행사",
+    "id": "seoul-467585",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울도서관 서울도서관",
+    "date": "2026-10-06",
+    "category": "문화",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467585"
+  },
+  {
+    "nttNo": "467584",
+    "title": "(석간) “탈곡부터 떡메 치기 까지”용산가족공원 가을걷이 한마당 개최!",
+    "id": "seoul-467584",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "문의",
+    "date": "2026-10-06",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "□ 수확의 계절을 맞아 도심에서 쉽게 접할 수 없는 가을걷이 체험을 통해 농업과 자연의 가치를 배우고 가족 간 소중한 추억을 만들 수 있는 행사가 용산가족공원에서 진행된다.",
+      "□ 서울시 중부공원여가센터는 오는 10월 24일(토) 13시부터 17시까지 용산가족공원 제1광장(잔디광장)에서「용산가족공원 가을걷이 한마당」체험행사를 개최하고, 일부 프로그램의 사전 신청을 10월 8일부터 모집한다.",
+      "□「용산가족공원 가을걷이 한마당」은 벼 탈곡 체험·볏짚 공예·자연물 염색·가드닝 등 다양한 체험 프로그램을 통해 온 가족이 함께 가을의 풍요로움을 직접 경험할 수 있도록 마련되었다.",
+      "○ ▲풍년이 왔네! 벼 탈곡 체험은 별도의 예약 없이 현장에서 참여할 수 있는 프로그램으로 참여자가 직접 탈곡기와 홀테를 이용해 벼를 탈곡해 보며 우리 농촌의 수확 과정을 직접 체험할 수 있다."
+    ],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467584"
+  },
+  {
     "nttNo": "467631",
     "title": "서울시청 선수단, 역대 아시안게임 최다 메달… '스포츠 도시 서울' 저력 입증",
     "id": "seoul-467631",
@@ -6580,52 +6627,5 @@
     "importance": "낮음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464903"
-  },
-  {
-    "nttNo": "464902",
-    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 29일(토) 「서울조각페스티벌」 개막식 참석",
-    "id": "seoul-464902",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "대변인 언론담당관",
-    "date": "2026-08-29",
-    "category": "행정",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "□ 오세훈 서울시장이 29일(토) 오후 6시 열린송현 녹지광장에서 개최된 「제3회 서울조각페스티벌」 개막식에 참석해 야외에 전시된 작품을 감상하고 참여 작가들과 이야기를 나눴다.",
-      "○ 올해로 3회째를 맞은 「서울조각페스티벌」은 도시 전역을 ‘지붕 없는 미술관’으로 만드는 ‘조각도시 서울’의 핵심 행사다. 올해는 ‘예술의 도시, 산들바람 타고’를 주제로 8월 29일부터 9월 4일까지 열린송현 녹지광장, 뚝섬한강공원, 서울숲 등 서울 시내 5곳에서 조각 작품 123점과 다양한 공연·체험 프로그램을 선보인다. 전시 작품은 11월 30일까지 만나볼 수 있다.",
-      "□ 야외에서 진행된 개막식에는 오 시장을 비롯해 권치규 한국조각가협회 이사장, 윤영달 크라운해태 회장 등 미술계 주요 인사와 시민·관광객 100여 명이 참석했다.",
-      "□ 개막식에 앞서 오 시장과 참석자들은 이후창 조각도시서울 예술감독의 안내로 행사장에 전시된 작품을 둘러보며 탁 트인 녹지와 어우러진 야외 조각의 매력을 느끼는 시간을 가졌다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464902"
-  },
-  {
-    "nttNo": "464902",
-    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 29일(토) 「서울조각페스티벌」 개막식 참석",
-    "id": "seoul-464902",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "대변인 언론담당관",
-    "date": "2026-08-29",
-    "category": "행정",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464902"
-  },
-  {
-    "nttNo": "464887",
-    "title": "(보도참고자료) 서울시 폭염 일일상황보고(26.8.28. 기준)",
-    "id": "seoul-464887",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "재난안전실 재난안전예방과",
-    "date": "2026-08-28",
-    "category": "안전",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464887"
   }
 ]
