@@ -1,5 +1,52 @@
 [
   {
+    "nttNo": "467854",
+    "title": "(엠바고15시30분)(자료제공) 시민·글로벌 바이어가 뽑은 혁신기술… 'SLW 2026 시민혁신상' 10개사 선정",
+    "id": "seoul-467854",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "디지털도시국 디지털정책과",
+    "date": "2026-10-08",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467854"
+  },
+  {
+    "nttNo": "467851",
+    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 8일(목) 아시안게임 출전 선수 격려 오찬",
+    "id": "seoul-467851",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "대변인 언론담당관",
+    "date": "2026-10-08",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "□ 오세훈 서울시장이 8일(목), 2026 아시안게임에 출전한 서울시청 소속 선수들과 오찬을 하며 역대 최고 성적을 기록한 것에 대한 성과와 노고를 격려했다.",
+      "○ 지난 9월 19일(토)부터 10월 4일(일)까지 일본 아이치·나고야에서 열린 2026아시안게임에 서울시청 소속 선수 17명이 펜싱·핸드볼·클라이밍 등 7개 종목에 태극마크를 달고 출전해 총12개(금3·은3·동6)의 메달을 획득했다.",
+      "○ 오찬에는 펜싱의 전하영, 박지희, 심소은, 스포츠클라이밍의 서채현, 정지민, 이도현, 여자축구 김민지, 강태경, 육상 신민규 선수와 강태선 서울시체육회장이 참석했다.",
+      "□ 오 시장은 선수들에게 그간의 노력에 대한 성과를 축하하며 해치굿즈를 선물했고, 선수들은 직접 싸인한 아시안게임 기념품(티셔츠)을 전달하며 화답했다."
+    ],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467851"
+  },
+  {
+    "nttNo": "467847",
+    "title": "(자료제공) 26일부터 잠수교 차량 통제… 서울시 최초의 '한강 보행전용교'로 탈바꿈",
+    "id": "seoul-467847",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "도시기반시설본부 도시기반시설본부",
+    "date": "2026-10-08",
+    "category": "주택",
+    "importance_score": 100,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467847"
+  },
+  {
     "nttNo": "467822",
     "title": "(자료제공) 서울, 美 유력 여행전문지 독자가 뽑은 '세계 최고의 대도시' 1위… 도쿄 제치고 첫 정상",
     "id": "seoul-467822",
@@ -6655,47 +6702,5 @@
     "importance": "낮음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464974"
-  },
-  {
-    "nttNo": "464973",
-    "title": "\"연면적 제한 없이 지원\"…서울시, 민간 신축건물 재생열 설치 문턱 낮춘다",
-    "id": "seoul-464973",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "기후환경본부 녹색에너지과",
-    "date": "2026-08-31",
-    "category": "환경",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464973"
-  },
-  {
-    "nttNo": "464972",
-    "title": "물재생센터의 '물·에너지·시민 공간'으로 대전환…'6회 워터서울 국제컨퍼런스' 개최",
-    "id": "seoul-464972",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "물순환안전국 수변감성도시과",
-    "date": "2026-08-31",
-    "category": "환경",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464972"
-  },
-  {
-    "nttNo": "464936",
-    "title": "(엠바고10시40분)(석간) 시민 식탁 김치 안전, 서울시가 끝까지 지킨다… 서울시 4대 안전망 가동",
-    "id": "seoul-464936",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "시민건강국 식품정책과",
-    "date": "2026-08-31",
-    "category": "복지",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=464936"
   }
 ]
