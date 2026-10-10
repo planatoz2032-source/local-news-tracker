@@ -1,5 +1,19 @@
 [
   {
+    "nttNo": "467929",
+    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 10일(토) 2026 진관사 가을음악회 참석",
+    "id": "seoul-467929",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "대변인 언론담당관",
+    "date": "2026-10-10",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467929"
+  },
+  {
     "nttNo": "467891",
     "title": "서울시, 강서·용산·중랑 모아주택·모아타운으로 1,735세대 공급",
     "id": "seoul-467891",
@@ -6713,19 +6727,5 @@
     "importance": "낮음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=465056"
-  },
-  {
-    "nttNo": "465055",
-    "title": "(석간) 가을의 시작, 서서울호수공원에서‘추억의 음악’과 함께해요",
-    "id": "seoul-465055",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "서부공원여가센터 서부공원여가센터",
-    "date": "2026-09-01",
-    "category": "환경",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=465055"
   }
 ]
