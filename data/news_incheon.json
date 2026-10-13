@@ -1,5 +1,212 @@
 [
   {
+    "repSeq": "DOM_0000000015747061",
+    "title": "인천시, 지역사회보장협의체 연합회의 개최, 복지사각지대 해소 역량 강화",
+    "date": "2026-10-13",
+    "dept": "복지정책과",
+    "id": "incheon-DOM_0000000015747061",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015747061",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시, 지역사회보장협의체 연합회의 개최, 복지사각지대 해소 역량 강화",
+      "인천시, 지역사회보장협의체 연합회의 개최, 복지사각지대 해소 역량 강화",
+      "복지정책과 / 윤태웅 (032-440-1542)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015747061"
+  },
+  {
+    "repSeq": "DOM_0000000015746359",
+    "title": "인천시, 내년부터 인공지능(AI) 기반 자율주행 대중교통 본격 추진",
+    "date": "2026-10-13",
+    "dept": "교통정책과",
+    "id": "incheon-DOM_0000000015746359",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015746359",
+    "category": null,
+    "importance_score": 120,
+    "importance": "높음",
+    "summary": [
+      "인천시, 내년부터 인공지능(AI) 기반 자율주행 대중교통 본격 추진",
+      "인천시, 내년부터 인공지능(AI) 기반 자율주행 대중교통 본격 추진",
+      "교통정책과 / 정훈 (032-440-4583)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015746359"
+  },
+  {
+    "repSeq": "DOM_0000000015746329",
+    "title": "인천시, 공원 등 공공시설 지하 활용해 원도심 주차난 해소",
+    "date": "2026-10-13",
+    "dept": "교통안전과",
+    "id": "incheon-DOM_0000000015746329",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015746329",
+    "category": null,
+    "importance_score": 100,
+    "importance": "높음",
+    "summary": [
+      "인천시, 공원 등 공공시설 지하 활용해 원도심 주차난 해소",
+      "인천시, 공원 등 공공시설 지하 활용해 원도심 주차난 해소",
+      "교통안전과 / 한재봉 (032-440-3922)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015746329"
+  },
+  {
+    "repSeq": "DOM_0000000015746328",
+    "title": "인천시, 공항 접근성 높이고 도심 간 빠른 연결 위해 버스 확충",
+    "date": "2026-10-13",
+    "dept": "버스정책과",
+    "id": "incheon-DOM_0000000015746328",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015746328",
+    "category": null,
+    "importance_score": 115,
+    "importance": "높음",
+    "summary": [
+      "인천시, 공항 접근성 높이고 도심 간 빠른 연결 위해 버스 확충",
+      "인천시, 공항 접근성 높이고 도심 간 빠른 연결 위해 버스 확충",
+      "버스정책과 / 신현규 (032-440-3952)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015746328"
+  },
+  {
+    "repSeq": "DOM_0000000015746323",
+    "title": "인천시, 다인승 장애인 특장차 도입 등 교통약자 이동권 강화",
+    "date": "2026-10-13",
+    "dept": "택시운수과",
+    "id": "incheon-DOM_0000000015746323",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015746323",
+    "category": null,
+    "importance_score": 120,
+    "importance": "높음",
+    "summary": [
+      "인천광역시(시장 박찬대)는 교통약자의 이동권을 강화하고 이동지원 서비스의 사각지대를 줄이기 위해 차량 안전성과 이동 편의를 높이고, 특별교통수단과 바우처택시를 확대한다고 밝혔다.\r\n\r\n[2026년, 안전을 강화하고 이용 편의를 높인다]\r\n시는 올해 특별교통수단 신규 차"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015746323"
+  },
+  {
+    "repSeq": "DOM_0000000015746315",
+    "title": "인천시, 실시간 교통신호정보 개방 교차로 전국 최다인 1,635개소로 확대",
+    "date": "2026-10-13",
+    "dept": "교통정보운영과",
+    "id": "incheon-DOM_0000000015746315",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015746315",
+    "category": null,
+    "importance_score": 120,
+    "importance": "높음",
+    "summary": [
+      "인천시, 실시간 교통신호정보 개방 교차로 전국 최다인 1,635개소로 확대",
+      "인천시, 실시간 교통신호정보 개방 교차로 전국 최다인 1,635개소로 확대",
+      "교통정보운영과 / 오창현 (032-440-1784)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015746315"
+  },
+  {
+    "repSeq": "DOM_0000000015743395",
+    "title": "인천경제청, 2026 미래전략 포럼 개최... '신(新)지경학 시대, IFEZ의 선택과 도약'",
+    "date": "2026-10-13",
+    "dept": "기획정책과",
+    "id": "incheon-DOM_0000000015743395",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015743395",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천경제청, 2026 미래전략 포럼 개최... '신(新)지경학 시대, IFEZ의 선택과 도약'",
+      "인천경제청, 2026 미래전략 포럼 개최... '신(新)지경학 시대, IFEZ의 선택과 도약'",
+      "기획정책과 / 김영주 (032-453-7102)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015743395"
+  },
+  {
+    "repSeq": "DOM_0000000015741633",
+    "title": "인천시, 시민과 평화‧통일 공감대 넓힌다 15일‘인천 평화도시 정책세미나’개최",
+    "date": "2026-10-13",
+    "dept": "정책기획관",
+    "id": "incheon-DOM_0000000015741633",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015741633",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시, 시민과 평화‧통일 공감대 넓힌다 15일‘인천 평화도시 정책세미나’개최",
+      "인천시, 시민과 평화‧통일 공감대 넓힌다 15일‘인천 평화도시 정책세미나’개최",
+      "정책기획관 / 최동진 (032-440-4312)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015741633"
+  },
+  {
+    "repSeq": "DOM_0000000015741624",
+    "title": "인천시, ‘2026 인천건축문화제’16일 개막 ‘변화’를 품은 건축문화의 장 펼쳐진다",
+    "date": "2026-10-13",
+    "dept": "건축과",
+    "id": "incheon-DOM_0000000015741624",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015741624",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시, ‘2026 인천건축문화제’16일 개막 ‘변화’를 품은 건축문화의 장 펼쳐진다",
+      "인천시, ‘2026 인천건축문화제’16일 개막 ‘변화’를 품은 건축문화의 장 펼쳐진다",
+      "건축과 / 김밝음 (032-440-4334)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015741624"
+  },
+  {
+    "repSeq": "DOM_0000000015741623",
+    "title": "인천시, 시청 중앙홀서‘경로당 프로그램 전시회’개최",
+    "date": "2026-10-13",
+    "dept": "노인정책과",
+    "id": "incheon-DOM_0000000015741623",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015741623",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시, 시청 중앙홀서‘경로당 프로그램 전시회’개최",
+      "인천시, 시청 중앙홀서‘경로당 프로그램 전시회’개최",
+      "노인정책과 / 오선미 (032-440-3302)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015741623"
+  },
+  {
+    "repSeq": "DOM_0000000015741618",
+    "title": "일본 그림자극 <핸드쉐도우 판타지 ANIMARE(아니마레)> “인천 행복문화티켓”으로 전석 매진!",
+    "date": "2026-10-13",
+    "dept": "문화예술회관",
+    "id": "incheon-DOM_0000000015741618",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015741618",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "일본 그림자극 <핸드쉐도우 판타지 ANIMARE(아니마레)> “인천 행복문화티켓”으로 전석 매진!",
+      "일본 그림자극 <핸드쉐도우 판타지 ANIMARE(아니마레)> “인천 행복문화티켓”으로 전석 매진!",
+      "문화예술회관 / 정수산나 (032-420-2736)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015741618"
+  },
+  {
     "repSeq": "DOM_0000000015738196",
     "title": "인천시,‘제12회 바이오헬스밸리 추진협의회’개최, 글로벌 바이오 혁신 생태계 도약 시동",
     "date": "2026-10-12",
@@ -7287,210 +7494,5 @@
       "송암미술관 / 김미현 (032-440-6786)"
     ],
     "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015322048"
-  },
-  {
-    "repSeq": "DOM_0000000015322047",
-    "title": "시각적 장치를 덜어내고, 희곡의 언어와 상상력에 집중하다.",
-    "date": "2026-08-13",
-    "dept": "문화예술회관",
-    "id": "incheon-DOM_0000000015322047",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015322047",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시립극단(예술감독 임도완)은 오는 8월 21일(금)부터 22일(토)까지 인천문화예술회관 복합문화공간에서 ‘특별기획 2026 리딩스테이지(Reading Stage)’를 개최한다.\r\n \r\n이번 무대는 오는 9월 정기공연으로 선보일 창작 가"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015322047"
-  },
-  {
-    "repSeq": "DOM_0000000015319793",
-    "title": "인천시, 서울7호선 청라 연장 정상화 위한 '민·관·정 협의체' 출범 회의",
-    "date": "2026-08-12",
-    "dept": "공사시설부",
-    "id": "incheon-DOM_0000000015319793",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015319793",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 서울7호선 청라 연장 정상화 위한 '민·관·정 협의체' 출범 회의",
-      "인천시, 서울7호선 청라 연장 정상화 위한 '민·관·정 협의체' 출범 회의",
-      "-12일 시청 대회의실서 킥오프 회의 개최… 위원 36명 위촉 및 4개 분과 구성 완료-"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015319793"
-  },
-  {
-    "repSeq": "DOM_0000000015315671",
-    "title": "인천시, 폭염 속 어촌·어항 현장점검… 양식장 피해 최소화 총력",
-    "date": "2026-08-12",
-    "dept": "수산과",
-    "id": "incheon-DOM_0000000015315671",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015315671",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 폭염 속 어촌·어항 현장점검… 양식장 피해 최소화 총력",
-      "인천시, 폭염 속 어촌·어항 현장점검… 양식장 피해 최소화 총력",
-      "수산과 / 양현규 (032-440-4855)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015315671"
-  },
-  {
-    "repSeq": "DOM_0000000015315666",
-    "title": "인천시, 부동산개발업 등록업체 90개소 실태점검",
-    "date": "2026-08-12",
-    "dept": "토지정보과",
-    "id": "incheon-DOM_0000000015315666",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015315666",
-    "category": null,
-    "importance_score": 15,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 부동산개발업 등록업체 90개소 실태점검",
-      "인천시, 부동산개발업 등록업체 90개소 실태점검",
-      "토지정보과 / 김유리 (032-440-4589)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015315666"
-  },
-  {
-    "repSeq": "DOM_0000000015315656",
-    "title": "인천시, ‘2026년 하반기 치유농업 수요자 교육’ 교육생 모집",
-    "date": "2026-08-12",
-    "dept": "도시농업과",
-    "id": "incheon-DOM_0000000015315656",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015315656",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, ‘2026년 하반기 치유농업 수요자 교육’ 교육생 모집",
-      "인천시, ‘2026년 하반기 치유농업 수요자 교육’ 교육생 모집",
-      "도시농업과 / 박예빈 (032-440-6947)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015315656"
-  },
-  {
-    "repSeq": "DOM_0000000015312845",
-    "title": "인천시 미얀마 외국인근로자 대상 용접기술 교육 성료",
-    "date": "2026-08-11",
-    "dept": "재외동포협력과",
-    "id": "incheon-DOM_0000000015312845",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015312845",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시 미얀마 외국인근로자 대상 용접기술 교육 성료",
-      "인천시 미얀마 외국인근로자 대상 용접기술 교육 성료",
-      "-실무 중심 기술교육으로 직무능력 향상 및 취·창업 역량 강화 기대-"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015312845"
-  },
-  {
-    "repSeq": "DOM_0000000015311505",
-    "title": "인천시, 옹진군 울도 해수담수화시설로 도서지역 물 걱정 던다",
-    "date": "2026-08-11",
-    "dept": "시설부",
-    "id": "incheon-DOM_0000000015311505",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015311505",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 옹진군 울도 해수담수화시설로 도서지역 물 걱정 던다",
-      "인천시, 옹진군 울도 해수담수화시설로 도서지역 물 걱정 던다",
-      "-하루 80㎥ 담수 생산으로 가뭄·갈수기 안정적 물 공급…11월 정식 운영-"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015311505"
-  },
-  {
-    "repSeq": "DOM_0000000015310529",
-    "title": "(기획) 몽골에 심은‘인천 희망의 숲’, 세계 도시협력 모델로",
-    "date": "2026-08-11",
-    "dept": "환경안전과",
-    "id": "incheon-DOM_0000000015310529",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015310529",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "(기획) 몽골에 심은‘인천 희망의 숲’, 세계 도시협력 모델로",
-      "(기획) 몽골에 심은‘인천 희망의 숲’, 세계 도시협력 모델로",
-      "-19년간 157ha에 25만 그루…시민의 나무심기 운동, 국제환경협력으로 성장-"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015310529"
-  },
-  {
-    "repSeq": "DOM_0000000015309952",
-    "title": "휴가는 설레게, 감염병 예방은 철저하게... 인천시, 감염병 예방수칙 준수 당부",
-    "date": "2026-08-11",
-    "dept": "감염병관리과",
-    "id": "incheon-DOM_0000000015309952",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015309952",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "휴가는 설레게, 감염병 예방은 철저하게... 인천시, 감염병 예방수칙 준수 당부",
-      "휴가는 설레게, 감염병 예방은 철저하게... 인천시, 감염병 예방수칙 준수 당부",
-      "-출국 전 방문국 감염병 정보 확인 당부… 손 씻기·모기 물림 예방 등 기본수칙 준수 강조-"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015309952"
-  },
-  {
-    "repSeq": "DOM_0000000015309941",
-    "title": "인천시, 지도 앱 지명정보 92%까지 정비…이번엔‘지명 자체’손본다",
-    "date": "2026-08-11",
-    "dept": "토지정보과",
-    "id": "incheon-DOM_0000000015309941",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015309941",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천 내비게이션에서 새로 생긴 공원 이름이 검색되지 않아 주변 건물을 검색해 찾아가거나, 실제 도로 환경과 맞지 않는 교차로 명칭 때문에 길을 헤매는 불편이 대폭 줄어들 전망이다.\r\n\r\n인천광역시(시장 박찬대)는 시민들의 일상적인 길 찾기 불편을 해소하고 정확한 위치"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015309941"
-  },
-  {
-    "repSeq": "DOM_0000000015309933",
-    "title": "인천시, 하반기 도시농업 기초과정 교육생 모집",
-    "date": "2026-08-11",
-    "dept": "도시농업과",
-    "id": "incheon-DOM_0000000015309933",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015309933",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 하반기 도시농업 기초과정 교육생 모집",
-      "인천시, 하반기 도시농업 기초과정 교육생 모집",
-      "-우선모집 8월 18일, 일반모집 8월 19일부터 온라인 선착순 접수-"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015309933"
   }
 ]
