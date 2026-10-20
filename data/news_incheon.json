@@ -1,5 +1,24 @@
 [
   {
+    "repSeq": "DOM_0000000015794845",
+    "title": "인천경제청, SOM CITY 개발계획 변경… K-콘텐츠 복합 클러스터 조성 탄력",
+    "date": "2026-10-20",
+    "dept": "서비스산업유치과",
+    "id": "incheon-DOM_0000000015794845",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015794845",
+    "category": null,
+    "importance_score": 5,
+    "importance": "낮음",
+    "summary": [
+      "인천경제청, SOM CITY 개발계획 변경… K-콘텐츠 복합 클러스터 조성 탄력",
+      "인천경제청, SOM CITY 개발계획 변경… K-콘텐츠 복합 클러스터 조성 탄력",
+      "서비스산업유치과 / 김진홍 (032-453-7395)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015794845"
+  },
+  {
     "repSeq": "DOM_0000000015792381",
     "title": "인천시, 재난방송 실시기준 개선, 신속·정확한 재난정보 전달 체계 구축",
     "date": "2026-10-20",
@@ -7481,22 +7500,5 @@
       "예산담당관 / 태영은 (032-440-2252)"
     ],
     "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015379443"
-  },
-  {
-    "repSeq": "DOM_0000000015374916",
-    "title": "76년 전 그날의 용기, 평화도시 인천에서 되새기다",
-    "date": "2026-08-24",
-    "dept": "총무과",
-    "id": "incheon-DOM_0000000015374916",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015374916",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천광역시(시장 박찬대)는 인천상륙작전 제76주년을 맞아 오는 9월 10일부터 15일까지 6일간 인천 전역에서 「제76주년 인천상륙작전 기념주간」을 운영한다고 밝혔다.\r\n \r\n올해 기념주간은 「함께 지킨 자유, 평화도시 인천」​을 주제로 인천광역시와 대한민국"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015374916"
   }
 ]

@@ -1,5 +1,19 @@
 [
   {
+    "nttNo": "468537",
+    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 20일(화) ‘야(夜)호! 어르신 별빛 활력 한마당 축제’ 참석",
+    "id": "seoul-468537",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "대변인 언론담당관",
+    "date": "2026-10-20",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468537"
+  },
+  {
     "nttNo": "468493",
     "title": "(자료제공) 걷다가 언제든 쉬어가는 서울… 오세훈 시장, 벤치 확충·공간 맞춤형 디자인 주문",
     "id": "seoul-468493",
@@ -6602,19 +6616,5 @@
     "importance": "낮음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=466295"
-  },
-  {
-    "nttNo": "466293",
-    "title": "서울시, 정원박람회서 시·청각장애인학습지원센터 홍보부스 연다",
-    "id": "seoul-466293",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "복지실 장애인자립지원과",
-    "date": "2026-09-14",
-    "category": "복지",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=466293"
   }
 ]
