@@ -1,5 +1,100 @@
 [
   {
+    "repSeq": "DOM_0000000015787618",
+    "title": "교통망은 넓게, 일상은 편리하게…인천 교통정책 촘촘해진다",
+    "date": "2026-10-20",
+    "dept": "교통정보운영과",
+    "id": "incheon-DOM_0000000015787618",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015787618",
+    "category": null,
+    "importance_score": 115,
+    "importance": "높음",
+    "summary": [
+      "교통망은 넓게, 일상은 편리하게…인천 교통정책 촘촘해진다",
+      "교통망은 넓게, 일상은 편리하게…인천 교통정책 촘촘해진다",
+      "교통정보운영과 / 정대정 (032-440-1752)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015787618"
+  },
+  {
+    "repSeq": "DOM_0000000015787613",
+    "title": "인천시, 전통의 멋과 가치 알리는 ‘2026 인천무형유산대축제’개최",
+    "date": "2026-10-20",
+    "dept": "문화유산과",
+    "id": "incheon-DOM_0000000015787613",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015787613",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시, 전통의 멋과 가치 알리는 ‘2026 인천무형유산대축제’개최",
+      "인천시, 전통의 멋과 가치 알리는 ‘2026 인천무형유산대축제’개최",
+      "문화유산과 / 박소영 (032-440-8082)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015787613"
+  },
+  {
+    "repSeq": "DOM_0000000015787612",
+    "title": "인천시,‘2026년 비상설 직거래장터’개최, 지역 농특산물 판로 개척",
+    "date": "2026-10-20",
+    "dept": "식품산업과",
+    "id": "incheon-DOM_0000000015787612",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015787612",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시,‘2026년 비상설 직거래장터’개최, 지역 농특산물 판로 개척",
+      "인천시,‘2026년 비상설 직거래장터’개최, 지역 농특산물 판로 개척",
+      "식품산업과 / 배현진 (032-440-4374)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015787612"
+  },
+  {
+    "repSeq": "DOM_0000000015787609",
+    "title": "인천시, ‘2026년 가로수지킴이 사진 이벤트’  시민 온라인 투표 실시",
+    "date": "2026-10-20",
+    "dept": "녹지정책과",
+    "id": "incheon-DOM_0000000015787609",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015787609",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시, ‘2026년 가로수지킴이 사진 이벤트’  시민 온라인 투표 실시",
+      "인천시, ‘2026년 가로수지킴이 사진 이벤트’  시민 온라인 투표 실시",
+      "녹지정책과 / 한경헌 (032-440-3694)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015787609"
+  },
+  {
+    "repSeq": "DOM_0000000015787602",
+    "title": "모차르트의 깊이, 베토벤의 생동감...크리스토프 포펜이 이끄는 고전주의의 밤",
+    "date": "2026-10-20",
+    "dept": "문화예술회관",
+    "id": "incheon-DOM_0000000015787602",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015787602",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "모차르트의 깊이, 베토벤의 생동감...크리스토프 포펜이 이끄는 고전주의의 밤",
+      "모차르트의 깊이, 베토벤의 생동감...크리스토프 포펜이 이끄는 고전주의의 밤",
+      "문화예술회관 / 정수산나 (032-420-2736)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015787602"
+  },
+  {
     "repSeq": "DOM_0000000015782403",
     "title": "인천시, 제물포구 철강산업 위기 극복 및 정부 지원 확보 총력",
     "date": "2026-10-19",
@@ -7403,100 +7498,5 @@
       "도시농업과 / 정은주 (032-440-6943)"
     ],
     "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015374797"
-  },
-  {
-    "repSeq": "DOM_0000000015374796",
-    "title": "인천시향·시립청소년교향악단, 10월 무대 동시 예매 시작",
-    "date": "2026-08-24",
-    "dept": "문화예술회관",
-    "id": "incheon-DOM_0000000015374796",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015374796",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시향·시립청소년교향악단, 10월 무대 동시 예매 시작",
-      "인천시향·시립청소년교향악단, 10월 무대 동시 예매 시작",
-      "문화예술회관 / 정수산나 (032-420-2736)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015374796"
-  },
-  {
-    "repSeq": "DOM_0000000015370613",
-    "title": "인천시, 2028년 제81주년 한국농촌지도자전국대회 유치 확정",
-    "date": "2026-08-23",
-    "dept": "농촌자원과",
-    "id": "incheon-DOM_0000000015370613",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015370613",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 2028년 제81주년 한국농촌지도자전국대회 유치 확정",
-      "인천시, 2028년 제81주년 한국농촌지도자전국대회 유치 확정",
-      "-인천 최초 전국대회 유치, 전국 농업인과 함께하는 농업·농촌 교류의 장 마련-"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015370613"
-  },
-  {
-    "repSeq": "DOM_0000000015370612",
-    "title": "인천시, 추석 대비 도축장 개장시간 1시간 앞당긴다",
-    "date": "2026-08-23",
-    "dept": "축산위생과",
-    "id": "incheon-DOM_0000000015370612",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015370612",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 추석 대비 도축장 개장시간 1시간 앞당긴다",
-      "인천시, 추석 대비 도축장 개장시간 1시간 앞당긴다",
-      "-24일부터 목·금요일 제외 12일간 7시 개장…축산물 원활한 공급 지원-"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015370612"
-  },
-  {
-    "repSeq": "DOM_0000000015366092",
-    "title": "인천시,‘대장홍대선 청라 연장’제5차 국가철도망 계획 반영 총력",
-    "date": "2026-08-21",
-    "dept": "철도과",
-    "id": "incheon-DOM_0000000015366092",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015366092",
-    "category": null,
-    "importance_score": 20,
-    "importance": "낮음",
-    "summary": [
-      "인천시,‘대장홍대선 청라 연장’제5차 국가철도망 계획 반영 총력",
-      "인천시,‘대장홍대선 청라 연장’제5차 국가철도망 계획 반영 총력",
-      "-박찬대 시장, 계양구 주민대표와 면담… 7천여 명 서명한 주민 청원서 전달받아-"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015366092"
-  },
-  {
-    "repSeq": "DOM_0000000015364778",
-    "title": "한여름 무더위 녹인 따뜻한 선물,‘8월의 크리스마스 캠페인’성료",
-    "date": "2026-08-21",
-    "dept": "아동정책과",
-    "id": "incheon-DOM_0000000015364778",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015364778",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "한여름 무더위 녹인 따뜻한 선물,‘8월의 크리스마스 캠페인’성료",
-      "한여름 무더위 녹인 따뜻한 선물,‘8월의 크리스마스 캠페인’성료",
-      "-- 올해 10억 1백만 원, 5년간 총 34억여 원 모금-"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015364778"
   }
 ]

@@ -1,5 +1,71 @@
 [
   {
+    "nttNo": "468426",
+    "title": "(석간) 금요일 밤 도심 문화투어…서울시, ‘문화로 야금야금’ 스탬프 투어 첫선",
+    "id": "seoul-468426",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "문화본부 문화정책과",
+    "date": "2026-10-20",
+    "category": "문화",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468426"
+  },
+  {
+    "nttNo": "468425",
+    "title": "(석간) 서울시, 도심 광장과 광화문 일대 가을꽃 식재 새단장",
+    "id": "seoul-468425",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "중부공원여가센터 중부공원여가센터",
+    "date": "2026-10-20",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468425"
+  },
+  {
+    "nttNo": "468424",
+    "title": "(석간) 호신술 배우고 모의사격 체험까지…‘서울시 자치경찰 시민대학’제7기 수강생 모집",
+    "id": "seoul-468424",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "자치경찰위원회 자치경찰위원회",
+    "date": "2026-10-20",
+    "category": "안전",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "□ 서울시 자치경찰위원회(이하 ‘서울 자경위’)는 서울시민을 대상으로 제7기 「서울시 자치경찰 시민대학」 수강생 80명을 11.5.(목)까지 모집한다고 밝혔다. 교육은 11.10.(화)부터 3주간 자치경찰제 소개를 시작으로 호신술·응급상황 대처 실습, 서울경찰청·지구대 현장 체험으로 진행된다.",
+      "□ 자치경찰 시민대학은 시민이 치안 현장을 직접 보고 체험하며 배우는 치안 교육이다. 수강생은 자치경찰제를 가깝게 이해하고, 범죄와 사고에 대비하는 법을 익히며, 우리 동네 안전을 함께 지키는 방법도 배울 수 있다. 2022년 시범운영을 시작으로 제6기까지 모두 316명이 과정을 수료했다.",
+      "□ 이번 과정에서는 최근 사회적 우려가 커진 이상동기 범죄에 대비한 호신술과 가족을 지키는 응급상황 대처 등 실생활에 유용한 체험·실습을 한층 강화했다. 교육은 매주 1회 오후 2시부터 5시까지 동국대학교와 서울경찰청, 지구대에서 진행된다.",
+      "○ (1주차, 11.10.(화)) 입교식을 시작으로 동국대학교 교수에게 자치경찰제의 역할과 주요 정책 강의를듣고, 현직 경찰관으로부터 위급할 때 스스로를 지키는 호신술을 배운다."
+    ],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468424"
+  },
+  {
+    "nttNo": "468422",
+    "title": "(석간) 외로운 가을날, 서울잇다플레이스에서 위로와 치유를 받아보세요",
+    "id": "seoul-468422",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울시복지재단 서울시복지재단",
+    "date": "2026-10-20",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "□ 서울시복지재단 서울시고립예방센터는 지난 9월 23일 개관한 서울마음숲 ‘서울잇다플레이스’에서 「모두의 공간이 되다」를 주제로 10월 30일까지 다양한 문화행사를 운영한다고 밝혔다.",
+      "□ 이번 행사는 문화예술을 통해 서울시민에게 일상 속 잔잔한 위로를 전하고, 외로움에 대한 공감과 소통의 기회를 마련하기 위해 기획됐다. 클래식 공연, 소셜다이닝, 토크콘서트, 연극 등 다양한 프로그램을 통해 시민들이 서로의 이야기에 귀 기울이고 자연스럽게 관계를 맺을 수 있도록 할 예정이다.",
+      "□ 오는 10월 23일(금)에는 가수이자 수필가인 김사월과 시인이자 사진작가인 이훤이 함께하는 토크콘서트 ‘거실을 찾아서’가 서울잇다플레이스 ‘울림숲’에서 열린다.",
+      "□ 두 사람은 외로움과 함께하는 창작의 과정, 혼자 머무는 공간에서도 누군가와 연결되어 있다는 감각이 주는 편안함에 관해 이야기하고, 낭독과 노래를 통해 개인의 경험과 감정을 나누며 관객들과 공감의 시간을 만들어 갈 계획이다."
+    ],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468422"
+  },
+  {
     "nttNo": "468470",
     "title": "(국감보도참고자료) 자율주행 안전성 평가와 밀접한 자율주행 해제 횟수를 국토부에 보고하도록 되어있는데, 의원요구에 제출하지 않은 이유는 (261019, 국토위 모경종 의원 질의 관련)",
     "id": "seoul-468470",
@@ -6535,61 +6601,5 @@
     "importance": "낮음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=466245"
-  },
-  {
-    "nttNo": "466244",
-    "title": "DDP가 거대한 K-콘텐츠 놀이터로…'엔터테크·GES 서울 2026' 17일 개막",
-    "id": "seoul-466244",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "경제실 K컬처전략과",
-    "date": "2026-09-13",
-    "category": "경제",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=466244"
-  },
-  {
-    "nttNo": "466243",
-    "title": "차 없는 서울, 누구나 함께 걷는다…'2026년 서울 걷자 페스티벌' 개최",
-    "id": "seoul-466243",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "교통실 생활교통안전과",
-    "date": "2026-09-13",
-    "category": "교통",
-    "importance_score": 100,
-    "importance": "높음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=466243"
-  },
-  {
-    "nttNo": "466242",
-    "title": "서울시 '글로벌 바로봉사단' 출범…국적 넘어 나눔가치 실현, 공동체 의식↑",
-    "id": "seoul-466242",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "행정국 시민협력과",
-    "date": "2026-09-13",
-    "category": "행정",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=466242"
-  },
-  {
-    "nttNo": "466241",
-    "title": "폐 치안센터가 동네 도서관으로…서울시 펀활력소’도곡에 2호 추진",
-    "id": "seoul-466241",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "미래공간기획관 미래공간담당관",
-    "date": "2026-09-13",
-    "category": "주택",
-    "importance_score": 100,
-    "importance": "높음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=466241"
   }
 ]
