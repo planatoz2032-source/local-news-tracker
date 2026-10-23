@@ -1,5 +1,100 @@
 [
   {
+    "repSeq": "DOM_0000000015810586",
+    "title": "인천시, ‘글로벌  혁신 신약 허브’대도약 선포… 릴리·삼성바이오로직스와 다자협력 본격 가동",
+    "date": "2026-10-23",
+    "dept": "바이오과",
+    "id": "incheon-DOM_0000000015810586",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015810586",
+    "category": null,
+    "importance_score": 5,
+    "importance": "낮음",
+    "summary": [
+      "인천시, ‘글로벌  혁신 신약 허브’대도약 선포… 릴리·삼성바이오로직스와 다자협력 본격 가동",
+      "인천시, ‘글로벌  혁신 신약 허브’대도약 선포… 릴리·삼성바이오로직스와 다자협력 본격 가동",
+      "바이오과 / 최혁 (032-440-1821)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015810586"
+  },
+  {
+    "repSeq": "DOM_0000000015809952",
+    "title": "인천시, 위성·드론으로 해양쓰레기 탐지부터 수거·반출까지 원스톱 처리",
+    "date": "2026-10-23",
+    "dept": "항공과",
+    "id": "incheon-DOM_0000000015809952",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015809952",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시, 위성·드론으로 해양쓰레기 탐지부터 수거·반출까지 원스톱 처리",
+      "인천시, 위성·드론으로 해양쓰레기 탐지부터 수거·반출까지 원스톱 처리",
+      "항공과 / 허윤혁 (032-440-4808)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015809952"
+  },
+  {
+    "repSeq": "DOM_0000000015809951",
+    "title": "인천시, 하천·하구 쓰레기 정화사업, 국비 1억 4,630만 원 추가 확보",
+    "date": "2026-10-23",
+    "dept": "해양환경과",
+    "id": "incheon-DOM_0000000015809951",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015809951",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시, 하천·하구 쓰레기 정화사업, 국비 1억 4,630만 원 추가 확보",
+      "인천시, 하천·하구 쓰레기 정화사업, 국비 1억 4,630만 원 추가 확보",
+      "해양환경과 / 신현수 (032-440-7892)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015809951"
+  },
+  {
+    "repSeq": "DOM_0000000015809939",
+    "title": "인천시,‘2026 농특산물 인천장터’개장, 지역 농가와 시민을 잇는다",
+    "date": "2026-10-23",
+    "dept": "식품산업과",
+    "id": "incheon-DOM_0000000015809939",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015809939",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시,‘2026 농특산물 인천장터’개장, 지역 농가와 시민을 잇는다",
+      "인천시,‘2026 농특산물 인천장터’개장, 지역 농가와 시민을 잇는다",
+      "식품산업과 / 배현진 (032-440-4374)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015809939"
+  },
+  {
+    "repSeq": "DOM_0000000015809931",
+    "title": "인천시, 불법 공유 숙박업소 8곳 적발",
+    "date": "2026-10-23",
+    "dept": "특별사법경찰과",
+    "id": "incheon-DOM_0000000015809931",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015809931",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시, 불법 공유 숙박업소 8곳 적발",
+      "인천시, 불법 공유 숙박업소 8곳 적발",
+      "특별사법경찰과 / 조근숙 (032-440-3383)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015809931"
+  },
+  {
     "repSeq": "DOM_0000000015806341",
     "title": "인천시, 중국 선전서 열린‘세계한인경제인대회’ 2,498만 달러 수출상담 성과",
     "date": "2026-10-22",
@@ -7405,100 +7500,5 @@
       "강화수도사업소 / 박철원 (032-720-3942)"
     ],
     "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015416437"
-  },
-  {
-    "repSeq": "DOM_0000000015414862",
-    "title": "인천시, 첫 시립 치매요양원 준공...공공 치매돌봄 시대 본격 열어",
-    "date": "2026-08-27",
-    "dept": "건강증진과",
-    "id": "incheon-DOM_0000000015414862",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015414862",
-    "category": null,
-    "importance_score": 5,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 첫 시립 치매요양원 준공...공공 치매돌봄 시대 본격 열어",
-      "인천시, 첫 시립 치매요양원 준공...공공 치매돌봄 시대 본격 열어",
-      "건강증진과 / 옥유림 (032-440-2985)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015414862"
-  },
-  {
-    "repSeq": "DOM_0000000015414859",
-    "title": "제13회 석남 이경성 미술이론가상 본상 최열·특별상 노준의 선정",
-    "date": "2026-08-27",
-    "dept": "전시교육부",
-    "id": "incheon-DOM_0000000015414859",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015414859",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "제13회 석남 이경성 미술이론가상 본상 최열·특별상 노준의 선정",
-      "제13회 석남 이경성 미술이론가상 본상 최열·특별상 노준의 선정",
-      "전시교육부 / 김윤희 (032-440-6759)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015414859"
-  },
-  {
-    "repSeq": "DOM_0000000015412092",
-    "title": "인천시, 민선9기 첫 간부회의 개최",
-    "date": "2026-08-27",
-    "dept": "정책기획관",
-    "id": "incheon-DOM_0000000015412092",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015412092",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 민선9기 첫 간부회의 개최",
-      "인천시, 민선9기 첫 간부회의 개최",
-      "정책기획관 / 이영경 (032-440-2133)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015412092"
-  },
-  {
-    "repSeq": "DOM_0000000015409665",
-    "title": "인천시,‘실시간 주차정보 서비스’민영주차장까지 확대",
-    "date": "2026-08-27",
-    "dept": "교통정보운영과",
-    "id": "incheon-DOM_0000000015409665",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015409665",
-    "category": null,
-    "importance_score": 105,
-    "importance": "높음",
-    "summary": [
-      "인천시,‘실시간 주차정보 서비스’민영주차장까지 확대",
-      "인천시,‘실시간 주차정보 서비스’민영주차장까지 확대",
-      "교통정보운영과 / 이선아 (032-440-1753)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015409665"
-  },
-  {
-    "repSeq": "DOM_0000000015409664",
-    "title": "인천 개항장의 역사가 관객의 숨결로 살아난다  관객 참여형 연극「출항」전격 개최",
-    "date": "2026-08-27",
-    "dept": "제물포혁신과",
-    "id": "incheon-DOM_0000000015409664",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015409664",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천 개항장의 역사가 관객의 숨결로 살아난다  관객 참여형 연극「출항」전격 개최",
-      "인천 개항장의 역사가 관객의 숨결로 살아난다  관객 참여형 연극「출항」전격 개최",
-      "제물포혁신과 / 최이화 (032-458-7125)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015409664"
   }
 ]
