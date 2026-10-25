@@ -1,5 +1,19 @@
 [
   {
+    "nttNo": "468838",
+    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 25일(일) 잠수교 보행전용교 전환 앞두고 현장 점검",
+    "id": "seoul-468838",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "대변인 언론담당관",
+    "date": "2026-10-25",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468838"
+  },
+  {
     "nttNo": "468792",
     "title": "AI 금융의 미래부터 스타트업 투자유치까지…'서울 핀테크 위크 2026' 개최",
     "id": "seoul-468792",
@@ -6642,19 +6656,5 @@
     "importance": "낮음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=466649"
-  },
-  {
-    "nttNo": "466648",
-    "title": "서울시, 추석 연휴 앞두고 대형마트·역사 10곳 긴급점검… 소방·인파안전 집중 확인",
-    "id": "seoul-466648",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "재난안전실 재난안전정책과",
-    "date": "2026-09-17",
-    "category": "안전",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=466648"
   }
 ]
