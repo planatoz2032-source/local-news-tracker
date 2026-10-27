@@ -1,5 +1,100 @@
 [
   {
+    "repSeq": "DOM_0000000015832879",
+    "title": "인천시,‘인공지능(AI) 커넥티비티 혁신도시’비전 선포, 미래 모빌리티 산업 선도",
+    "date": "2026-10-27",
+    "dept": "첨단산업과",
+    "id": "incheon-DOM_0000000015832879",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015832879",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시,‘인공지능(AI) 커넥티비티 혁신도시’비전 선포, 미래 모빌리티 산업 선도",
+      "인천시,‘인공지능(AI) 커넥티비티 혁신도시’비전 선포, 미래 모빌리티 산업 선도",
+      "첨단산업과 / 김휘돈 (032-440-4207)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015832879"
+  },
+  {
+    "repSeq": "DOM_0000000015829774",
+    "title": "인천시,‘2026년 가장 아름다운 공장’애니모션텍㈜ 선정",
+    "date": "2026-10-27",
+    "dept": "산업입지과",
+    "id": "incheon-DOM_0000000015829774",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015829774",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시,‘2026년 가장 아름다운 공장’애니모션텍㈜ 선정",
+      "인천시,‘2026년 가장 아름다운 공장’애니모션텍㈜ 선정",
+      "산업입지과 / 우연희 (032-440-4268)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015829774"
+  },
+  {
+    "repSeq": "DOM_0000000015829770",
+    "title": "인천시, 식품안전 감시 인력 340명 대상 직무교육 실시",
+    "date": "2026-10-27",
+    "dept": "위생정책과",
+    "id": "incheon-DOM_0000000015829770",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015829770",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시, 식품안전 감시 인력 340명 대상 직무교육 실시",
+      "인천시, 식품안전 감시 인력 340명 대상 직무교육 실시",
+      "위생정책과 / 노미소 (032-440-2783)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015829770"
+  },
+  {
+    "repSeq": "DOM_0000000015829760",
+    "title": "인천시‘등대를 사랑하는 점박이 물범 친구들’, 대한민국 캐릭터 어워즈 2년 연속‘대상’",
+    "date": "2026-10-27",
+    "dept": "홍보담당관",
+    "id": "incheon-DOM_0000000015829760",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015829760",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시‘등대를 사랑하는 점박이 물범 친구들’, 대한민국 캐릭터 어워즈 2년 연속‘대상’",
+      "인천시‘등대를 사랑하는 점박이 물범 친구들’, 대한민국 캐릭터 어워즈 2년 연속‘대상’",
+      "홍보담당관 / 안나름 (032-440-3082)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015829760"
+  },
+  {
+    "repSeq": "DOM_0000000015827134",
+    "title": "사각지대 갇힌 학대 피해 아동...인천시,「공공후견인」으로 홀로서기 돕는다",
+    "date": "2026-10-27",
+    "dept": "아동정책과",
+    "id": "incheon-DOM_0000000015827134",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015827134",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "사각지대 갇힌 학대 피해 아동...인천시,「공공후견인」으로 홀로서기 돕는다",
+      "사각지대 갇힌 학대 피해 아동...인천시,「공공후견인」으로 홀로서기 돕는다",
+      "아동정책과 / 허순남 (032-440-3496)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015827134"
+  },
+  {
     "repSeq": "DOM_0000000015825719",
     "title": "인천시,‘2026 인천일러스트코리아’개최, K-일러스트 한자리에",
     "date": "2026-10-27",
@@ -7407,100 +7502,5 @@
       "정보정책부 / 변우석 (032-440-6664)"
     ],
     "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015439836"
-  },
-  {
-    "repSeq": "DOM_0000000015439823",
-    "title": "인천애뜰 공영주차장, “QR코드 사전정산 시스템 도입”",
-    "date": "2026-09-01",
-    "dept": "기전부",
-    "id": "incheon-DOM_0000000015439823",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015439823",
-    "category": null,
-    "importance_score": 5,
-    "importance": "낮음",
-    "summary": [
-      "인천애뜰 공영주차장, “QR코드 사전정산 시스템 도입”",
-      "인천애뜰 공영주차장, “QR코드 사전정산 시스템 도입”",
-      "기전부 / 박장빈 (032-440-5292)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015439823"
-  },
-  {
-    "repSeq": "DOM_0000000015439797",
-    "title": "인천시, (재)인천인재평생교육진흥원 제4대 상임이사 임명",
-    "date": "2026-09-01",
-    "dept": "교육협력담당관",
-    "id": "incheon-DOM_0000000015439797",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015439797",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, (재)인천인재평생교육진흥원 제4대 상임이사 임명",
-      "인천시, (재)인천인재평생교육진흥원 제4대 상임이사 임명",
-      "교육협력담당관 / 안영선 (032-440-2172)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015439797"
-  },
-  {
-    "repSeq": "DOM_0000000015439788",
-    "title": "인천시,‘2026 인차이나포럼 국제콘퍼런스’개최 10주년 맞아 새로운 한중협력 길 모색",
-    "date": "2026-09-01",
-    "dept": "국제협력과",
-    "id": "incheon-DOM_0000000015439788",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015439788",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시,‘2026 인차이나포럼 국제콘퍼런스’개최 10주년 맞아 새로운 한중협력 길 모색",
-      "인천시,‘2026 인차이나포럼 국제콘퍼런스’개최 10주년 맞아 새로운 한중협력 길 모색",
-      "국제협력과 / 한현희 (032-440-3232)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015439788"
-  },
-  {
-    "repSeq": "DOM_0000000015439749",
-    "title": "인천시,“잠시 멈춤, 나를 돌보다” ‘2026 인천 웰니스 페스타’개최",
-    "date": "2026-09-01",
-    "dept": "관광진흥과",
-    "id": "incheon-DOM_0000000015439749",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015439749",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시,“잠시 멈춤, 나를 돌보다” ‘2026 인천 웰니스 페스타’개최",
-      "인천시,“잠시 멈춤, 나를 돌보다” ‘2026 인천 웰니스 페스타’개최",
-      "관광진흥과 / 김진주 (032-440-4103)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015439749"
-  },
-  {
-    "repSeq": "DOM_0000000015439740",
-    "title": "인천시,‘인천 섬 개수’재정비, 197개로 확정",
-    "date": "2026-09-01",
-    "dept": "섬해양정책과",
-    "id": "incheon-DOM_0000000015439740",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015439740",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시,‘인천 섬 개수’재정비, 197개로 확정",
-      "인천시,‘인천 섬 개수’재정비, 197개로 확정",
-      "섬해양정책과 / 이선주 (032-440-4983)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015439740"
   }
 ]
