@@ -1,5 +1,100 @@
 [
   {
+    "repSeq": "DOM_0000000015868746",
+    "title": "다름을 잇고, 인천을 하나로, ‘제9회 온통 다문화 페스티벌’개최 성료",
+    "date": "2026-11-01",
+    "dept": "인구전략기획과",
+    "id": "incheon-DOM_0000000015868746",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015868746",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "다름을 잇고, 인천을 하나로, ‘제9회 온통 다문화 페스티벌’개최 성료",
+      "다름을 잇고, 인천을 하나로, ‘제9회 온통 다문화 페스티벌’개최 성료",
+      "인구전략기획과 / 이미선 (032-440-2902)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015868746"
+  },
+  {
+    "repSeq": "DOM_0000000015868745",
+    "title": "시민 100명이 손글씨로 남긴 인천의 오늘과 내일",
+    "date": "2026-11-01",
+    "dept": "콘텐츠담당관",
+    "id": "incheon-DOM_0000000015868745",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015868745",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "시민 100명이 손글씨로 남긴 인천의 오늘과 내일",
+      "시민 100명이 손글씨로 남긴 인천의 오늘과 내일",
+      "콘텐츠담당관 / 정경숙 (032-440-8302)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015868745"
+  },
+  {
+    "repSeq": "DOM_0000000015868744",
+    "title": "“함께 놀며 배워요” 인천시, 놀이와 체험으로 배우는 ‘아동권리 놀이터’ 개최",
+    "date": "2026-11-01",
+    "dept": "아동정책과",
+    "id": "incheon-DOM_0000000015868744",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015868744",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "“함께 놀며 배워요” 인천시, 놀이와 체험으로 배우는 ‘아동권리 놀이터’ 개최",
+      "“함께 놀며 배워요” 인천시, 놀이와 체험으로 배우는 ‘아동권리 놀이터’ 개최",
+      "아동정책과 / 박용철 (032-440-4903)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015868744"
+  },
+  {
+    "repSeq": "DOM_0000000015868743",
+    "title": "인천시, 대한항공 점보스 배구팀과 2028 G20 정상회의 인천 유치 공동 응원",
+    "date": "2026-11-01",
+    "dept": "홍보담당관",
+    "id": "incheon-DOM_0000000015868743",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015868743",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시, 대한항공 점보스 배구팀과 2028 G20 정상회의 인천 유치 공동 응원",
+      "인천시, 대한항공 점보스 배구팀과 2028 G20 정상회의 인천 유치 공동 응원",
+      "홍보담당관 / 안나름 (032-440-3082)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015868743"
+  },
+  {
+    "repSeq": "DOM_0000000015868742",
+    "title": "인천시,‘2026 인천역사문화둘레길 축제’개최, 걷기 문화 확산",
+    "date": "2026-11-01",
+    "dept": "녹지정책과",
+    "id": "incheon-DOM_0000000015868742",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015868742",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시,‘2026 인천역사문화둘레길 축제’개최, 걷기 문화 확산",
+      "인천시,‘2026 인천역사문화둘레길 축제’개최, 걷기 문화 확산",
+      "녹지정책과 / 이경수 (032-440-3679)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015868742"
+  },
+  {
     "repSeq": "DOM_0000000015865100",
     "title": "인천시·청년재단, 청년 정착·성장 지원 협력, 전주기 지원 생태계 구축",
     "date": "2026-10-30",
@@ -7399,100 +7494,5 @@
       "아트센터인천 / 고해리 (032-453-7194)"
     ],
     "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015475864"
-  },
-  {
-    "repSeq": "DOM_0000000015475819",
-    "title": "밤이 내려앉은 청라하늘대교, 사계절이 펼쳐진다",
-    "date": "2026-09-07",
-    "dept": "영종청라기반과",
-    "id": "incheon-DOM_0000000015475819",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015475819",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "밤이 내려앉은 청라하늘대교, 사계절이 펼쳐진다",
-      "밤이 내려앉은 청라하늘대교, 사계절이 펼쳐진다",
-      "영종청라기반과 / 장선정 (032-453-7622)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015475819"
-  },
-  {
-    "repSeq": "DOM_0000000015473520",
-    "title": "인천시, 내년도 국비 7조 시대 활짝 연다...역대 최대",
-    "date": "2026-09-07",
-    "dept": "재정담당관",
-    "id": "incheon-DOM_0000000015473520",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015473520",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 내년도 국비 7조 시대 활짝 연다...역대 최대",
-      "인천시, 내년도 국비 7조 시대 활짝 연다...역대 최대",
-      "재정담당관 / 최신 (032-440-1663)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015473520"
-  },
-  {
-    "repSeq": "DOM_0000000015473506",
-    "title": "인천시, 해병대와 함께‘평화기원음악회’개최, 인천상륙작전 역사 되새긴다",
-    "date": "2026-09-07",
-    "dept": "총무과",
-    "id": "incheon-DOM_0000000015473506",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015473506",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 해병대와 함께‘평화기원음악회’개최, 인천상륙작전 역사 되새긴다",
-      "인천시, 해병대와 함께‘평화기원음악회’개최, 인천상륙작전 역사 되새긴다",
-      "총무과 / 김세은 (032-440-2402)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015473506"
-  },
-  {
-    "repSeq": "DOM_0000000015473505",
-    "title": "인천시, 2026년 하반기 지방세 체납액 특별정리 나선다.",
-    "date": "2026-09-07",
-    "dept": "징수담당관",
-    "id": "incheon-DOM_0000000015473505",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015473505",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 2026년 하반기 지방세 체납액 특별정리 나선다.",
-      "인천시, 2026년 하반기 지방세 체납액 특별정리 나선다.",
-      "징수담당관 / 최영미 (032-440-2632)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015473505"
-  },
-  {
-    "repSeq": "DOM_0000000015473504",
-    "title": "인천시, 시민과 함께하는‘2026 통일어울림 한마당’개최",
-    "date": "2026-09-07",
-    "dept": "정책기획관",
-    "id": "incheon-DOM_0000000015473504",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015473504",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 시민과 함께하는‘2026 통일어울림 한마당’개최",
-      "인천시, 시민과 함께하는‘2026 통일어울림 한마당’개최",
-      "정책기획관 / 이승리 (032-440-4313)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015473504"
   }
 ]
