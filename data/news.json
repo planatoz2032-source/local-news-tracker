@@ -1,5 +1,61 @@
 [
   {
+    "nttNo": "469284",
+    "title": "(석간) 전화에 이어 문자까지…120다산콜재단, 외국인 상담 서비스 확대",
+    "id": "seoul-469284",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울시120다산콜재단 서울시120다산콜재단",
+    "date": "2026-11-02",
+    "category": null,
+    "importance_score": 5,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=469284"
+  },
+  {
+    "nttNo": "469283",
+    "title": "(석간) 서울시, 회색·녹색 인프라 융합 모색… 풍수해 정책 포럼 개최",
+    "id": "seoul-469283",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "물순환안전국 치수안전과",
+    "date": "2026-11-02",
+    "category": "환경",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=469283"
+  },
+  {
+    "nttNo": "469282",
+    "title": "(석간) 이동부터 검사까지 제약 없이…  서울시 어린이병원, 「장애인 건강검진」 문 연다 !",
+    "id": "seoul-469282",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "어린이병원 어린이병원",
+    "date": "2026-11-02",
+    "category": "복지",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=469282"
+  },
+  {
+    "nttNo": "469332",
+    "title": "(엠바고12시) 서울서 시작한 버스정류소 온열의자, 정부혁신 국내 최초 인증…전국으로 확산",
+    "id": "seoul-469332",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "교통실 버스정책과",
+    "date": "2026-11-01",
+    "category": "교통",
+    "importance_score": 115,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=469332"
+  },
+  {
     "nttNo": "469281",
     "title": "서울시, 겨울철 화재안전대책 가동… 취약주택 소화기 보급부터 고층화재 대응까지",
     "id": "seoul-469281",
@@ -6611,63 +6667,5 @@
     "importance": "낮음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467125"
-  },
-  {
-    "nttNo": "467124",
-    "title": "보관부터 소분·포장까지 한곳에서… 서울시, 강서시장 상품화 시설 건립",
-    "id": "seoul-467124",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "민생노동국 농수산유통과",
-    "date": "2026-09-27",
-    "category": "경제",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467124"
-  },
-  {
-    "nttNo": "467123",
-    "title": "남산에서 만나는 다채로운 K-콘텐츠… 「2026 서울관광 ON 페스타」 개최",
-    "id": "seoul-467123",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "관광체육국 관광산업과",
-    "date": "2026-09-27",
-    "category": "문화",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467123"
-  },
-  {
-    "nttNo": "467122",
-    "title": "“중장년의 경험을 사회공헌으로”…서울시 2026 가치동행한마당 개최",
-    "id": "seoul-467122",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "평생교육국 중장년지원과",
-    "date": "2026-09-27",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467122"
-  },
-  {
-    "nttNo": "467121",
-    "title": "제16차 서울특별시 도시·건축공동위원회 개최결과",
-    "id": "seoul-467121",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "도시공간본부 도시관리과",
-    "date": "2026-09-27",
-    "category": "주택",
-    "importance_score": 105,
-    "importance": "높음",
-    "summary": [
-      "□ 금일 위원회 상정 안건 : 총 2건"
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467121"
   }
 ]
