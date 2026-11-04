@@ -1,5 +1,19 @@
 [
   {
+    "nttNo": "469593",
+    "title": "(엠바고14시)(자료제공) 서울시, 늘어나는 외래관광객 안심하고 머물도록… 오세훈 시장 숙박시설 현장점검",
+    "id": "seoul-469593",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "관광체육국 관광산업과",
+    "date": "2026-11-04",
+    "category": "문화",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=469593"
+  },
+  {
     "nttNo": "469560",
     "title": "(자료제공) 서울시, 서울경찰청 등과 「도심 마라톤 관리 협의체」 구성 추진",
     "id": "seoul-469560",
@@ -6633,19 +6647,5 @@
     "importance": "낮음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467324"
-  },
-  {
-    "nttNo": "467323",
-    "title": "(석간) 광화문광장에서 만나는 가을…감사의 빛으로 전하는 기억과 감사",
-    "id": "seoul-467323",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "균형발전본부 광화문광장사업과",
-    "date": "2026-09-30",
-    "category": "주택",
-    "importance_score": 100,
-    "importance": "높음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467323"
   }
 ]
