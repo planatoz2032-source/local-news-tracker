@@ -1,5 +1,103 @@
 [
   {
+    "nttNo": "469624",
+    "title": "서울시, 소방대원 안전·건강 챙기고 현장 대응력 높인다… 내년 소방예산안 1조 1,022억 원",
+    "id": "seoul-469624",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "소방재난본부 소방재난본부",
+    "date": "2026-11-05",
+    "category": "안전",
+    "importance_score": 15,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=469624"
+  },
+  {
+    "nttNo": "469623",
+    "title": "(엠바고14시50분) 발전소 지붕에 스키장을 만든 BIG, 국내 첫 기획전 11월 7일 개막",
+    "id": "seoul-469623",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "미래공간기획관 미래공간담당관",
+    "date": "2026-11-05",
+    "category": "주택",
+    "importance_score": 100,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=469623"
+  },
+  {
+    "nttNo": "469622",
+    "title": "서울시, 전국 15개 지자체와 친환경 버스 부가세 면제 유지 촉구",
+    "id": "seoul-469622",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "교통실 버스정책과",
+    "date": "2026-11-05",
+    "category": "교통",
+    "importance_score": 115,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=469622"
+  },
+  {
+    "nttNo": "469619",
+    "title": "서울시민 4명 중 3명 아리수 마신다…먹는 비율 2년 연속 상승",
+    "id": "seoul-469619",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울아리수본부 서울아리수본부",
+    "date": "2026-11-05",
+    "category": "환경",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=469619"
+  },
+  {
+    "nttNo": "469617",
+    "title": "“정책 홍보의 진화”…서울시 정책 웹툰 5편 모두 100만 뷰, 신작 「서울 76년 만의 카덴차」 5일 공개",
+    "id": "seoul-469617",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "홍보기획관 콘텐츠담당관",
+    "date": "2026-11-05",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=469617"
+  },
+  {
+    "nttNo": "469616",
+    "title": "연구실 속 양자기술, 창업 아이템으로…서울퀀텀캠퍼스 3기 우수과제 4건 선정",
+    "id": "seoul-469616",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "경제실 AI전략산업과",
+    "date": "2026-11-05",
+    "category": "경제",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=469616"
+  },
+  {
+    "nttNo": "469615",
+    "title": "“세계시민의 질문이 국제포럼의 의제가 된다” 서울문화재단, SAFT 2027 글로벌 오픈콜… 세계의 다음 질문을 찾는다",
+    "id": "seoul-469615",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울문화재단 서울문화재단",
+    "date": "2026-11-05",
+    "category": "문화",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=469615"
+  },
+  {
     "nttNo": "469614",
     "title": "(석간) '서울한옥위크' 8만5천 명 발길… 한옥, 일상 속 문화공간으로",
     "id": "seoul-469614",
@@ -6499,130 +6597,5 @@
     "importance": "낮음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467413"
-  },
-  {
-    "nttNo": "467411",
-    "title": "(석간) 서울특별시 자치법규 제·개정 공포",
-    "id": "seoul-467411",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "기획조정실 법무담당관",
-    "date": "2026-10-01",
-    "category": "행정",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "□ 2026. 10. 1.(목)",
-      "○ 조례: 34건(제정 4건, 개정 30건)",
-      "□ 2026. 10. 15.(목)",
-      "○ 규칙: 7건(제정 2건, 개정 5건)"
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467411"
-  },
-  {
-    "nttNo": "467409",
-    "title": "(석간) 잠수교 400m가 치킨으로 채워진다…서울시, '잠수교 치킨데이' 참가사 모집",
-    "id": "seoul-467409",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "미래한강본부 미래한강본부",
-    "date": "2026-10-01",
-    "category": "환경",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "□ 차 없는 잠수교 뚜벅뚜벅 축제의 마지막 날인 10월 25일(일) 잠수교가 약 400m 규모의 ‘치킨 테이블’로 채워진다. 서울시는 한강하면 떠오르는 대표 음식인 치킨을 잠수교에서 한강을 바라보며 즐길 수 있도록 '잠수교 치킨데이'를 운영한다고 밝혔다. 17만 여명의 시민과 관광객은 서울은 물론 전국 각지의 개성 있는 치킨을 한자리에서 맛볼 수 있다.",
-      "□ 이와 관련해 서울시는 「2026 차 없는 잠수교 뚜벅뚜벅 축제」의 특별 프로그램인 ‘잠수교 치킨데이(가칭)’ 참가할 프랜차이즈 또는 소상공인 참가사를 10월7일(수)까지 모집한다.",
-      "○ 차 없는 잠수교 뚜벅뚜벅 축제는 2026년 하반기 9월6일부터 시작해 10월25일까지 매주 일요일 14시부터 22시까지 잠수교와 반포한강공원 일원에서 개최된다.",
-      "□ 시는 올해 축제의 마지막 날을 장식할 특별 행사로 한강에서 즐기는 대표적인 음식인 ‘치킨’을 주제로 프랜차이즈 브랜드는 물론 소상공인이 모두 함께 참여할 수 있는 상생형 프로그램을 마련했다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467409"
-  },
-  {
-    "nttNo": "467408",
-    "title": "(석간) 한옥에 쌓인 시간, 흙에 담긴 시간…서울공예박물관《시간이 쌓이는 집》전시 개최",
-    "id": "seoul-467408",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "서울공예박물관 서울공예박물관",
-    "date": "2026-10-01",
-    "category": "문화",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467408"
-  },
-  {
-    "nttNo": "467359",
-    "title": "(자료제공) 한강 한가운데 새로 열린 노들섬…개방 10일 만에 10만 명 찾았다",
-    "id": "seoul-467359",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "미래공간기획관 미래공간담당관",
-    "date": "2026-09-30",
-    "category": "주택",
-    "importance_score": 100,
-    "importance": "높음",
-    "summary": [
-      "○ 생태정원에는 한강을 파노라마로 조망할 수 있는 무대형 좌석과 넓은 잔디 공간을 마련해 시민들이 한강 풍경을 바라보며 휴식과 피크닉을 즐길 수 있도록 했다.",
-      "○ 놀이정원은 통나무와 잔디언덕, 자연석 등을 활용해 아이들이 뛰고 오르며 자연을 직접 경험할 수 있도록 조성했다. 아이와 함께 노들섬을 찾은 가족 방문객들의 발길이 이어지고 있다.",
-      "○ 그라스정원과 1.5km 순환형 산책로에서는 섬과 한강의 풍경을 감상하며 산책하거나 달릴 수 있다. 저녁에는 한강대교 남단 미디어아트 공간‘아뜰리에 노들’에서 색다른 야간경관도 만날 수 있다.",
-      "○ 토요일에는 한강을 바라보며 책을 읽는 ‘팝업 도서관’, 일요일에는 돗자리와 보드게임을 빌려 여유로운 시간을 보내는‘피크닉 데이’를 운영한다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467359"
-  },
-  {
-    "nttNo": "467332",
-    "title": "(엠바고14시) '2530 장애인 일상활력프로젝트'가 바꾼 일상, '서울장애인정책박람회'서 만난다",
-    "id": "seoul-467332",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "복지실 장애인복지과",
-    "date": "2026-09-30",
-    "category": "복지",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ 장애인 당사자와 가족, 채용기업, 장애인단체·지원기관, 시민 등 약 2,000명이 참여한 가운데 일자리·소득, 주거·돌봄, 이동·접근, 인권·여가 등 프로젝트의 성과와 향후 과제를 한 자리서 나눈다.",
-      "○ 특히 장애인 공공일자리는 '25년 5,117개에서 '26년 5,712개로 11.6% 늘었으며, 장애유형 맞춤형 특화일자리 참여자 428명 중 342명(79.9%)이 중증·최중증장애인으로, `특화일자리 경험'이 실제 `취업'으로 이어지도록 장애인 채용기업의 현장면접과 직무체험, 취업상담 등도 운영한다.",
-      "○ 장애유형 맞춤형 특화일자리에 참여해 바리스타로 취업한 한 참여자는 “처음에는 손님 응대가 긴장되고 낯설었지만, 특화일자리에서 동료들과 함께 일하며 바리스타 업무에 익숙해졌고 자신감도 많이 생겼다“며 “이 경험이 실제 카페 취업으로 이어져 앞으로도 계속 바리스타로 일하면서 스스로 자립하는 것이 꿈“이라고 말했다.",
-      "○ 장애유형 맞춤형 특화일자리는 장애인의 특성과 역량에 적합한 직무 경험을 제공하고, 이를 경력으로 쌓아 민간취업과 지속적인 자립으로 이어질 수 있도록 지원하는 사업이다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467332"
-  },
-  {
-    "nttNo": "467331",
-    "title": "(엠바고11시) 오세훈 시장, \"부상 장병 예우, 제대 후 삶까지\"… 청년부상제대군인과 간담회",
-    "id": "seoul-467331",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "복지실 복지정책과",
-    "date": "2026-09-30",
-    "category": "복지",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "○ 최근에도 군 복무 현장에서 사고가 이어지면서, 부상 이후 치료와 보훈뿐 아니라 안정적인 사회복귀까지 지원하는 체계의 중요성이 커지고 있다.",
-      "○ 상담센터는 2019년 작전 중 지뢰 폭발로 부상을 입은 이주은 대위 등 청년부상제대군인들이 제기한 지원 필요성과 현장의 목소리를 바탕으로 추진됐다.",
-      "○ AI 영상 제작 기초부터 심화 과정까지 직업훈련과 관련 기업의 직무 경험 기회를 제공하고, 전문 변호사의 소송 지원 대상도 확대해 경제적 자립과 권리구제를 함께 지원한다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467331"
-  },
-  {
-    "nttNo": "467330",
-    "title": "(엠바고14시) 서울숲에 더해 매헌시민의숲까지… 서울국제정원박람회 10월 확대 개최",
-    "id": "seoul-467330",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "정원도시국 조경과",
-    "date": "2026-09-30",
-    "category": "환경",
-    "importance_score": 5,
-    "importance": "낮음",
-    "summary": [
-      "○ 정원도슨트는 행사 기간 매일 3회 운영하며, 시민정원사가 직접 정원을 소개해 정원 조성 과정과 그 안에 담긴 이야기를 관람객과 나눌 예정이다.",
-      "○ 아울러 박람회 기간 인근에서 열리는 지역행사와 연계해 박람회 방문객의 지역 방문을 유도하고, 지역을 찾은 시민들도 매헌시민의숲을 함께 찾을 수 있도록 할 예정이다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467330"
   }
 ]
