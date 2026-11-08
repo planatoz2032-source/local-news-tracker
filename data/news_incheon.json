@@ -1,5 +1,98 @@
 [
   {
+    "repSeq": "DOM_0000000015924429",
+    "title": "인천시, 세계 최대 스마트도시 박람회서 ‘미래 도시계획’ 혁신 구상",
+    "date": "2026-11-08",
+    "dept": "도시계획과",
+    "id": "incheon-DOM_0000000015924429",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015924429",
+    "category": null,
+    "importance_score": 20,
+    "importance": "낮음",
+    "summary": [
+      "인천시, 세계 최대 스마트도시 박람회서 ‘미래 도시계획’ 혁신 구상",
+      "인천시, 세계 최대 스마트도시 박람회서 ‘미래 도시계획’ 혁신 구상",
+      "도시계획과 / 성시윤 (032-440-4612)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015924429"
+  },
+  {
+    "repSeq": "DOM_0000000015924425",
+    "title": "인천시, 자립준비청년과‘따뜻한 동행’, 지지망 다진다",
+    "date": "2026-11-08",
+    "dept": "아동정책과",
+    "id": "incheon-DOM_0000000015924425",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015924425",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시, 자립준비청년과‘따뜻한 동행’, 지지망 다진다",
+      "인천시, 자립준비청년과‘따뜻한 동행’, 지지망 다진다",
+      "아동정책과 / 윤인숙 (032-440-2882)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015924425"
+  },
+  {
+    "repSeq": "DOM_0000000015924419",
+    "title": "알뜰한 장보기, 풍성한 혜택! 전통시장으로 장 보러 가요!",
+    "date": "2026-11-08",
+    "dept": "소상공인정책과",
+    "id": "incheon-DOM_0000000015924419",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015924419",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "알뜰한 장보기, 풍성한 혜택! 전통시장으로 장 보러 가요!",
+      "알뜰한 장보기, 풍성한 혜택! 전통시장으로 장 보러 가요!",
+      "소상공인정책과 / 이나영 (032-440-4225)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015924419"
+  },
+  {
+    "repSeq": "DOM_0000000015924410",
+    "title": "인천시, 옹진 시도서‘인천 평화 캠핑’개최,서해 평화 가치 공유",
+    "date": "2026-11-08",
+    "dept": "홍보담당관",
+    "id": "incheon-DOM_0000000015924410",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015924410",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시가 서해 평화의 상징 공간인 지역 섬의 매력을 재조명하고, 시민과 전국의 젊은 세대가 함께 평화와 생태의 가치를 나누는 도시브랜드 캠페인을 펼쳤다.\r\n\r\n\r\n\r\n인천광역시(시장 박찬대)는 지난 7일부터 8일까지 이틀간 옹진군 북도면 시도리 수기해수욕장 일원에서 인"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015924410"
+  },
+  {
+    "repSeq": "DOM_0000000015924401",
+    "title": "인천시립합창단, 2027년 신규 상임단원(베이스) 공개모집",
+    "date": "2026-11-08",
+    "dept": "문화예술회관",
+    "id": "incheon-DOM_0000000015924401",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015924401",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시립합창단, 2027년 신규 상임단원(베이스) 공개모집",
+      "인천시립합창단, 2027년 신규 상임단원(베이스) 공개모집",
+      "문화예술회관 / 정수산나 (032-420-2736)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015924401"
+  },
+  {
     "repSeq": "DOM_0000000015919898",
     "title": "인천시, 2028 G20 정상회의 유치 응원‘릴스 콘테스트’개최",
     "date": "2026-11-06",
@@ -7395,100 +7488,5 @@
       "인천광역시(시장 박찬대)는 다가오는 추석 연휴 성묘객과 가을철 산행 등 야외활동 증가로 산불 발생 위험이 높아짐에 따라, 철저한 예방과 감시활동을 중심으로 한 산불 총력 대응태세에 돌입한다고 밝혔다.\r\n \r\n우선, 시는 연휴를 앞둔 9월 15일부터 23일까지&"
     ],
     "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015525844"
-  },
-  {
-    "repSeq": "DOM_0000000015525843",
-    "title": "인천시, 추석 연휴 특별교통대책 시행  안전하고 편안한 귀성·귀경길 지원!",
-    "date": "2026-09-15",
-    "dept": "교통정책과",
-    "id": "incheon-DOM_0000000015525843",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015525843",
-    "category": null,
-    "importance_score": 120,
-    "importance": "높음",
-    "summary": [
-      "인천시, 추석 연휴 특별교통대책 시행  안전하고 편안한 귀성·귀경길 지원!",
-      "인천시, 추석 연휴 특별교통대책 시행  안전하고 편안한 귀성·귀경길 지원!",
-      "교통정책과 / 이승훈 (032-440-3852)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015525843"
-  },
-  {
-    "repSeq": "DOM_0000000015525841",
-    "title": "인천시, 돌봄 인력 확충 나선다. 요양보호사교육기관 6개소 신규 지정",
-    "date": "2026-09-15",
-    "dept": "통합돌봄과",
-    "id": "incheon-DOM_0000000015525841",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015525841",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 돌봄 인력 확충 나선다. 요양보호사교육기관 6개소 신규 지정",
-      "인천시, 돌봄 인력 확충 나선다. 요양보호사교육기관 6개소 신규 지정",
-      "통합돌봄과 / 김담희 (032-440-7913)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015525841"
-  },
-  {
-    "repSeq": "DOM_0000000015525840",
-    "title": "9월은 정기분 재산세 납부의 달! 9월 30일까지 꼭 납부하세요",
-    "date": "2026-09-15",
-    "dept": "세정담당관",
-    "id": "incheon-DOM_0000000015525840",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015525840",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "9월은 정기분 재산세 납부의 달! 9월 30일까지 꼭 납부하세요",
-      "9월은 정기분 재산세 납부의 달! 9월 30일까지 꼭 납부하세요",
-      "세정담당관 / 오기우 (032-440-2563)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015525840"
-  },
-  {
-    "repSeq": "DOM_0000000015521478",
-    "title": "인천시, 청라6공구 006 정거장 구간 계측기준 초과에 따라 원인조사 진행...“시민 안전 확보 최우선”",
-    "date": "2026-09-14",
-    "dept": "공사시설부",
-    "id": "incheon-DOM_0000000015521478",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015521478",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 청라6공구 006 정거장 구간 계측기준 초과에 따라 원인조사 진행...“시민 안전 확보 최우선”",
-      "인천시, 청라6공구 006 정거장 구간 계측기준 초과에 따라 원인조사 진행...“시민 안전 확보 최우선”",
-      "공사시설부 / 구현호 (032-451-2748)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015521478"
-  },
-  {
-    "repSeq": "DOM_0000000015521470",
-    "title": "인천시, 국회 찾아 국비 939억 원 추가 확보 총력",
-    "date": "2026-09-14",
-    "dept": "재정담당관",
-    "id": "incheon-DOM_0000000015521470",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015521470",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 국회 찾아 국비 939억 원 추가 확보 총력",
-      "인천시, 국회 찾아 국비 939억 원 추가 확보 총력",
-      "재정담당관 / 최신 (032-440-1663)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015521470"
   }
 ]
