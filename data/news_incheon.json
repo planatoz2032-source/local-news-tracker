@@ -1,5 +1,24 @@
 [
   {
+    "repSeq": "DOM_0000000015967426",
+    "title": "‘백령공항 건설’타당성재조사 통과… 사업 추진‘속도’",
+    "date": "2026-11-13",
+    "dept": "항공과",
+    "id": "incheon-DOM_0000000015967426",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000015967426",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "‘백령공항 건설’타당성재조사 통과… 사업 추진‘속도’",
+      "‘백령공항 건설’타당성재조사 통과… 사업 추진‘속도’",
+      "항공과 / 이규섭 (032-440-4832)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015967426"
+  },
+  {
     "repSeq": "DOM_0000000015965274",
     "title": "인천시, 서울7호선 청라 연장‘개통 지연 대책’점검, 민관정 협의체 전체회의 개최",
     "date": "2026-11-13",
@@ -7481,24 +7500,5 @@
       "건축과 / 김밝음 (032-440-4334)"
     ],
     "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015570458"
-  },
-  {
-    "repSeq": "DOM_0000000015570453",
-    "title": "인천시, 추석 명절 앞두고 진드기 매개 감염병 주의 당부",
-    "date": "2026-09-18",
-    "dept": "감염병관리과",
-    "id": "incheon-DOM_0000000015570453",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015570453",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 추석 명절 앞두고 진드기 매개 감염병 주의 당부",
-      "인천시, 추석 명절 앞두고 진드기 매개 감염병 주의 당부",
-      "감염병관리과 / 김예빈 (032-440-7845)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015570453"
   }
 ]
