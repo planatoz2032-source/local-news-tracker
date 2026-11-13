@@ -1,5 +1,61 @@
 [
   {
+    "nttNo": "470320",
+    "title": "겨울에도 꽃은 핀다… 서울식물원에서 만나는 특별한 겨울 정원",
+    "id": "seoul-470320",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울식물원 서울식물원",
+    "date": "2026-11-13",
+    "category": "환경",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=470320"
+  },
+  {
+    "nttNo": "470319",
+    "title": "\"시험 당일 이동 걱정 덜어요\" 서울시설공단,  수능 장애인 수험생에 '장애인콜택시 우선 배차'",
+    "id": "seoul-470319",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울시설공단 서울시설공단",
+    "date": "2026-11-13",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=470319"
+  },
+  {
+    "nttNo": "470318",
+    "title": "서울시, '재개발 신통기획' 후보지 6개구 6곳 추가 선정…주거환경 개선 속도",
+    "id": "seoul-470318",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "주택실 주거정비과",
+    "date": "2026-11-13",
+    "category": "주택",
+    "importance_score": 115,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=470318"
+  },
+  {
+    "nttNo": "470317",
+    "title": "서울시, 양천·중랑 '모아주택' 6곳 2,741세대 공급 속도… 2028년 착공",
+    "id": "seoul-470317",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "주택실 모아주택과",
+    "date": "2026-11-13",
+    "category": "주택",
+    "importance_score": 130,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=470317"
+  },
+  {
     "nttNo": "470285",
     "title": "(석간) 10월 서울 토허 신청 2개월 연속 증가… 외곽지역·한강벨트 상승세 지속",
     "id": "seoul-470285",
@@ -6282,66 +6338,5 @@
       "○ 추천대상은 최초 공고일인 2026년 10월 8일까지 서울시에 3년 이상 계속 거주하거나 사업장(주된 직장)을 둔 개인·단체 중 시민상 대상·시민표창 수상자 또는 시정발전 공로자다."
     ],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467899"
-  },
-  {
-    "nttNo": "467897",
-    "title": "(석간) 가을 밤을 즐기는 특별한 방법 '2026 남산 나이트 페스티벌'",
-    "id": "seoul-467897",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "정원도시국 공원여가사업과",
-    "date": "2026-10-12",
-    "category": "환경",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467897"
-  },
-  {
-    "nttNo": "467896",
-    "title": "(석간) 서울시, 청소년의 건강한 디지털미디어 환경 조성 위해 전문가·시민 모인다",
-    "id": "seoul-467896",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "평생교육국 청소년정책과",
-    "date": "2026-10-12",
-    "category": "복지",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "□ 서울시립인터넷중독예방상담센터(이하 ‘아이윌센터’)가 오는 10월 15일(목) 오후 2시 시립마포청소년센터 대강당에서 ‘청소년 디지털미디어 정책포럼’을 개최한다. 이번 포럼에서는 청소년 디지털미디어와 관련한 해외 정책 사례와 국내 정책의 실효성 및 한계를 살펴보고, 전문가와 현장 관계자, 시민이 함께 향후 정책 방향을 논의한다.",
-      "○ 아이윌센터는 서울시가 2007년 전국 지방자치단체 최초로 설립한 청소년의 디지털미디어 과의존 상담·예방교육·연구·캠페인 등을 추진해 온 전문 기관이다. 그동안 6개 센터가 개별 위탁 운영됐으나, 최근 서울시의 서비스 전달체계 개편 및 표준화 방침에 따라 ‘1개 대표센터 및 5개 사무소’ 체제로 구조 개편을 마쳤다.",
-      "○ 이번 포럼은 아이윌센터 개편 이후 처음 개최하는 포럼으로, AI 기술 발전 등으로 심화하는 청소년 디지털미디어 문제에 효과적으로 대응하기 위해 마련됐다.",
-      "□ 행사는 ▲1부 주제강연 ▲2부 토론 및 질의응답 ▲공모전 수상작 시상식 순으로 진행되며, 행사장 로비에서는 청소년의 디지털미디어 과의존 예방 및 해소를 주제로 한 「2026 디지털미디어 과의존 예방주간 공모전」 우수작도 전시한다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467896"
-  },
-  {
-    "nttNo": "467895",
-    "title": "(석간) 책 자체로 예술이 된다…서울아트책보고 2026 가을 아트북 특별전",
-    "id": "seoul-467895",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "서울도서관 서울도서관",
-    "date": "2026-10-12",
-    "category": "문화",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467895"
-  },
-  {
-    "nttNo": "467894",
-    "title": "(석간) 막 내린 극장, 다시 시작되는 광화문의 밤",
-    "id": "seoul-467894",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "세종문화회관 세종문화회관",
-    "date": "2026-10-12",
-    "category": "문화",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=467894"
   }
 ]
