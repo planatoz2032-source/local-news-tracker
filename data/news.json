@@ -1,5 +1,47 @@
 [
   {
+    "nttNo": "470572",
+    "title": "(대변인 입장문) 서울시는 민주노총의 허위사실 유포에 끝까지 법적 책임을 묻겠습니다",
+    "id": "seoul-470572",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "대변인 언론담당관",
+    "date": "2026-11-17",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=470572"
+  },
+  {
+    "nttNo": "470570",
+    "title": "(보도참고자료) '23년 서울시 방침에 따라 학교시설 예정부지를 공공공지로 우선 결정하는 것이 학교용지법 위반 아닌지 (261117, 김정우 시의원 질의 관련)",
+    "id": "seoul-470570",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "주택실 공동주택과",
+    "date": "2026-11-17",
+    "category": "주택",
+    "importance_score": 100,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=470570"
+  },
+  {
+    "nttNo": "470558",
+    "title": "(보도참고자료) SH 미상환 대출금 회수 대책 및 추가 출자 가능성은 (261117, 노성철 시의원 질의 관련)",
+    "id": "seoul-470558",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "미래한강본부 미래한강본부",
+    "date": "2026-11-17",
+    "category": "환경",
+    "importance_score": 5,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=470558"
+  },
+  {
     "nttNo": "470555",
     "title": "(보도참고자료) '24년 조례 개정까지 하면서 주택개발을 해야하는 SH를 한강버스에 참여시킨 이유는 (261117, 노성철 시의원 질의 관련)",
     "id": "seoul-470555",
@@ -6169,52 +6211,5 @@
     "importance": "높음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468136"
-  },
-  {
-    "nttNo": "468135",
-    "title": "(석간) 서울 도심에서 떠나는 일곱 지역 가을여행…‘로컬트립 가을소풍’개최",
-    "id": "seoul-468135",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "관광체육국 관광정책과",
-    "date": "2026-10-15",
-    "category": "문화",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468135"
-  },
-  {
-    "nttNo": "468134",
-    "title": "(석간) 조선 최고 관청 ‘의정부’ 다시 시민의 품으로…서울시, 의정부지 유적전시관 개관",
-    "id": "seoul-468134",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "문화본부 문화유산과",
-    "date": "2026-10-15",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468134"
-  },
-  {
-    "nttNo": "468133",
-    "title": "(석간) 서울을 기록하는 17가지 시선… 서울기록원, 제7회 서울기록페어 개최",
-    "id": "seoul-468133",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "서울기록원 서울기록원",
-    "date": "2026-10-15",
-    "category": "문화",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "□ 재개발로 달라지는 동네부터 오래된 손글씨와 지하철 타일까지, 시민들이 각자의 시선으로 기록한 서울을 한자리에서 만날 수 있는 행사가 열린다.",
-      "○ 서울기록원은 10월 23일(금)부터 24일(토)까지 이틀간 서울기록원에서 ‘우리가 기록하는 도시’를 주제로 <제7회 서울기록페어>를 개최한다고 밝혔다.",
-      "□ 올해 서울기록페어는 도시의 모습을 남기는 데 그치지 않고, 서울을 살아가고 바라보는 사람들의 경험과 관계를 조명한다.",
-      "○ 개인 기록자와 기록활동 단체, 지역에서 기록을 이어가는 기관등이 참여해 각자의 기록물과 활동을 시민들에게 소개한다. 재개발 지역과 한옥마을, 시외버스터미널 등 익숙한 공간을 새로운 시선으로 바로보는 기록도 만날 수 있다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468133"
   }
 ]
