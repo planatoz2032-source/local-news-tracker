@@ -1,5 +1,33 @@
 [
   {
+    "nttNo": "470750",
+    "title": "(자료제공) 서울 철도지하화 67.6㎞ 전 구간 정부 종합계획(안) 반영… 서울시, 조기 추진 총력",
+    "id": "seoul-470750",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "도시공간본부 도시공간전략과",
+    "date": "2026-11-19",
+    "category": "주택",
+    "importance_score": 120,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=470750"
+  },
+  {
+    "nttNo": "470727",
+    "title": "(보도참고자료) 동북선 경전철 공사기간 연장에 대해 사업시행자에게 지체상금을 부과해야 하는 것 아닌지 (261119, 박이강 시의원 질의 관련)",
+    "id": "seoul-470727",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "도시기반시설본부 도시기반시설본부",
+    "date": "2026-11-19",
+    "category": "주택",
+    "importance_score": 100,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=470727"
+  },
+  {
     "nttNo": "470683",
     "title": "가을밤 음악으로 물들인 DJ파티‘팔각클럽’…「2026 남산 나이트 페스티벌」성황리 마무리",
     "id": "seoul-470683",
@@ -6149,33 +6177,5 @@
     "importance": "낮음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468318"
-  },
-  {
-    "nttNo": "468301",
-    "title": "(대변인 입장문) 한강버스 관련 의혹에 철저한 진상규명으로 답하겠습니다",
-    "id": "seoul-468301",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "대변인 언론담당관",
-    "date": "2026-10-16",
-    "category": "행정",
-    "importance_score": 15,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468301"
-  },
-  {
-    "nttNo": "468277",
-    "title": "(시민감사옴부즈만위원회 입장문) 「전 성동구청장의 공무국외출장 관련」 주민감사 실시 관련 입장문",
-    "id": "seoul-468277",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "시민감사옴부즈만위원회 시민감사옴부즈만위원회",
-    "date": "2026-10-16",
-    "category": "행정",
-    "importance_score": 5,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468277"
   }
 ]
