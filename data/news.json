@@ -1,5 +1,64 @@
 [
   {
+    "nttNo": "470747",
+    "title": "(석간) DDP·한강이 웹툰 속 배경으로…서울시, '서울 명소 3D 배경' 13종 무료 배포",
+    "id": "seoul-470747",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "경제실 K컬처전략과",
+    "date": "2026-11-20",
+    "category": "경제",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=470747"
+  },
+  {
+    "nttNo": "470746",
+    "title": "(석간) 남산터널부터 장애인콜택시까지…서울시설공단, 생활 속 불편 개선 나선다",
+    "id": "seoul-470746",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울시설공단 서울시설공단",
+    "date": "2026-11-20",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=470746"
+  },
+  {
+    "nttNo": "470745",
+    "title": "(석간) 서울시, 사회복지종사자 대상 <금융복지 가이드북> 발간",
+    "id": "seoul-470745",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울시복지재단 서울시복지재단",
+    "date": "2026-11-20",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=470745"
+  },
+  {
+    "nttNo": "470744",
+    "title": "(엠바고10시)(석간) 제23차 서울시 정비사업 통합심의위원회 개최결과",
+    "id": "seoul-470744",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "주택실 주거정비과",
+    "date": "2026-11-20",
+    "category": "주택",
+    "importance_score": 125,
+    "importance": "높음",
+    "summary": [
+      "□ 금일 처리 안건 : 총 3건",
+      "○ 조건부 의결 : 3건"
+    ],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=470744"
+  },
+  {
     "nttNo": "470750",
     "title": "(자료제공) 서울 철도지하화 67.6㎞ 전 구간 정부 종합계획(안) 반영… 서울시, 조기 추진 총력",
     "id": "seoul-470750",
@@ -6111,71 +6170,5 @@
       "○ 참여자 774명을 대상으로 한 설문조사에서 행사 전반 만족도는 5점 만점에 4.44점으로 나타났으며, 응답자의 95.2%가 향후 유사한 AI 행사에 참여할 의향이 있다고 답했다."
     ],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468293"
-  },
-  {
-    "nttNo": "468292",
-    "title": "음악과 체험으로 즐기는 가장 다정한 가을, 서울식물원 정원치유축제",
-    "id": "seoul-468292",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "서울식물원 서울식물원",
-    "date": "2026-10-18",
-    "category": "환경",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "□ 서울식물원은 오는 10월 23일(금)부터 24일(토)까지 이틀간 전시온실 앞과 해봄정원 일대에서 ‘가장 다정한 가을’을 주제로 「2026 서울식물원 정원치유축제」를 개최한다고 밝혔다.",
-      "□ 이번 축제에서는 심신을 치유하는 요가와 다양한 음악 공연부터, 테라리움과 꽃꽂이 등 다양한 체험 프로그램까지 마련되어 아름다운 가을 정원 속에서 식물과 함께 힐링할 수 있다.",
-      "□ 축제 첫날인 10월 23일(금)에는 전시온실 앞 메인무대에서 런치 콘서트, 가든 요가, 다정한 작은 음악회 등 가을 정원에서 여유와 휴식을 즐길 수 있는 다양한 프로그램이 진행된다.",
-      "○ 12시 30분부터 13시까지는 하프·비올라·오보에로 구성된 ‘린 하프 트리오’가 친숙한 대중음악을 선보이는 런치 콘서트가 열린다. 서울식물원 관람객은 물론 인근 직장인들도 점심시간을 활용해 가을 정원에서 음악을 즐길 수 있다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468292"
-  },
-  {
-    "nttNo": "468291",
-    "title": "공공기록과 예술작품으로 다시 읽는 도시 …‘예술가들이 기록한 도시’ 전시 개막",
-    "id": "seoul-468291",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "서울기록원 서울기록원",
-    "date": "2026-10-18",
-    "category": "문화",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "□ 익숙한 도시의 풍경도 어떤 기록을 통해 바라보냐에 따라 다르게 읽힌다. 서울기록원과 성북문화재단은 공공기록과 예술가의 작품을 통해 성북의 변화와 기억을 살펴보는 ‘예술가들이 기록한 도시’ 전시를 10월 20일(화) 서울기록원 제2전시실에서 개막한다. 전시는 2029년까지 3개년 상설전시로 이어진다.",
-      "□ 이번 전시는 공공기록과 문학·미술·사진·영상 등 예술자료를 함께 선보이는 융합 전시다. 도시의 형성과 발전을 보여주는 행정기록부터 재개발과 철거로 사라지거나 변형된 장소를 담은 예술가의 기록까지, 서로 다른 시선으로 남겨진 자료를 통해 성북의 변화와 그 안에 살아온 사람들의 기억을 입체적으로 조명한다.",
-      "□ 전시는 ▲1부, 도시의 형성과 삶의 흔적을 살펴보는 ‘기록 엮기’ ▲2부, 사라지거나 변형된 장소의 기록을 되짚는 ‘상실의 기록’ ▲3부, 오늘날 예술가의 시선으로 도시를 다시 바라보는 ‘기억의 발굴’로 이어진다.",
-      "○ 1부‘기록 엮기: 성북서사’는 노송희 작가의 신작 ‘미아(MiA, Missing in Action)’를 시작으로 공공기록과 예술자료를 나란히 배치해 자연과 삶의 터전이 도시로 변화해 온 과정, 성북의 문화적 정체성을 살펴본다."
-    ],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468291"
-  },
-  {
-    "nttNo": "468324",
-    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 17일(토) 「제3회 서울 동물보호의 날 기념행사」 참석… 시민과 함께 동물보호 의미 되새겨",
-    "id": "seoul-468324",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "대변인 언론담당관",
-    "date": "2026-10-17",
-    "category": "행정",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468324"
-  },
-  {
-    "nttNo": "468318",
-    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 16일(금) 제107회 전국체전 개회식 참석 및 선수단 격려",
-    "id": "seoul-468318",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "대변인 언론담당관",
-    "date": "2026-10-16",
-    "category": "행정",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468318"
   }
 ]
