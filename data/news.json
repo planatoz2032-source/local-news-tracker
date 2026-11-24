@@ -1,5 +1,33 @@
 [
   {
+    "nttNo": "470984",
+    "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 24일(화) 한양대학교 경영대 초청 특강",
+    "id": "seoul-470984",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "대변인 언론담당관",
+    "date": "2026-11-24",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=470984"
+  },
+  {
+    "nttNo": "470955",
+    "title": "(자료제공) 세계로 진출한 '책읽는 서울', 산살바도르·반다아체에 서울야외도서관 조성",
+    "id": "seoul-470955",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "글로벌도시정책관 국제협력담당관",
+    "date": "2026-11-24",
+    "category": "행정",
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=470955"
+  },
+  {
     "nttNo": "470939",
     "title": "(자료제공) 서울시, 25일(수) 지하철(1~8호선) 파업 대비 비상수송대책 가동",
     "id": "seoul-470939",
@@ -6062,33 +6090,5 @@
     "importance": "높음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468441"
-  },
-  {
-    "nttNo": "468440",
-    "title": "(국감보도참고자료) 공공주택 스프링클러 미설치율이 높은데 문제가 있는 것 아닌지 (20261019, 국토위 모경종 의원 질의 관련)",
-    "id": "seoul-468440",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "주택실 주택정책과",
-    "date": "2026-10-19",
-    "category": "주택",
-    "importance_score": 115,
-    "importance": "높음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468440"
-  },
-  {
-    "nttNo": "468428",
-    "title": "(국감보도참고자료) 청년안심주택 보증금 미지급 관련 선지급율 낮음 (20261019, 국토위 모경종 의원 질의 관련)",
-    "id": "seoul-468428",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "주택실 청년주거과",
-    "date": "2026-10-19",
-    "category": "주택",
-    "importance_score": 115,
-    "importance": "높음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468428"
   }
 ]
