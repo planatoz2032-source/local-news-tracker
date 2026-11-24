@@ -1,5 +1,47 @@
 [
   {
+    "nttNo": "470997",
+    "title": "(석간) 서울시, '한옥의 새로운 가능성'과 '전통건축의 현대적 실천' 한자리에 선보인다",
+    "id": "seoul-470997",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "주택실 한옥건축자산과",
+    "date": "2026-11-25",
+    "category": "주택",
+    "importance_score": 100,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=470997"
+  },
+  {
+    "nttNo": "470996",
+    "title": "(석간) 기술훈련이 창업으로, 현장 경험이 채용으로…서울 중장년 경력전환 우수사례 16편 선정",
+    "id": "seoul-470996",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "서울시50플러스재단 서울시50플러스재단",
+    "date": "2026-11-25",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=470996"
+  },
+  {
+    "nttNo": "470990",
+    "title": "(엠바고00시)(자료제공) 서울시, 서부선 다시 한번 민자로 재추진…이번에도 유찰시 재정전환",
+    "id": "seoul-470990",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "교통실 교통정책과",
+    "date": "2026-11-25",
+    "category": "교통",
+    "importance_score": 100,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=470990"
+  },
+  {
     "nttNo": "470984",
     "title": "(자료제공) 서울시장 사후동정 - 오세훈 시장, 24일(화) 한양대학교 경영대 초청 특강",
     "id": "seoul-470984",
@@ -6048,47 +6090,5 @@
     "importance": "높음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468447"
-  },
-  {
-    "nttNo": "468444",
-    "title": "(국감보도참고자료) 최근 인허가 감소 원인을 박원순 전 시장, 대통령, 정부·여당 탓으로 돌리는데, 서울시 책임은 없는 것인지 (20261019, 국토위 장종태 의원 질의 관련)",
-    "id": "seoul-468444",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "주택실 주거정비과",
-    "date": "2026-10-19",
-    "category": "주택",
-    "importance_score": 100,
-    "importance": "높음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468444"
-  },
-  {
-    "nttNo": "468443",
-    "title": "(국감보도참고자료) 선박건조 수의계약에 문제는 없었는지 건조능력 등 확인했는지 (20261019, 국토위 정일영 의원 질의 관련)",
-    "id": "seoul-468443",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "미래한강본부 미래한강본부",
-    "date": "2026-10-19",
-    "category": "환경",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468443"
-  },
-  {
-    "nttNo": "468441",
-    "title": "(국감보도참고자료) 선거 악영향 우려해 GTX-A 철근 누락을 11.13. 철도공단에 간단히·소극적으로 보고했는지 (20261019, 국토위 조인철 의원 질의 관련)",
-    "id": "seoul-468441",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "도시기반시설본부 도시기반시설본부",
-    "date": "2026-10-19",
-    "category": "주택",
-    "importance_score": 115,
-    "importance": "높음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468441"
   }
 ]
