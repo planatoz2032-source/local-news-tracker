@@ -1,5 +1,33 @@
 [
   {
+    "nttNo": "471075",
+    "title": "(보도참고자료) 서울시, 주택공급 확대하려면 정비사업 규제부터 풀어야… 국토부에 개선 촉구",
+    "id": "seoul-471075",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "주택실 주거정비과",
+    "date": "2026-11-25",
+    "category": "주택",
+    "importance_score": 165,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=471075"
+  },
+  {
+    "nttNo": "471074",
+    "title": "(보도참고자료)서울시 ＂남산 케이블카 재허가만으로는 독점 해소 한계… 곤돌라 신속 도입해야＂",
+    "id": "seoul-471074",
+    "region": "seoul",
+    "region_name": "서울특별시",
+    "dept": "균형발전본부 도시정비과",
+    "date": "2026-11-25",
+    "category": "주택",
+    "importance_score": 105,
+    "importance": "높음",
+    "summary": [],
+    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=471074"
+  },
+  {
     "nttNo": "471030",
     "title": "(보도참고자료) 서울시, ''통합심의 권한이양, 500세대 이하 보다 더 퇴행…전면 철회 촉구''",
     "id": "seoul-471030",
@@ -6062,33 +6090,5 @@
     "importance": "낮음",
     "summary": [],
     "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468469"
-  },
-  {
-    "nttNo": "468468",
-    "title": "(민생소통특보 입장문) 서울시에 은폐는 없습니다. 비리가 있다면 무관용이 원칙입니다",
-    "id": "seoul-468468",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "대변인 언론담당관",
-    "date": "2026-10-19",
-    "category": "행정",
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468468"
-  },
-  {
-    "nttNo": "468467",
-    "title": "(국감보도참고자료) 종묘 앞 세운4구역을 당초 계획인 저층·중밀로 추진하거나 세계유산영향평가를 받으면 안되는지 (20261019, 국토위 조인철 의원 질의 관련)",
-    "id": "seoul-468467",
-    "region": "seoul",
-    "region_name": "서울특별시",
-    "dept": "도시공간본부 도시재창조과",
-    "date": "2026-10-19",
-    "category": "주택",
-    "importance_score": 105,
-    "importance": "높음",
-    "summary": [],
-    "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=468467"
   }
 ]
