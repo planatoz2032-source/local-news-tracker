@@ -1,5 +1,117 @@
 [
   {
+    "repSeq": "DOM_0000000016097080",
+    "title": "인천시,‘범죄 피해자 상시 구호망’구축…  인천시·경찰·공동모금회 손잡아",
+    "date": "2026-11-26",
+    "dept": "복지정책과",
+    "id": "incheon-DOM_0000000016097080",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000016097080",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시,‘범죄 피해자 상시 구호망’구축…  인천시·경찰·공동모금회 손잡아",
+      "인천시,‘범죄 피해자 상시 구호망’구축…  인천시·경찰·공동모금회 손잡아",
+      "복지정책과 / 윤신혜 (032-440-1547)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000016097080"
+  },
+  {
+    "repSeq": "DOM_0000000016096224",
+    "title": "인천경제청, 외국인 대상 지역탐방 프로그램 진행",
+    "date": "2026-11-26",
+    "dept": "투자유치기획과",
+    "id": "incheon-DOM_0000000016096224",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000016096224",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천경제청, 외국인 대상 지역탐방 프로그램 진행",
+      "인천경제청, 외국인 대상 지역탐방 프로그램 진행",
+      "투자유치기획과 / 유장석 (032-453-7662)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000016096224"
+  },
+  {
+    "repSeq": "DOM_0000000016093628",
+    "title": "인천시 특사경, 미신고 대기·소음 불법행위 … 3곳 적발",
+    "date": "2026-11-26",
+    "dept": "특별사법경찰과",
+    "id": "incheon-DOM_0000000016093628",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000016093628",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시가 주거지 인접 노후 공장에서 발생하는 미세먼지와 소음 피해를 줄이기 위해 관할 구청과 합동으로 환경오염 배출사업장 현장 단속에 나섰다.\r\n\r\n인천광역시(시장 박찬대) 특별사법경찰은 지난 18일부터 20일까지 노후 소규모 공장 밀집 지역을 대상으로 무허가·미신고"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000016093628"
+  },
+  {
+    "repSeq": "DOM_0000000016093604",
+    "title": "인천시, 오는 28·29일 송도서 ‘2026 로보텍스 인터내셔널 세계대회’열어",
+    "date": "2026-11-26",
+    "dept": "마이스산업과",
+    "id": "incheon-DOM_0000000016093604",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000016093604",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "인천시, 오는 28·29일 송도서 ‘2026 로보텍스 인터내셔널 세계대회’열어",
+      "인천시, 오는 28·29일 송도서 ‘2026 로보텍스 인터내셔널 세계대회’열어",
+      "마이스산업과 / 박윤정 (032-440-1506)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000016093604"
+  },
+  {
+    "repSeq": "DOM_0000000016093590",
+    "title": "인천시, 도시철도 건설현장 재난대응 역량 강화 나서",
+    "date": "2026-11-26",
+    "dept": "건설총괄부",
+    "id": "incheon-DOM_0000000016093590",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000016093590",
+    "category": null,
+    "importance_score": 15,
+    "importance": "낮음",
+    "summary": [
+      "인천시, 도시철도 건설현장 재난대응 역량 강화 나서",
+      "인천시, 도시철도 건설현장 재난대응 역량 강화 나서",
+      "건설총괄부 / 이아로치 (032-451-2859)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000016093590"
+  },
+  {
+    "repSeq": "DOM_0000000016093524",
+    "title": "합창·클래식·무용·대중음악을 아우르는 인천문화예술회관의 연말 무대",
+    "date": "2026-11-26",
+    "dept": "문화예술회관",
+    "id": "incheon-DOM_0000000016093524",
+    "region": "incheon",
+    "region_name": "인천광역시",
+    "nttNo": "DOM_0000000016093524",
+    "category": null,
+    "importance_score": 0,
+    "importance": "낮음",
+    "summary": [
+      "합창·클래식·무용·대중음악을 아우르는 인천문화예술회관의 연말 무대",
+      "합창·클래식·무용·대중음악을 아우르는 인천문화예술회관의 연말 무대",
+      "문화예술회관 / 정수산나 (032-420-2736)"
+    ],
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000016093524"
+  },
+  {
     "repSeq": "DOM_0000000016091993",
     "title": "인천시, SK인천석유화학 협력사 상생협력 안전행복관 개관, 원청·협력사 상생협력 거점 마련",
     "date": "2026-11-25",
@@ -7380,117 +7492,5 @@
       "농촌자원과 / 신혜원 (032-440-6932)"
     ],
     "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015669897"
-  },
-  {
-    "repSeq": "DOM_0000000015669889",
-    "title": "현실 부부의 진짜 사랑과 공감 스토리! 연가곡으로 만나는 유쾌하고 진지한 우리의 삶 이야기",
-    "date": "2026-10-01",
-    "dept": "문화예술회관",
-    "id": "incheon-DOM_0000000015669889",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015669889",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "현실 부부의 진짜 사랑과 공감 스토리! 연가곡으로 만나는 유쾌하고 진지한 우리의 삶 이야기",
-      "현실 부부의 진짜 사랑과 공감 스토리! 연가곡으로 만나는 유쾌하고 진지한 우리의 삶 이야기",
-      "문화예술회관 / 정수산나 (032-420-2736)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015669889"
-  },
-  {
-    "repSeq": "DOM_0000000015669853",
-    "title": "인천시,「인천 바이오 얼라이언스」첫 회의 열어",
-    "date": "2026-10-01",
-    "dept": "바이오과",
-    "id": "incheon-DOM_0000000015669853",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015669853",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시,「인천 바이오 얼라이언스」첫 회의 열어",
-      "인천시,「인천 바이오 얼라이언스」첫 회의 열어",
-      "바이오과 / 권기혁 (032-440-3103)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015669853"
-  },
-  {
-    "repSeq": "DOM_0000000015669812",
-    "title": "인천시, 세계 최대 EDM 페스티벌‘2026 EDC KOREA’개최",
-    "date": "2026-10-01",
-    "dept": "마이스산업과",
-    "id": "incheon-DOM_0000000015669812",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015669812",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 세계 최대 EDM 페스티벌‘2026 EDC KOREA’개최",
-      "인천시, 세계 최대 EDM 페스티벌‘2026 EDC KOREA’개최",
-      "마이스산업과 / 김종혁 (032-440-1505)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015669812"
-  },
-  {
-    "repSeq": "DOM_0000000015669787",
-    "title": "인천시, 공공 채용정보 문자 발송 서비스 개시",
-    "date": "2026-10-01",
-    "dept": "경제정책과",
-    "id": "incheon-DOM_0000000015669787",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015669787",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천시, 공공 채용정보 문자 발송 서비스 개시",
-      "인천시, 공공 채용정보 문자 발송 서비스 개시",
-      "경제정책과 / 김주영 (032-440-4272)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015669787"
-  },
-  {
-    "repSeq": "DOM_0000000015669776",
-    "title": "197개 섬의 매력을 도심 속으로 ‘2026 인천 섬의 날 페스타’10일 개최",
-    "date": "2026-10-01",
-    "dept": "섬해양정책과",
-    "id": "incheon-DOM_0000000015669776",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015669776",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "197개 섬의 매력을 도심 속으로 ‘2026 인천 섬의 날 페스타’10일 개최",
-      "197개 섬의 매력을 도심 속으로 ‘2026 인천 섬의 날 페스타’10일 개최",
-      "섬해양정책과 / 이선주 (032-440-4983)"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015669776"
-  },
-  {
-    "repSeq": "DOM_0000000015669765",
-    "title": "인천을 빛낸 시민 15명,‘제48회 인천광역시 시민상’수상",
-    "date": "2026-10-01",
-    "dept": "총무과",
-    "id": "incheon-DOM_0000000015669765",
-    "region": "incheon",
-    "region_name": "인천광역시",
-    "nttNo": "DOM_0000000015669765",
-    "category": null,
-    "importance_score": 0,
-    "importance": "낮음",
-    "summary": [
-      "인천광역시(시장 박찬대)는 제62회 시민의 날을 맞아 지역사회 발전을 위해 헌신해 온 시민 15명을 ‘제48회 인천광역시 시민상’ 수상자로 선정했다고 밝혔다.\r\n \r\n시민상은 1978년 11월 제정돼 올해로 48회를 맞은 인천시 최고 권위"
-    ],
-    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000015669765"
   }
 ]
